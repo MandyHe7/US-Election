@@ -1,101 +1,101 @@
-state,pollster,start_date,end_date,sample_size,population,candidate_name,pct,party,methodology,outcome,predicted_prob,predicted_winner
-Florida,YouGov,2024-09-01,2024-09-27,699,lv,Donald Trump,50.4,REP,Online Panel,1,0.504,DEM
-Michigan,YouGov,2024-10-11,2024-10-09,1711,lv,Joe Biden,42.9,DEM,Online Panel,0,0.429,REP
-North Carolina,YouGov,2024-10-07,2024-10-04,1753,lv,Kamala Harris,46.6,DEM,Online Panel,0,0.466,REP
-Wisconsin,YouGov,2024-09-18,2024-10-16,983,lv,Joe Biden,52.9,REP,Online Panel,1,0.529,DEM
-Georgia,YouGov,2024-09-29,2024-09-20,1932,lv,Kamala Harris,52.3,REP,Online Panel,1,0.523,DEM
-North Carolina,YouGov,2024-09-05,2024-09-30,1564,lv,Donald Trump,44.7,REP,Online Panel,0,0.447,REP
-Wisconsin,YouGov,2024-09-13,2024-10-01,1782,lv,Donald Trump,54.8,DEM,Online Panel,1,0.5479999999999999,DEM
-Pennsylvania,YouGov,2024-09-15,2024-09-24,1496,lv,Kamala Harris,45.9,DEM,Online Panel,0,0.45899999999999996,REP
-Michigan,YouGov,2024-09-15,2024-09-15,1368,lv,Joe Biden,41.7,REP,Online Panel,0,0.41700000000000004,REP
-North Carolina,YouGov,2024-10-03,2024-10-14,1187,lv,Joe Biden,40.3,REP,Online Panel,0,0.40299999999999997,REP
-North Carolina,YouGov,2024-09-26,2024-09-28,1836,lv,Joe Biden,45.1,REP,Online Panel,0,0.451,REP
-Wisconsin,YouGov,2024-09-05,2024-10-03,1859,lv,Donald Trump,52.4,REP,Online Panel,1,0.524,DEM
-Florida,YouGov,2024-09-14,2024-10-03,1584,lv,Joe Biden,51.8,DEM,Online Panel,1,0.518,DEM
-Michigan,YouGov,2024-09-11,2024-10-13,1182,lv,Joe Biden,45.6,REP,Online Panel,0,0.456,REP
-Florida,YouGov,2024-09-03,2024-09-16,771,lv,Donald Trump,50.4,DEM,Online Panel,1,0.504,DEM
-Ohio,YouGov,2024-10-01,2024-10-19,1248,lv,Kamala Harris,49.1,DEM,Online Panel,0,0.491,REP
-Florida,YouGov,2024-09-08,2024-09-22,1070,lv,Kamala Harris,48.2,DEM,Online Panel,0,0.48200000000000004,REP
-Wisconsin,YouGov,2024-09-22,2024-09-21,1976,lv,Donald Trump,52.9,REP,Online Panel,1,0.529,DEM
-Arizona,YouGov,2024-09-02,2024-10-04,608,lv,Kamala Harris,45.4,DEM,Online Panel,0,0.45399999999999996,REP
-North Carolina,YouGov,2024-09-01,2024-09-25,866,lv,Kamala Harris,44.6,DEM,Online Panel,0,0.446,REP
-North Carolina,YouGov,2024-09-22,2024-10-18,1658,lv,Kamala Harris,49.1,REP,Online Panel,0,0.491,REP
-Ohio,YouGov,2024-09-10,2024-10-01,1942,lv,Donald Trump,44.9,DEM,Online Panel,0,0.449,REP
-Florida,YouGov,2024-10-08,2024-10-13,1235,lv,Kamala Harris,49.1,DEM,Online Panel,0,0.491,REP
-Florida,YouGov,2024-09-13,2024-10-12,1304,lv,Joe Biden,43.7,REP,Online Panel,0,0.43700000000000006,REP
-Arizona,YouGov,2024-09-24,2024-09-19,1590,lv,Donald Trump,51.1,DEM,Online Panel,1,0.511,DEM
-Georgia,YouGov,2024-10-09,2024-09-18,1200,lv,Donald Trump,40.2,DEM,Online Panel,0,0.402,REP
-Georgia,YouGov,2024-09-23,2024-10-16,1096,lv,Joe Biden,49.3,REP,Online Panel,0,0.493,REP
-North Carolina,YouGov,2024-10-12,2024-10-11,728,lv,Joe Biden,52.9,DEM,Online Panel,1,0.529,DEM
-Wisconsin,YouGov,2024-09-15,2024-09-14,1340,lv,Donald Trump,47.3,REP,Online Panel,0,0.473,REP
-Georgia,YouGov,2024-09-10,2024-10-01,992,lv,Joe Biden,47.3,DEM,Online Panel,0,0.473,REP
-Michigan,YouGov,2024-09-18,2024-09-17,1981,lv,Donald Trump,41.3,REP,Online Panel,0,0.413,REP
-Arizona,YouGov,2024-09-30,2024-09-17,906,lv,Donald Trump,46,DEM,Online Panel,0,0.46,REP
-Florida,YouGov,2024-09-17,2024-09-13,935,lv,Donald Trump,51,DEM,Online Panel,1,0.51,DEM
-Pennsylvania,YouGov,2024-09-04,2024-10-18,1633,lv,Donald Trump,54.2,REP,Online Panel,1,0.542,DEM
-North Carolina,YouGov,2024-10-10,2024-09-11,1100,lv,Donald Trump,47.5,REP,Online Panel,0,0.475,REP
-Georgia,YouGov,2024-10-04,2024-10-16,1432,lv,Kamala Harris,40.5,DEM,Online Panel,0,0.405,REP
-Wisconsin,YouGov,2024-10-06,2024-09-19,890,lv,Donald Trump,49.2,REP,Online Panel,0,0.49200000000000005,REP
-Ohio,YouGov,2024-09-03,2024-10-04,886,lv,Joe Biden,41.7,DEM,Online Panel,0,0.41700000000000004,REP
-North Carolina,YouGov,2024-09-03,2024-10-07,1538,lv,Joe Biden,42.4,REP,Online Panel,0,0.424,REP
-North Carolina,YouGov,2024-10-15,2024-09-11,671,lv,Joe Biden,42.4,DEM,Online Panel,0,0.424,REP
-Florida,YouGov,2024-10-10,2024-09-28,1011,lv,Joe Biden,44,DEM,Online Panel,0,0.44,REP
-North Carolina,YouGov,2024-10-01,2024-09-28,1367,lv,Kamala Harris,44.3,REP,Online Panel,0,0.44299999999999995,REP
-Wisconsin,YouGov,2024-09-09,2024-10-12,1479,lv,Joe Biden,51.9,DEM,Online Panel,1,0.519,DEM
-Georgia,YouGov,2024-09-12,2024-10-16,665,lv,Joe Biden,46.8,DEM,Online Panel,0,0.46799999999999997,REP
-Michigan,YouGov,2024-10-01,2024-09-19,853,lv,Kamala Harris,47,DEM,Online Panel,0,0.47,REP
-Georgia,YouGov,2024-10-10,2024-09-25,679,lv,Kamala Harris,48.7,DEM,Online Panel,0,0.48700000000000004,REP
-Arizona,YouGov,2024-09-08,2024-10-03,789,lv,Kamala Harris,45,REP,Online Panel,0,0.45,REP
-North Carolina,YouGov,2024-09-24,2024-09-19,1524,lv,Joe Biden,51.3,DEM,Online Panel,1,0.513,DEM
-Arizona,YouGov,2024-09-09,2024-09-23,955,lv,Joe Biden,41.7,REP,Online Panel,0,0.41700000000000004,REP
-Georgia,YouGov,2024-10-02,2024-10-05,1786,lv,Kamala Harris,54,DEM,Online Panel,1,0.54,DEM
-North Carolina,YouGov,2024-09-15,2024-10-20,1961,lv,Kamala Harris,42.3,REP,Online Panel,0,0.423,REP
-Michigan,YouGov,2024-10-10,2024-10-18,683,lv,Kamala Harris,48.1,REP,Online Panel,0,0.48100000000000004,REP
-Florida,YouGov,2024-10-12,2024-10-08,1456,lv,Kamala Harris,42.5,REP,Online Panel,0,0.425,REP
-Arizona,YouGov,2024-09-02,2024-10-07,585,lv,Joe Biden,49.2,DEM,Online Panel,0,0.49200000000000005,REP
-Pennsylvania,YouGov,2024-09-20,2024-10-14,1124,lv,Kamala Harris,46.5,DEM,Online Panel,0,0.465,REP
-Ohio,YouGov,2024-10-12,2024-10-01,1951,lv,Joe Biden,51.2,DEM,Online Panel,1,0.512,DEM
-Michigan,YouGov,2024-10-01,2024-10-10,1941,lv,Donald Trump,53.3,DEM,Online Panel,1,0.5329999999999999,DEM
-Arizona,YouGov,2024-09-05,2024-09-18,1494,lv,Joe Biden,42.1,DEM,Online Panel,0,0.42100000000000004,REP
-Ohio,YouGov,2024-09-26,2024-09-18,1916,lv,Joe Biden,47.9,DEM,Online Panel,0,0.479,REP
-Arizona,YouGov,2024-10-07,2024-10-02,1923,lv,Kamala Harris,50.6,DEM,Online Panel,1,0.506,DEM
-Pennsylvania,YouGov,2024-09-23,2024-09-29,1737,lv,Kamala Harris,42.8,DEM,Online Panel,0,0.428,REP
-Wisconsin,YouGov,2024-10-02,2024-10-14,1696,lv,Joe Biden,40.8,DEM,Online Panel,0,0.408,REP
-Wisconsin,YouGov,2024-09-20,2024-09-19,1195,lv,Kamala Harris,47.4,REP,Online Panel,0,0.474,REP
-Michigan,YouGov,2024-09-28,2024-09-15,714,lv,Donald Trump,49.7,REP,Online Panel,0,0.49700000000000005,REP
-Michigan,YouGov,2024-09-16,2024-10-20,1012,lv,Donald Trump,49.4,REP,Online Panel,0,0.494,REP
-Pennsylvania,YouGov,2024-10-01,2024-10-11,1771,lv,Donald Trump,47.2,REP,Online Panel,0,0.47200000000000003,REP
-Ohio,YouGov,2024-09-02,2024-09-27,1180,lv,Joe Biden,42.6,REP,Online Panel,0,0.426,REP
-Michigan,YouGov,2024-09-19,2024-10-12,1837,lv,Kamala Harris,46.5,DEM,Online Panel,0,0.465,REP
-Arizona,YouGov,2024-09-08,2024-10-02,1533,lv,Kamala Harris,41.9,DEM,Online Panel,0,0.419,REP
-Wisconsin,YouGov,2024-09-18,2024-10-12,1591,lv,Kamala Harris,50.3,DEM,Online Panel,1,0.503,DEM
-North Carolina,YouGov,2024-10-07,2024-09-19,713,lv,Kamala Harris,52.9,DEM,Online Panel,1,0.529,DEM
-Michigan,YouGov,2024-09-02,2024-09-27,859,lv,Kamala Harris,48.3,REP,Online Panel,0,0.483,REP
-Arizona,YouGov,2024-10-13,2024-09-17,1976,lv,Kamala Harris,50.4,DEM,Online Panel,1,0.504,DEM
-North Carolina,YouGov,2024-09-21,2024-10-02,524,lv,Donald Trump,44.2,DEM,Online Panel,0,0.442,REP
-Michigan,YouGov,2024-10-06,2024-09-17,1270,lv,Joe Biden,49.2,DEM,Online Panel,0,0.49200000000000005,REP
-Georgia,YouGov,2024-09-04,2024-10-14,1182,lv,Donald Trump,47.7,DEM,Online Panel,0,0.47700000000000004,REP
-Wisconsin,YouGov,2024-09-20,2024-09-16,756,lv,Joe Biden,44.3,DEM,Online Panel,0,0.44299999999999995,REP
-Georgia,YouGov,2024-10-10,2024-09-10,1306,lv,Donald Trump,47.6,DEM,Online Panel,0,0.47600000000000003,REP
-Michigan,YouGov,2024-09-06,2024-10-18,1632,lv,Joe Biden,48.7,DEM,Online Panel,0,0.48700000000000004,REP
-Pennsylvania,YouGov,2024-10-12,2024-09-19,1024,lv,Kamala Harris,42.5,REP,Online Panel,0,0.425,REP
-Florida,YouGov,2024-10-13,2024-09-11,1144,lv,Donald Trump,53.4,DEM,Online Panel,1,0.534,DEM
-Michigan,YouGov,2024-09-27,2024-09-18,1300,lv,Kamala Harris,47.5,DEM,Online Panel,0,0.475,REP
-Ohio,YouGov,2024-09-01,2024-10-06,1531,lv,Kamala Harris,45,REP,Online Panel,0,0.45,REP
-Wisconsin,YouGov,2024-09-14,2024-09-10,606,lv,Kamala Harris,54.3,DEM,Online Panel,1,0.5429999999999999,DEM
-Ohio,YouGov,2024-09-07,2024-09-29,1498,lv,Donald Trump,53.6,DEM,Online Panel,1,0.536,DEM
-Ohio,YouGov,2024-09-28,2024-10-19,997,lv,Kamala Harris,44.6,REP,Online Panel,0,0.446,REP
-Ohio,YouGov,2024-10-06,2024-09-10,1084,lv,Kamala Harris,43.3,REP,Online Panel,0,0.433,REP
-Wisconsin,YouGov,2024-09-17,2024-10-12,1361,lv,Donald Trump,44.5,DEM,Online Panel,0,0.445,REP
-Ohio,YouGov,2024-10-03,2024-09-21,1126,lv,Donald Trump,53.4,REP,Online Panel,1,0.534,DEM
-Ohio,YouGov,2024-10-01,2024-10-13,1351,lv,Joe Biden,49.3,REP,Online Panel,0,0.493,REP
-Ohio,YouGov,2024-09-21,2024-09-27,1160,lv,Donald Trump,50.9,REP,Online Panel,1,0.509,DEM
-Pennsylvania,YouGov,2024-09-03,2024-10-06,1491,lv,Donald Trump,49.2,REP,Online Panel,0,0.49200000000000005,REP
-Florida,YouGov,2024-09-07,2024-10-05,1037,lv,Donald Trump,43.1,DEM,Online Panel,0,0.431,REP
-Ohio,YouGov,2024-09-15,2024-09-14,525,lv,Kamala Harris,41.4,DEM,Online Panel,0,0.414,REP
-Georgia,YouGov,2024-09-14,2024-10-20,719,lv,Donald Trump,47.2,DEM,Online Panel,0,0.47200000000000003,REP
-Georgia,YouGov,2024-09-21,2024-10-06,1860,lv,Kamala Harris,52.1,DEM,Online Panel,1,0.521,DEM
-Wisconsin,YouGov,2024-09-07,2024-10-18,1577,lv,Donald Trump,48.5,REP,Online Panel,0,0.485,REP
-Pennsylvania,YouGov,2024-09-09,2024-09-18,1546,lv,Joe Biden,49.9,REP,Online Panel,0,0.499,REP
-Georgia,YouGov,2024-09-01,2024-09-13,812,lv,Kamala Harris,41.7,REP,Online Panel,0,0.41700000000000004,REP
-North Carolina,YouGov,2024-10-10,2024-10-20,572,lv,Kamala Harris,41.1,DEM,Online Panel,0,0.41100000000000003,REP
+pollster,numeric_grade,pollscore,methodology,state,start_date,end_date,sample_size,party,answer,pct,predicted_winner
+Siena/NYT,2,2,Online Panel,Georgia,2024-09-15,2024-09-19,1300,DEM,Harris,53,DEM
+Siena/NYT,2.5,1,Live Phone,Pennsylvania,2024-10-05,2024-09-15,650,DEM,Harris,42.5,REP
+Siena/NYT,2.5,-1,Online Panel,Pennsylvania,2024-09-27,2024-10-21,2650,DEM,Harris,50.7,DEM
+Gallup,2,-1,Mixed Mode,Florida,2024-09-25,2024-09-12,1550,DEM,Harris,40.3,REP
+Gallup,2,-1,Live Phone,Georgia,2024-09-21,2024-10-08,2950,DEM,Harris,54.8,DEM
+Siena/NYT,2,0.5,Mixed Mode,Georgia,2024-10-29,2024-10-18,1700,DEM,Harris,51.6,DEM
+Gallup,2.5,1,Online Panel,Michigan,2024-09-24,2024-10-31,1350,DEM,Harris,54.7,DEM
+SurveyMonkey,2,2,Live Phone,Pennsylvania,2024-09-13,2024-09-26,2750,DEM,Harris,52.8,DEM
+YouGov,3,2,Live Phone,Florida,2024-10-14,2024-10-07,1400,DEM,Harris,47.2,REP
+Siena/NYT,2.8,0,Online Panel,Arizona,2024-09-16,2024-10-14,1050,DEM,Biden,52.3,DEM
+Siena/NYT,2.8,2,Mixed Mode,Florida,2024-09-08,2024-10-10,1350,DEM,Biden,50.1,DEM
+YouGov,3,1,Mixed Mode,Michigan,2024-09-07,2024-10-07,2450,DEM,Harris,52.8,DEM
+Gallup,1.9,-0.5,Online Panel,Georgia,2024-09-26,2024-09-29,1750,DEM,Harris,41.4,REP
+YouGov,3,-1,Online Panel,Pennsylvania,2024-09-30,2024-10-03,2650,DEM,Harris,45.2,REP
+YouGov,1.9,-1,Live Phone,Georgia,2024-10-18,2024-11-03,1300,DEM,Harris,47.3,REP
+Ipsos,1.7,2,Live Phone,Georgia,2024-10-03,2024-10-29,1600,DEM,Biden,48.1,REP
+Siena/NYT,2.8,0.5,Live Phone,Georgia,2024-10-28,2024-09-07,1100,DEM,Harris,52.3,DEM
+SurveyMonkey,3,2,Mixed Mode,Arizona,2024-10-13,2024-09-30,700,DEM,Biden,54.7,DEM
+Siena/NYT,2.8,-1.5,Live Phone,Pennsylvania,2024-10-28,2024-10-05,2600,DEM,Harris,45.4,REP
+YouGov,2.5,-0.5,Online Panel,Arizona,2024-09-10,2024-10-20,2150,DEM,Biden,47.1,REP
+Siena/NYT,2,1.5,Online Panel,Florida,2024-09-24,2024-10-25,1750,DEM,Biden,50.2,DEM
+Gallup,2.8,-2,Mixed Mode,Michigan,2024-10-24,2024-09-07,1450,DEM,Biden,46.8,REP
+Gallup,1.9,-2,Mixed Mode,Pennsylvania,2024-09-04,2024-10-29,1850,DEM,Harris,46.3,REP
+Siena/NYT,2.8,1,Online Panel,Arizona,2024-10-21,2024-09-15,2500,DEM,Biden,47,REP
+Gallup,1.9,-2,Mixed Mode,Georgia,2024-09-04,2024-09-15,2350,DEM,Biden,47.5,REP
+Ipsos,2.8,-1.5,Online Panel,Arizona,2024-10-11,2024-09-26,2750,DEM,Biden,43,REP
+Gallup,2.8,1.5,Online Panel,Arizona,2024-09-24,2024-09-14,2200,DEM,Harris,44.5,REP
+Ipsos,2.8,1,Online Panel,Florida,2024-10-30,2024-10-10,2350,DEM,Harris,40.8,REP
+Siena/NYT,2,1.5,Online Panel,Florida,2024-10-29,2024-10-01,800,DEM,Harris,44.5,REP
+Ipsos,1.3,-1,Mixed Mode,Arizona,2024-09-20,2024-10-25,2150,DEM,Biden,42.1,REP
+SurveyMonkey,3,1,Mixed Mode,Pennsylvania,2024-09-22,2024-09-07,1950,DEM,Biden,47,REP
+YouGov,2.8,-2,Live Phone,Arizona,2024-09-19,2024-10-16,2850,DEM,Biden,41.1,REP
+YouGov,1.7,1,Online Panel,Georgia,2024-10-07,2024-10-16,700,DEM,Biden,50,REP
+Gallup,2.4,-2,Live Phone,Pennsylvania,2024-09-03,2024-10-09,1500,DEM,Harris,45,REP
+Gallup,1.7,-1.5,Mixed Mode,Pennsylvania,2024-09-19,2024-09-19,2550,DEM,Biden,52.6,DEM
+Gallup,2.8,2,Live Phone,Florida,2024-09-06,2024-09-23,1800,DEM,Biden,51.9,DEM
+Gallup,2.4,-2,Online Panel,Georgia,2024-09-26,2024-09-12,500,DEM,Harris,41.8,REP
+Siena/NYT,2.4,-0.5,Online Panel,Florida,2024-10-06,2024-10-10,1250,DEM,Biden,42.8,REP
+Gallup,2.4,1.5,Mixed Mode,Michigan,2024-09-29,2024-10-04,2450,DEM,Harris,54.3,DEM
+SurveyMonkey,1.3,-2,Live Phone,Georgia,2024-10-20,2024-10-21,2200,DEM,Biden,43.4,REP
+SurveyMonkey,1.9,-2,Live Phone,Pennsylvania,2024-10-31,2024-09-05,2000,DEM,Biden,53.3,DEM
+SurveyMonkey,2.5,2,Live Phone,Arizona,2024-10-19,2024-09-27,1050,DEM,Harris,54.2,DEM
+Ipsos,1.7,-1.5,Online Panel,Pennsylvania,2024-09-08,2024-09-12,2200,DEM,Biden,47.3,REP
+Ipsos,1.3,-1.5,Live Phone,Pennsylvania,2024-10-07,2024-10-20,700,DEM,Harris,53.3,DEM
+Gallup,1.9,-1.5,Mixed Mode,Pennsylvania,2024-10-25,2024-09-19,1000,DEM,Harris,45.8,REP
+SurveyMonkey,1.7,0,Online Panel,Florida,2024-10-26,2024-09-30,2650,DEM,Harris,40.7,REP
+Gallup,2.5,2,Online Panel,Pennsylvania,2024-10-26,2024-10-01,650,DEM,Harris,52.5,DEM
+YouGov,2.4,1,Online Panel,Georgia,2024-10-02,2024-10-25,1550,DEM,Biden,50.9,DEM
+SurveyMonkey,3,2,Live Phone,Arizona,2024-09-06,2024-09-30,1250,DEM,Biden,46.1,REP
+Gallup,2,-0.5,Mixed Mode,Michigan,2024-09-12,2024-10-05,950,DEM,Harris,54,DEM
+SurveyMonkey,2.8,2,Live Phone,Georgia,2024-09-19,2024-09-07,800,DEM,Harris,42.8,REP
+Ipsos,2.5,1.5,Mixed Mode,Michigan,2024-10-08,2024-09-26,650,DEM,Biden,44.4,REP
+SurveyMonkey,1.9,2,Online Panel,Michigan,2024-10-23,2024-10-08,2500,DEM,Biden,44,REP
+YouGov,1.9,1.5,Online Panel,Florida,2024-10-13,2024-10-25,3000,DEM,Harris,53.3,DEM
+Gallup,1.3,-2,Mixed Mode,Arizona,2024-09-06,2024-09-05,500,DEM,Harris,40.8,REP
+Siena/NYT,3,0.5,Live Phone,Georgia,2024-09-05,2024-11-02,2500,DEM,Harris,54.7,DEM
+Siena/NYT,1.3,-0.5,Live Phone,Georgia,2024-10-07,2024-10-09,2200,DEM,Harris,40.2,REP
+SurveyMonkey,2.5,0,Live Phone,Florida,2024-10-16,2024-10-26,2050,DEM,Biden,51.3,DEM
+Siena/NYT,2.5,2,Online Panel,Michigan,2024-09-03,2024-09-24,2150,DEM,Biden,54.7,DEM
+Siena/NYT,2,2,Live Phone,Michigan,2024-09-04,2024-09-19,1750,DEM,Biden,51.4,DEM
+YouGov,2,0,Live Phone,Pennsylvania,2024-10-24,2024-10-05,700,DEM,Biden,49.1,REP
+Siena/NYT,1.9,-1,Online Panel,Arizona,2024-10-30,2024-09-29,2950,DEM,Biden,52.2,DEM
+YouGov,2.8,-1,Mixed Mode,Arizona,2024-10-01,2024-09-27,1300,DEM,Biden,44.5,REP
+SurveyMonkey,1.7,0,Mixed Mode,Arizona,2024-10-01,2024-11-01,1150,DEM,Harris,42.4,REP
+Ipsos,2,0,Online Panel,Arizona,2024-09-21,2024-10-29,3000,DEM,Harris,47.4,REP
+Siena/NYT,2.5,2,Mixed Mode,Arizona,2024-09-23,2024-10-29,1050,DEM,Biden,54.4,DEM
+SurveyMonkey,1.7,2,Mixed Mode,Arizona,2024-10-29,2024-10-09,2950,DEM,Biden,46.6,REP
+SurveyMonkey,1.3,-1.5,Mixed Mode,Michigan,2024-09-07,2024-09-14,1700,DEM,Harris,52.4,DEM
+SurveyMonkey,1.9,2,Online Panel,Florida,2024-09-04,2024-09-07,1800,DEM,Biden,48,REP
+SurveyMonkey,2.8,-1,Mixed Mode,Arizona,2024-09-08,2024-09-12,2550,DEM,Biden,47.1,REP
+Ipsos,2.4,0,Live Phone,Georgia,2024-10-15,2024-10-29,1250,DEM,Harris,51.7,DEM
+YouGov,3,1,Online Panel,Michigan,2024-09-30,2024-11-02,1950,DEM,Biden,48.9,REP
+SurveyMonkey,2.5,-1,Online Panel,Arizona,2024-09-19,2024-10-07,2400,DEM,Harris,49.8,REP
+Siena/NYT,1.9,-1,Live Phone,Arizona,2024-10-31,2024-10-10,1850,DEM,Harris,52.4,DEM
+Siena/NYT,1.9,1.5,Live Phone,Arizona,2024-10-17,2024-09-14,900,DEM,Biden,49.5,REP
+SurveyMonkey,1.3,0,Online Panel,Florida,2024-09-04,2024-10-29,3000,DEM,Harris,53.1,DEM
+Ipsos,2,-1,Live Phone,Florida,2024-10-23,2024-10-31,1750,DEM,Biden,40.4,REP
+Ipsos,2.8,0.5,Online Panel,Arizona,2024-09-02,2024-10-12,1800,DEM,Harris,50.9,DEM
+Gallup,2,0,Online Panel,Georgia,2024-09-01,2024-09-05,950,DEM,Biden,47.2,REP
+Siena/NYT,2.8,0,Online Panel,Florida,2024-09-19,2024-09-12,2450,DEM,Harris,49.8,REP
+YouGov,2,1.5,Online Panel,Florida,2024-09-07,2024-09-12,2750,DEM,Biden,44.8,REP
+SurveyMonkey,1.7,2,Online Panel,Georgia,2024-09-07,2024-10-21,1150,DEM,Harris,46.2,REP
+YouGov,3,1,Mixed Mode,Arizona,2024-10-12,2024-09-14,2450,DEM,Biden,51.1,DEM
+Siena/NYT,1.3,-0.5,Online Panel,Pennsylvania,2024-09-07,2024-10-08,2200,DEM,Harris,44.5,REP
+SurveyMonkey,2.8,2,Live Phone,Georgia,2024-10-01,2024-10-03,700,DEM,Harris,42.5,REP
+Siena/NYT,1.9,0,Live Phone,Pennsylvania,2024-10-23,2024-10-29,1850,DEM,Harris,43.4,REP
+Siena/NYT,3,0,Live Phone,Georgia,2024-10-27,2024-09-22,750,DEM,Harris,43.2,REP
+Siena/NYT,2.5,1,Live Phone,Pennsylvania,2024-10-02,2024-09-19,1450,DEM,Harris,44.1,REP
+Ipsos,2.8,-1,Mixed Mode,Georgia,2024-09-09,2024-10-08,600,DEM,Harris,44.6,REP
+Ipsos,2.5,-0.5,Live Phone,Florida,2024-10-06,2024-10-04,1850,DEM,Biden,46.6,REP
+YouGov,2.8,-0.5,Live Phone,Michigan,2024-10-04,2024-09-08,1500,DEM,Biden,45.1,REP
+Gallup,2.5,0.5,Mixed Mode,Georgia,2024-09-05,2024-09-27,1350,DEM,Harris,53.3,DEM
+Siena/NYT,2.4,-1.5,Mixed Mode,Michigan,2024-09-25,2024-09-07,1750,DEM,Harris,43.8,REP
+Siena/NYT,1.9,-0.5,Mixed Mode,Georgia,2024-10-04,2024-10-03,1500,DEM,Biden,50.2,DEM
+Gallup,3,-1.5,Live Phone,Pennsylvania,2024-09-12,2024-09-19,2300,DEM,Biden,53.8,DEM
+Ipsos,2,-2,Live Phone,Michigan,2024-09-15,2024-10-04,2350,DEM,Harris,54.3,DEM
+Ipsos,3,1.5,Mixed Mode,Florida,2024-09-07,2024-10-21,1550,DEM,Biden,55,DEM
+Ipsos,3,1,Mixed Mode,Michigan,2024-09-30,2024-09-22,1500,DEM,Harris,47.9,REP
+SurveyMonkey,2.4,0.5,Mixed Mode,Arizona,2024-09-18,2024-10-20,2600,DEM,Harris,54.6,DEM
+SurveyMonkey,3,1.5,Mixed Mode,Florida,2024-10-12,2024-09-19,1950,DEM,Biden,40.9,REP

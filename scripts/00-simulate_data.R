@@ -9,43 +9,51 @@
 
 #### Workspace setup ####
 # Load necessary library
+
 library(dplyr)
+library(lubridate)  # For date manipulation
 
 # Set seed for reproducibility
 set.seed(12345)
 
 # Define parameters for the simulation
-states <- c("Arizona", "Wisconsin", "Michigan", "Georgia", "Pennsylvania", "Florida", "Ohio", "North Carolina")
-pollsters <- c("YouGov")
-methodologies <- c("Online Panel")
-candidates <- c("Donald Trump", "Joe Biden", "Kamala Harris")
-parties <- c("DEM", "REP")
+pollsters <- c("YouGov", "Siena/NYT", "Ipsos", "Gallup", "SurveyMonkey")
+numeric_grades <- signif(runif(10, min = 1, max = 3), digits = 2)
+pollscores <- seq(-2, 2, by = 0.5)
+methodologies <- c("Online Panel", "Live Phone", "Mixed Mode")
+states <- c("Arizona", "Michigan", "Georgia", "Pennsylvania", "Florida")
+parties <- "DEM"
+answers <- c("Harris", "Biden")
 
-# Number of simulated polls
+# Simulate dates
+start_dates <- seq(as.Date("2024-09-01"), as.Date("2024-10-31"), by="day")
+end_dates <- start_dates + sample(3:7, length(start_dates), replace = TRUE)
+
+# Number of polls to simulate
 n_polls <- 100
+
+# Define the range of sample sizes
+sample_size_min <- 500
+sample_size_max <- 3000
 
 # Simulate data
 simulated_data <- data.frame(
-  state = sample(states, n_polls, replace = TRUE),
   pollster = sample(pollsters, n_polls, replace = TRUE),
-  start_date = sample(seq(as.Date('2024-09-01'), as.Date('2024-10-15'), by="day"), n_polls, replace = TRUE),
-  end_date = sample(seq(as.Date('2024-09-10'), as.Date('2024-10-20'), by="day"), n_polls, replace = TRUE),
-  sample_size = sample(500:2000, n_polls, replace = TRUE),
-  population = rep("lv", n_polls),
-  candidate_name = sample(candidates, n_polls, replace = TRUE),
-  pct = round(runif(n_polls, 40, 55), 1),  # Random polling percentages between 40% and 55%
-  party = ifelse(sample(candidates, n_polls, replace = TRUE) == "Kamala Harris" | 
-                   sample(candidates, n_polls, replace = TRUE) == "Joe Biden", "DEM", "REP"),
-  methodology = sample(methodologies, n_polls, replace = TRUE)
+  numeric_grade = sample(numeric_grades, n_polls, replace = TRUE),
+  pollscore = sample(pollscores, n_polls, replace = TRUE),
+  methodology = sample(methodologies, n_polls, replace = TRUE),
+  state = sample(states, n_polls, replace = TRUE),
+  start_date = sample(start_dates, n_polls, replace = TRUE),
+  end_date = sample(end_dates, n_polls, replace = TRUE),
+  sample_size = sample(seq(sample_size_min, sample_size_max, by = 50), n_polls, replace = TRUE),
+  party = sample(parties, n_polls, replace = TRUE),
+  answer = sample(answers, n_polls, replace = TRUE),
+  pct = round(runif(n_polls, 40, 55), 1)  # Random polling percentages between 40% and 55%
 )
 
-# Simulate outcome based on polling percentages (randomly assign winner based on poll data)
+# Simulate a winner based on polling percentages
 simulated_data <- simulated_data %>%
-  group_by(state, pollster) %>%
-  mutate(outcome = ifelse(pct > 50, 1, 0),  # Assume if pct > 50, the candidate "wins"
-         predicted_prob = pct / 100,        # Simulate a probability based on pct
-         predicted_winner = ifelse(predicted_prob >= 0.5, "DEM", "REP"))
-
+  mutate(predicted_winner = ifelse(pct > 50, "DEM", "REP"))  # Predict winner based on percentage
 
 # Save the updated dataset with predictions
 #### Save data ####

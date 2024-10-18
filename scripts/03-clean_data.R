@@ -17,7 +17,7 @@ raw_data <- read_csv("data/01-raw_data/raw_data.csv")
 # Filter data to DEM estimates based on high-quality polls after DEM declared
 just_DEM_high_quality <- raw_data |>
   filter(
-    party == "DEM",
+    answer  %in% c("Biden", "Harris"),
     numeric_grade >= 3 
   ) |>
   mutate(
