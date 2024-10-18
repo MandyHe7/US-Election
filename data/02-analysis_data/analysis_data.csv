@@ -1,648 +1,648 @@
-pollster,numeric_grade,pollscore,methodology,state,start_date,end_date,sample_size,party,answer,pct
-YouGov,3,-1.1,Online Panel,Arizona,2024-10-11,2024-10-16,1435,DEM,Harris,48
-YouGov,3,-1.1,Online Panel,National,2024-10-12,2024-10-15,1457,DEM,Harris,48
-YouGov,3,-1.1,Online Panel,National,2024-10-12,2024-10-15,1314,DEM,Harris,49
-YouGov,3,-1.1,Online Panel,National,2024-10-08,2024-10-11,2712,DEM,Harris,51
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-10-07,2024-10-10,857,DEM,Harris,50
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-10-07,2024-10-10,857,DEM,Harris,49
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-10-07,2024-10-10,857,DEM,Harris,50
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-10-07,2024-10-10,857,DEM,Harris,49
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-10-07,2024-10-10,808,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-10-07,2024-10-10,808,DEM,Harris,45
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-10-07,2024-10-10,808,DEM,Harris,45
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-10-07,2024-10-10,808,DEM,Harris,44
-Marquette Law School,3,-1.1,Probability Panel,National,2024-10-01,2024-10-10,780,DEM,Harris,50
-Marquette Law School,3,-1.1,Probability Panel,National,2024-10-01,2024-10-10,780,DEM,Harris,43
-Marquette Law School,3,-1.1,Probability Panel,National,2024-10-01,2024-10-10,652,DEM,Harris,50
-Marquette Law School,3,-1.1,Probability Panel,National,2024-10-01,2024-10-10,652,DEM,Harris,44
-Siena/NYT,3,-1.5,Live Phone,Montana,2024-10-05,2024-10-08,656,DEM,Harris,39
-Siena/NYT,3,-1.5,Live Phone,Montana,2024-10-05,2024-10-08,656,DEM,Harris,38
-Siena/NYT,3,-1.5,Live Phone,Montana,2024-10-05,2024-10-08,656,DEM,Harris,40
-Siena/NYT,3,-1.5,Live Phone,Montana,2024-10-05,2024-10-08,656,DEM,Harris,39
-YouGov,3,-1.1,Online Panel,National,2024-10-06,2024-10-07,1414,DEM,Harris,47
-YouGov,3,-1.1,Online Panel,National,2024-10-06,2024-10-07,1230,DEM,Harris,49
-The Washington Post,3,-1.2,Live Phone/Text-to-Web,Ohio,2024-10-03,2024-10-07,1002,DEM,Harris,45
-The Washington Post,3,-1.2,Live Phone/Text-to-Web,Ohio,2024-10-03,2024-10-07,1002,DEM,Harris,44
-Siena/NYT,3,-1.5,Live Phone,National,2024-09-29,2024-10-06,3385,DEM,Harris,49
-Siena/NYT,3,-1.5,Live Phone,National,2024-09-29,2024-10-06,3385,DEM,Harris,47
-Siena/NYT,3,-1.5,Live Phone,Florida,2024-09-29,2024-10-06,622,DEM,Harris,41
-Siena/NYT,3,-1.5,Live Phone,Florida,2024-09-29,2024-10-06,622,DEM,Harris,40
-Siena/NYT,3,-1.5,Live Phone,Florida,2024-09-29,2024-10-06,622,DEM,Harris,41
-Siena/NYT,3,-1.5,Live Phone,Florida,2024-09-29,2024-10-06,622,DEM,Harris,40
-YouGov,3,-1.1,Online Panel,National,2024-10-02,2024-10-04,1150,DEM,Harris,46
-YouGov,3,-1.1,Online Panel,National,2024-10-02,2024-10-04,1032,DEM,Harris,47
-YouGov,3,-1.1,Online Panel,National,2024-10-02,2024-10-04,1151,DEM,Harris,48
-YouGov,3,-1.1,Online Panel,National,2024-10-02,2024-10-04,1033,DEM,Harris,48
-Siena/NYT,3,-1.5,Live Phone,Texas,2024-09-29,2024-10-04,617,DEM,Harris,44
-Siena/NYT,3,-1.5,Live Phone,Texas,2024-09-29,2024-10-04,617,DEM,Harris,42
-Siena/NYT,3,-1.5,Live Phone,Texas,2024-09-29,2024-10-04,617,DEM,Harris,44
-Siena/NYT,3,-1.5,Live Phone,Texas,2024-09-29,2024-10-04,617,DEM,Harris,41
-YouGov/Center for Working Class Politics,3,-1.1,Online Panel,Pennsylvania,2024-09-24,2024-10-02,1000,DEM,Harris,46.8
-YouGov,3,-1.1,Online Panel,National,2024-09-29,2024-10-01,1463,DEM,Harris,48
-YouGov,3,-1.1,Online Panel,National,2024-09-29,2024-10-01,1261,DEM,Harris,49
-The Washington Post,3,-1.2,Live Phone/Text-to-Web,North Carolina,2024-09-25,2024-09-29,1001,DEM,Harris,48
-The Washington Post,3,-1.2,Live Phone/Text-to-Web,North Carolina,2024-09-25,2024-09-29,1001,DEM,Harris,47
-McCourtney Institute/YouGov,3,-1.1,Online Panel,National,2024-09-23,2024-09-27,848,DEM,Harris,48
-Siena/NYT,3,-1.5,Live Phone,Nebraska CD-2,2024-09-24,2024-09-26,680,DEM,Harris,51
-Siena/NYT,3,-1.5,Live Phone,Nebraska CD-2,2024-09-24,2024-09-26,680,DEM,Harris,49
-Siena/NYT,3,-1.5,Live Phone,Nebraska CD-2,2024-09-24,2024-09-26,680,DEM,Harris,52
-Siena/NYT,3,-1.5,Live Phone,Nebraska CD-2,2024-09-24,2024-09-26,680,DEM,Harris,51
-Siena/NYT,3,-1.5,Live Phone,Michigan,2024-09-21,2024-09-26,688,DEM,Harris,45
-Siena/NYT,3,-1.5,Live Phone,Michigan,2024-09-21,2024-09-26,688,DEM,Harris,43
-Siena/NYT,3,-1.5,Live Phone,Michigan,2024-09-21,2024-09-26,688,DEM,Harris,48
-Siena/NYT,3,-1.5,Live Phone,Michigan,2024-09-21,2024-09-26,688,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,Ohio,2024-09-21,2024-09-26,687,DEM,Harris,45
-Siena/NYT,3,-1.5,Live Phone,Ohio,2024-09-21,2024-09-26,687,DEM,Harris,44
-Siena/NYT,3,-1.5,Live Phone,Ohio,2024-09-21,2024-09-26,687,DEM,Harris,44
-Siena/NYT,3,-1.5,Live Phone,Ohio,2024-09-21,2024-09-26,687,DEM,Harris,43
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-09-21,2024-09-26,680,DEM,Harris,49
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-09-21,2024-09-26,680,DEM,Harris,48
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-09-21,2024-09-26,680,DEM,Harris,49
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-09-21,2024-09-26,680,DEM,Harris,48
-Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-09-18,2024-09-26,882,DEM,Harris,52
-Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-09-18,2024-09-26,798,DEM,Harris,52
-Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-09-18,2024-09-26,882,DEM,Harris,48
-Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-09-18,2024-09-26,798,DEM,Harris,49
-YouGov,3,-1.1,Online Panel,National,2024-09-21,2024-09-24,1424,DEM,Harris,47
-YouGov,3,-1.1,Online Panel,National,2024-09-21,2024-09-24,1220,DEM,Harris,49
-YouGov,3,-1.1,Online Panel,Georgia,2024-09-20,2024-09-24,1441,DEM,Harris,49
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-09-17,2024-09-21,713,DEM,Harris,45
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-09-17,2024-09-21,713,DEM,Harris,45
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-09-17,2024-09-21,713,DEM,Harris,42
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-09-17,2024-09-21,713,DEM,Harris,43
-Siena/NYT,3,-1.5,Live Phone,Georgia,2024-09-17,2024-09-21,682,DEM,Harris,44
-Siena/NYT,3,-1.5,Live Phone,Georgia,2024-09-17,2024-09-21,682,DEM,Harris,45
-Siena/NYT,3,-1.5,Live Phone,Georgia,2024-09-17,2024-09-21,682,DEM,Harris,43
-Siena/NYT,3,-1.5,Live Phone,Georgia,2024-09-17,2024-09-21,682,DEM,Harris,44
-Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-09-17,2024-09-21,682,DEM,Harris,47
-Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-09-17,2024-09-21,682,DEM,Harris,47
-Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-09-17,2024-09-21,682,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-09-17,2024-09-21,682,DEM,Harris,45
-YouGov,3,-1.1,Online Panel,National,2024-09-18,2024-09-20,3129,DEM,Harris,52
-YouGov,3,-1.1,Online Panel,National,2024-09-15,2024-09-17,1445,DEM,Harris,49
-The Washington Post,3,-1.2,Live Phone/Text-to-Web,Pennsylvania,2024-09-12,2024-09-16,1003,DEM,Harris,48
-The Washington Post,3,-1.2,Live Phone/Text-to-Web,Pennsylvania,2024-09-12,2024-09-16,1003,DEM,Harris,48
-Siena/NYT,3,-1.5,Live Phone,National,2024-09-11,2024-09-16,2437,DEM,Harris,47
-Siena/NYT,3,-1.5,Live Phone,National,2024-09-11,2024-09-16,2437,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,National,2024-09-11,2024-09-16,2437,DEM,Harris,45
-Siena/NYT,3,-1.5,Live Phone,National,2024-09-11,2024-09-16,2437,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-09-11,2024-09-16,1082,DEM,Harris,50
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-09-11,2024-09-16,1082,DEM,Harris,50
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-09-11,2024-09-16,1082,DEM,Harris,48
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-09-11,2024-09-16,1082,DEM,Harris,49
-YouGov,3,-1.1,Online Panel,National,2024-09-11,2024-09-13,1177,DEM,Harris,50
-YouGov,3,-1.1,Online Panel,National,2024-09-11,2024-09-13,1090,DEM,Harris,50
-YouGov,3,-1.1,Online Panel,National,2024-09-11,2024-09-13,1175,DEM,Harris,48
-YouGov,3,-1.1,Online Panel,National,2024-09-11,2024-09-13,1090,DEM,Harris,49
-YouGov,3,-1.1,Online Panel,National,2024-09-08,2024-09-10,1464,DEM,Harris,45
-YouGov,3,-1.1,Online Panel,Michigan,2024-09-03,2024-09-06,1077,DEM,Harris,50
-YouGov,3,-1.1,Online Panel,Pennsylvania,2024-09-03,2024-09-06,1078,DEM,Harris,50
-YouGov,3,-1.1,Online Panel,Wisconsin,2024-09-03,2024-09-06,946,DEM,Harris,51
-Siena/NYT,3,-1.5,Live Phone,National,2024-09-03,2024-09-06,1695,DEM,Harris,47
-Siena/NYT,3,-1.5,Live Phone,National,2024-09-03,2024-09-06,1695,DEM,Harris,45
-Siena/NYT,3,-1.5,Live Phone,National,2024-09-03,2024-09-06,1695,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,National,2024-09-03,2024-09-06,1695,DEM,Harris,44
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-08-28,2024-09-05,822,DEM,Harris,52
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-08-28,2024-09-05,738,DEM,Harris,52
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-08-28,2024-09-05,822,DEM,Harris,47
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-08-28,2024-09-05,738,DEM,Harris,48
-YouGov,3,-1.1,Online Panel,National,2024-09-01,2024-09-03,1389,DEM,Harris,47
-YouGov,3,-1.1,Online Panel,Texas,2024-08-23,2024-08-31,1200,DEM,Harris,44
-YouGov,3,-1.1,Online Panel,Texas,2024-08-23,2024-08-31,1200,DEM,Harris,44
-YouGov,3,-1.1,Online Panel,National,2024-08-25,2024-08-27,1368,DEM,Harris,47
-YouGov,3,-1.1,Online Panel,National,2024-08-22,2024-08-26,1194,DEM,Harris,46
-YouGov,3,-1.1,Online Panel,National,2024-08-22,2024-08-26,1197,DEM,Harris,47
-YouGov,3,-1.1,Online Panel,National,2024-08-22,2024-08-26,1788,DEM,Harris,39
-YouGov,3,-1.1,Online Panel,National,2024-08-22,2024-08-26,1200,DEM,Harris,44
-YouGov,3,-1.1,Online Panel,Pennsylvania,2024-08-15,2024-08-23,500,DEM,Harris,43
-YouGov,3,-1.1,Online Panel,Pennsylvania,2024-08-15,2024-08-23,500,DEM,Harris,43
-YouGov,3,-1.1,Online Panel,Wisconsin,2024-08-15,2024-08-23,500,DEM,Harris,48
-YouGov,3,-1.1,Online Panel,Wisconsin,2024-08-15,2024-08-23,500,DEM,Harris,45
-YouGov,3,-1.1,Online Panel,Michigan,2024-08-15,2024-08-23,500,DEM,Harris,44
-YouGov,3,-1.1,Online Panel,Michigan,2024-08-15,2024-08-23,500,DEM,Harris,44
-YouGov,3,-1.1,Online Panel,National,2024-08-15,2024-08-22,1835,DEM,Harris,44
-YouGov,3,-1.1,Online Panel,National,2024-08-17,2024-08-20,1371,DEM,Harris,46
-YouGov,3,-1.1,Online Panel,National,2024-08-14,2024-08-16,3253,DEM,Harris,51
-YouGov,3,-1.1,Online Panel,National,2024-08-14,2024-08-16,3253,DEM,Harris,49
-YouGov,3,-1.1,Online Panel,Missouri,2024-08-08,2024-08-16,900,DEM,Harris,41
-Siena/NYT,3,-1.5,Live Phone,Nevada,2024-08-12,2024-08-15,677,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,Nevada,2024-08-12,2024-08-15,677,DEM,Harris,47
-Siena/NYT,3,-1.5,Live Phone,Nevada,2024-08-12,2024-08-15,677,DEM,Harris,42
-Siena/NYT,3,-1.5,Live Phone,Nevada,2024-08-12,2024-08-15,677,DEM,Harris,44
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-08-08,2024-08-15,677,DEM,Harris,49
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-08-08,2024-08-15,677,DEM,Harris,50
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-08-08,2024-08-15,677,DEM,Harris,45
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-08-08,2024-08-15,677,DEM,Harris,47
-Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-08-09,2024-08-14,655,DEM,Harris,49
-Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-08-09,2024-08-14,655,DEM,Harris,49
-Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-08-09,2024-08-14,655,DEM,Harris,45
-Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-08-09,2024-08-14,655,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,Georgia,2024-08-09,2024-08-14,661,DEM,Harris,44
-Siena/NYT,3,-1.5,Live Phone,Georgia,2024-08-09,2024-08-14,661,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,Georgia,2024-08-09,2024-08-14,661,DEM,Harris,41
-Siena/NYT,3,-1.5,Live Phone,Georgia,2024-08-09,2024-08-14,661,DEM,Harris,44
-YouGov,3,-1.1,Online Panel,National,2024-08-11,2024-08-13,1407,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-08-06,2024-08-09,693,DEM,Harris,49
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-08-06,2024-08-09,693,DEM,Harris,50
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-08-06,2024-08-09,693,DEM,Harris,45
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-08-06,2024-08-09,693,DEM,Harris,46
-YouGov Blue,3,-1.1,Online Panel,North Carolina,2024-08-05,2024-08-09,802,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,Michigan,2024-08-05,2024-08-08,619,DEM,Harris,45
-Siena/NYT,3,-1.5,Live Phone,Michigan,2024-08-05,2024-08-08,619,DEM,Harris,50
-Siena/NYT,3,-1.5,Live Phone,Michigan,2024-08-05,2024-08-08,619,DEM,Harris,44
-Siena/NYT,3,-1.5,Live Phone,Michigan,2024-08-05,2024-08-08,619,DEM,Harris,48
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-08-05,2024-08-08,661,DEM,Harris,50
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-08-05,2024-08-08,661,DEM,Harris,50
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-08-05,2024-08-08,661,DEM,Harris,49
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-08-05,2024-08-08,661,DEM,Harris,49
-YouGov,3,-1.1,Online Panel,National,2024-08-04,2024-08-06,1413,DEM,Harris,45
-YouGov,3,-1.1,Online Panel,National,2024-07-30,2024-08-02,3092,DEM,Harris,50
-YouGov,3,-1.1,Online Panel,National,2024-07-30,2024-08-02,3092,DEM,Harris,49
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-07-24,2024-08-01,877,DEM,Harris,49
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-07-24,2024-08-01,801,DEM,Harris,50
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-07-24,2024-08-01,877,DEM,Harris,45
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-07-24,2024-08-01,801,DEM,Harris,46
-Marquette Law School,3,-1.1,Probability Panel,National,2024-07-24,2024-08-01,879,DEM,Harris,52
-Marquette Law School,3,-1.1,Probability Panel,National,2024-07-24,2024-08-01,683,DEM,Harris,53
-Marquette Law School,3,-1.1,Probability Panel,National,2024-07-24,2024-08-01,879,DEM,Harris,47
-Marquette Law School,3,-1.1,Probability Panel,National,2024-07-24,2024-08-01,683,DEM,Harris,50
-YouGov,3,-1.1,Online Panel,National,2024-07-27,2024-07-30,1434,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,National,2024-07-22,2024-07-24,1142,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,National,2024-07-22,2024-07-24,1142,DEM,Harris,47
-Siena/NYT,3,-1.5,Live Phone,National,2024-07-22,2024-07-24,1142,DEM,Harris,42
-Siena/NYT,3,-1.5,Live Phone,National,2024-07-22,2024-07-24,1142,DEM,Harris,44
-YouGov,3,-1.1,Online Panel,National,2024-07-22,2024-07-23,1155,DEM,Harris,44
-YouGov,3,-1.1,Online Panel,National,2024-07-21,2024-07-23,1435,DEM,Harris,41
-YouGov,3,-1.1,Online Panel,National,2024-07-19,2024-07-22,1178,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2024-07-19,2024-07-22,1115,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2024-07-19,2024-07-22,1178,DEM,Harris,41
-YouGov,3,-1.1,Online Panel,National,2024-07-19,2024-07-22,1178,DEM,Harris,46
-YouGov,3,-1.1,Online Panel,National,2024-07-16,2024-07-18,2241,DEM,Biden,47
-YouGov,3,-1.1,Online Panel,National,2024-07-16,2024-07-18,2240,DEM,Harris,48
-YouGov,3,-1.1,Online Panel,National,2024-07-13,2024-07-16,1404,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2024-07-13,2024-07-16,1404,DEM,Harris,39
-Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Biden,46
-Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Biden,48
-Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Biden,38
-Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Biden,40
-Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Harris,48
-Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Harris,49
-Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Harris,41
-Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Harris,43
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Biden,45
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Biden,38
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Biden,40
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Harris,47
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Harris,40
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Harris,42
-YouGov,3,-1.1,Online Panel,National,2024-07-07,2024-07-09,1443,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2024-07-07,2024-07-09,1443,DEM,Harris,38
-YouGov,3,-1.1,Online Panel,National,2024-06-30,2024-07-02,1392,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2024-06-28,2024-07-02,2815,DEM,Biden,48
-YouGov,3,-1.1,Online Panel,National,2024-06-28,2024-07-02,2815,DEM,Biden,40
-Siena/NYT,3,-1.5,Live Phone,National,2024-06-28,2024-07-02,1532,DEM,Biden,41
-Siena/NYT,3,-1.5,Live Phone,National,2024-06-28,2024-07-02,1532,DEM,Biden,33
-Siena/NYT,3,-1.5,Live Phone,National,2024-06-28,2024-07-02,1532,DEM,Biden,43
-Siena/NYT,3,-1.5,Live Phone,National,2024-06-28,2024-07-02,1532,DEM,Biden,37
-YouGov,3,-1.1,Online Panel,National,2024-06-28,2024-07-01,1176,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2024-06-28,2024-07-01,1176,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2024-06-28,2024-07-01,1176,DEM,Harris,45
-YouGov,3,-1.1,Online Panel,National,2024-06-23,2024-06-25,1406,DEM,Biden,42
-Siena/NYT,3,-1.5,Live Phone,National,2024-06-20,2024-06-25,1226,DEM,Biden,42
-Siena/NYT,3,-1.5,Live Phone,National,2024-06-20,2024-06-25,1226,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,National,2024-06-20,2024-06-25,1226,DEM,Biden,32
-Siena/NYT,3,-1.5,Live Phone,National,2024-06-20,2024-06-25,1226,DEM,Biden,37
-YouGov,3,-1.1,Online Panel,National,2024-06-11,2024-06-24,2750,DEM,Biden,44.3
-YouGov,3,-1.1,Online Panel,National,2024-06-17,2024-06-21,1878,DEM,Biden,49
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-06-12,2024-06-20,871,DEM,Biden,50
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-06-12,2024-06-20,784,DEM,Biden,51
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-06-12,2024-06-20,871,DEM,Biden,40
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-06-12,2024-06-20,784,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2024-06-16,2024-06-18,1396,DEM,Biden,42
-YouGov Blue,3,-1.1,Online Panel,National,2024-06-14,2024-06-18,2015,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2024-06-11,2024-06-14,1011,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2024-06-09,2024-06-11,1399,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,Texas,2024-05-31,2024-06-09,1200,DEM,Biden,34
-YouGov,3,-1.1,Online Panel,Texas,2024-05-31,2024-06-09,1200,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2024-06-05,2024-06-07,1359,DEM,Biden,49
-YouGov,3,-1.1,Online Panel,National,2024-06-03,2024-06-06,1239,DEM,Biden,46
-YouGov,3,-1.1,Online Panel,National,2024-06-03,2024-06-06,1239,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2024-06-02,2024-06-04,1566,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2024-05-25,2024-05-28,1547,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2024-05-19,2024-05-21,1560,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,Florida,2024-05-10,2024-05-16,1181,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,Florida,2024-05-10,2024-05-16,1174,DEM,Biden,36
-YouGov,3,-1.1,Online Panel,Arizona,2024-05-10,2024-05-16,1193,DEM,Biden,47
-YouGov,3,-1.1,Online Panel,Arizona,2024-05-10,2024-05-16,1192,DEM,Biden,40
-Marquette Law School,3,-1.1,Probability Panel,National,2024-05-06,2024-05-15,902,DEM,Biden,50
-Marquette Law School,3,-1.1,Probability Panel,National,2024-05-06,2024-05-15,684,DEM,Biden,49
-Marquette Law School,3,-1.1,Probability Panel,National,2024-05-06,2024-05-15,902,DEM,Biden,37
-Marquette Law School,3,-1.1,Probability Panel,National,2024-05-06,2024-05-15,684,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2024-05-12,2024-05-14,1586,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2024-05-10,2024-05-13,1201,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2024-05-10,2024-05-13,1201,DEM,Biden,43
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-04-28,2024-05-09,626,DEM,Biden,33
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-04-28,2024-05-09,626,DEM,Biden,42
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-04-28,2024-05-09,626,DEM,Biden,35
-Siena/NYT,3,-1.5,Live Phone,Arizona,2024-04-28,2024-05-09,626,DEM,Biden,43
-Siena/NYT,3,-1.5,Live Phone,Georgia,2024-04-28,2024-05-09,604,DEM,Biden,31
-Siena/NYT,3,-1.5,Live Phone,Georgia,2024-04-28,2024-05-09,604,DEM,Biden,39
-Siena/NYT,3,-1.5,Live Phone,Georgia,2024-04-28,2024-05-09,604,DEM,Biden,34
-Siena/NYT,3,-1.5,Live Phone,Georgia,2024-04-28,2024-05-09,604,DEM,Biden,41
-Siena/NYT,3,-1.5,Live Phone,Michigan,2024-04-28,2024-05-09,616,DEM,Biden,36
-Siena/NYT,3,-1.5,Live Phone,Michigan,2024-04-28,2024-05-09,616,DEM,Biden,42
-Siena/NYT,3,-1.5,Live Phone,Michigan,2024-04-28,2024-05-09,616,DEM,Biden,42
-Siena/NYT,3,-1.5,Live Phone,Michigan,2024-04-28,2024-05-09,616,DEM,Biden,47
-Siena/NYT,3,-1.5,Live Phone,Nevada,2024-04-28,2024-05-09,614,DEM,Biden,27
-Siena/NYT,3,-1.5,Live Phone,Nevada,2024-04-28,2024-05-09,614,DEM,Biden,38
-Siena/NYT,3,-1.5,Live Phone,Nevada,2024-04-28,2024-05-09,614,DEM,Biden,30
-Siena/NYT,3,-1.5,Live Phone,Nevada,2024-04-28,2024-05-09,614,DEM,Biden,38
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-04-28,2024-05-09,1023,DEM,Biden,36
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-04-28,2024-05-09,1023,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-04-28,2024-05-09,1023,DEM,Biden,37
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-04-28,2024-05-09,1023,DEM,Biden,45
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-04-28,2024-05-09,614,DEM,Biden,38
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-04-28,2024-05-09,614,DEM,Biden,47
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-04-28,2024-05-09,614,DEM,Biden,39
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-04-28,2024-05-09,614,DEM,Biden,46
-YouGov,3,-1.1,Online Panel,National,2024-05-05,2024-05-07,1598,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2024-04-28,2024-04-30,1479,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,Pennsylvania,2024-04-19,2024-04-25,1288,DEM,Biden,49
-YouGov,3,-1.1,Online Panel,Michigan,2024-04-19,2024-04-25,1262,DEM,Biden,51
-YouGov,3,-1.1,Online Panel,Michigan,2024-04-19,2024-04-25,1262,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,Wisconsin,2024-04-19,2024-04-25,1226,DEM,Biden,49
-YouGov,3,-1.1,Online Panel,Wisconsin,2024-04-19,2024-04-25,1226,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2024-04-21,2024-04-23,1470,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,Texas,2024-04-12,2024-04-22,1200,DEM,Biden,36
-YouGov,3,-1.1,Online Panel,Texas,2024-04-12,2024-04-22,1200,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2024-04-14,2024-04-16,1358,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2024-04-11,2024-04-15,1171,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2024-04-11,2024-04-15,1171,DEM,Biden,42
-Siena/NYT,3,-1.5,Live Phone,National,2024-04-07,2024-04-11,1059,DEM,Biden,45
-Siena/NYT,3,-1.5,Live Phone,National,2024-04-07,2024-04-11,1059,DEM,Biden,40
-Siena/NYT,3,-1.5,Live Phone,National,2024-04-07,2024-04-11,1059,DEM,Biden,46
-Siena/NYT,3,-1.5,Live Phone,National,2024-04-07,2024-04-11,1059,DEM,Biden,42
-Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-04-03,2024-04-10,814,DEM,Biden,49
-Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-04-03,2024-04-10,707,DEM,Biden,49
-Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-04-03,2024-04-10,814,DEM,Biden,40
-Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-04-03,2024-04-10,707,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2024-04-06,2024-04-09,1583,DEM,Biden,42
-YouGov Blue,3,-1.1,Online Panel,National,2024-03-29,2024-04-05,4038,DEM,Biden,44
-YouGov Blue,3,-1.1,Online Panel,National,2024-03-29,2024-04-05,4038,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2024-03-30,2024-04-02,1604,DEM,Biden,43
-Marquette Law School,3,-1.1,Probability Panel,National,2024-03-18,2024-03-28,868,DEM,Biden,50
-Marquette Law School,3,-1.1,Probability Panel,National,2024-03-18,2024-03-28,674,DEM,Biden,52
-Marquette Law School,3,-1.1,Probability Panel,National,2024-03-18,2024-03-28,868,DEM,Biden,38
-Marquette Law School,3,-1.1,Probability Panel,National,2024-03-18,2024-03-28,674,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2024-03-24,2024-03-26,1415,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2024-03-16,2024-03-19,1510,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2024-03-10,2024-03-12,1367,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2024-03-08,2024-03-11,990,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2024-03-08,2024-03-11,992,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,Georgia,2024-03-04,2024-03-11,1126,DEM,Biden,48
-YouGov,3,-1.1,Online Panel,National,2024-03-03,2024-03-05,1450,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2024-03-03,2024-03-05,1450,DEM,Biden,37
-YouGov,3,-1.1,Online Panel,National,2024-02-28,2024-03-01,1436,DEM,Biden,48
-Siena/NYT,3,-1.5,Live Phone,National,2024-02-25,2024-02-28,980,DEM,Biden,43
-Siena/NYT,3,-1.5,Live Phone,National,2024-02-25,2024-02-28,980,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,National,2024-02-25,2024-02-28,980,DEM,Biden,35
-Siena/NYT,3,-1.5,Live Phone,National,2024-02-25,2024-02-28,980,DEM,Biden,37
-Siena/NYT,3,-1.5,Live Phone,National,2024-02-25,2024-02-28,980,DEM,Harris,41
-Siena/NYT,3,-1.5,Live Phone,National,2024-02-25,2024-02-28,980,DEM,Harris,42
-YouGov,3,-1.1,Online Panel,National,2024-02-25,2024-02-27,1498,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2024-02-18,2024-02-20,1360,DEM,Biden,42
-Marquette Law School,3,-1.1,Probability Panel,National,2024-02-05,2024-02-15,787,DEM,Biden,49
-Marquette Law School,3,-1.1,Probability Panel,National,2024-02-05,2024-02-15,628,DEM,Biden,48
-Marquette Law School,3,-1.1,Probability Panel,National,2024-02-05,2024-02-15,787,DEM,Biden,42
-Marquette Law School,3,-1.1,Probability Panel,National,2024-02-05,2024-02-15,628,DEM,Biden,41
-Marquette Law School,3,-1.1,Probability Panel,National,2024-02-05,2024-02-15,787,DEM,Biden,39
-Marquette Law School,3,-1.1,Probability Panel,National,2024-02-05,2024-02-15,628,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2024-02-11,2024-02-13,1470,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,Texas,2024-02-02,2024-02-12,1200,DEM,Biden,36
-YouGov,3,-1.1,Online Panel,Texas,2024-02-02,2024-02-12,1200,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,Texas,2024-02-02,2024-02-12,1200,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2024-02-06,2024-02-09,869,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2024-02-04,2024-02-06,1399,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2024-01-31,2024-02-04,1765,DEM,Biden,42
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-01-24,2024-01-31,930,DEM,Biden,49
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-01-24,2024-01-31,808,DEM,Biden,49
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-01-24,2024-01-31,930,DEM,Biden,41
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-01-24,2024-01-31,808,DEM,Biden,42
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-01-24,2024-01-31,930,DEM,Biden,37
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-01-24,2024-01-31,808,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2024-01-28,2024-01-30,1486,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2024-01-24,2024-01-30,850,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2024-01-24,2024-01-30,847,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2024-01-25,2024-01-29,1069,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2024-01-25,2024-01-29,1069,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2024-01-25,2024-01-29,1069,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2024-01-21,2024-01-23,1497,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2024-01-14,2024-01-16,1472,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2024-01-10,2024-01-12,1906,DEM,Biden,48
-YouGov,3,-1.1,Online Panel,National,2024-01-10,2024-01-12,1906,DEM,Biden,48
-YouGov,3,-1.1,Online Panel,National,2024-01-10,2024-01-12,1906,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2024-01-07,2024-01-09,1417,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2023-12-31,2024-01-02,1343,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2023-12-31,2024-01-02,1343,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2023-12-31,2024-01-02,1343,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2023-12-18,2023-12-23,1765,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2023-12-16,2023-12-18,1336,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2023-12-14,2023-12-18,1027,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2023-12-14,2023-12-18,1027,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2023-12-14,2023-12-18,1027,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,Colorado,2023-12-01,2023-12-18,800,DEM,Biden,47
-YouGov,3,-1.1,Online Panel,Colorado,2023-12-01,2023-12-18,800,DEM,Biden,46
-Siena/NYT,3,-1.5,Live Phone,National,2023-12-10,2023-12-14,1016,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,National,2023-12-10,2023-12-14,1016,DEM,Biden,47
-YouGov,3,-1.1,Online Panel,National,2023-12-09,2023-12-12,1332,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,Texas,2023-12-01,2023-12-10,1200,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,Texas,2023-12-01,2023-12-10,1200,DEM,Biden,37
-YouGov,3,-1.1,Online Panel,Texas,2023-12-01,2023-12-10,1200,DEM,Biden,37
-YouGov,3,-1.1,Online Panel,Texas,2023-12-01,2023-12-10,1200,DEM,Biden,36
-YouGov,3,-1.1,Online Panel,Texas,2023-12-01,2023-12-10,1200,DEM,Biden,34
-YouGov,3,-1.1,Online Panel,National,2023-12-02,2023-12-05,1291,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2023-11-25,2023-11-27,1323,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2023-11-20,2023-11-27,1000,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2023-11-20,2023-11-27,1000,DEM,Biden,38
-YouGov,3,-1.1,Online Panel,National,2023-11-11,2023-11-14,1272,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2023-11-09,2023-11-13,1058,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2023-11-09,2023-11-13,1061,DEM,Biden,39
-Marquette Law School,3,-1.1,Probability Panel,National,2023-11-02,2023-11-07,856,DEM,Biden,48
-Marquette Law School,3,-1.1,Probability Panel,National,2023-11-02,2023-11-07,668,DEM,Biden,49
-Marquette Law School,3,-1.1,Probability Panel,National,2023-11-02,2023-11-07,856,DEM,Biden,49
-Marquette Law School,3,-1.1,Probability Panel,National,2023-11-02,2023-11-07,668,DEM,Biden,49
-Marquette Law School,3,-1.1,Probability Panel,National,2023-11-02,2023-11-07,856,DEM,Biden,45
-Marquette Law School,3,-1.1,Probability Panel,National,2023-11-02,2023-11-07,668,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2023-10-30,2023-11-03,1759,DEM,Biden,48
-Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Harris,43
-Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Harris,43
-Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,41
-Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,42
-Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,38
-Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,37
-Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,33
-Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,34
-Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,43
-Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Harris,44
-Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Harris,44
-Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,43
-Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,40
-Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,40
-Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,29
-Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,31
-Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,43
-Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,46
-Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Harris,45
-Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Harris,48
-Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,42
-Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,35
-Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,36
-Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,31
-Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,34
-Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,41
-Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,41
-Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Harris,42
-Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Harris,42
-Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,42
-Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,41
-Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,38
-Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,37
-Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,31
-Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,34
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Harris,44
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Harris,44
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,43
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,43
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,38
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,39
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,35
-Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,36
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,47
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,47
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Harris,46
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,39
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,39
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,37
-Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,37
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2023-10-26,2023-11-02,908,DEM,Biden,50
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2023-10-26,2023-11-02,908,DEM,Biden,48
-Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2023-10-26,2023-11-02,908,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2023-10-28,2023-10-31,1500,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2023-10-28,2023-10-31,1333,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,Texas,2023-10-05,2023-10-17,1200,DEM,Biden,37
-YouGov,3,-1.1,Online Panel,Texas,2023-10-05,2023-10-17,1200,DEM,Biden,38
-YouGov,3,-1.1,Online Panel,Texas,2023-10-05,2023-10-17,1200,DEM,Biden,36
-YouGov,3,-1.1,Online Panel,Texas,2023-10-05,2023-10-17,1200,DEM,Biden,34
-YouGov,3,-1.1,Online Panel,Texas,2023-10-05,2023-10-17,1200,DEM,Biden,34
-YouGov,3,-1.1,Online Panel,Texas,2023-10-05,2023-10-17,1200,DEM,Biden,36
-YouGov,3,-1.1,Online Panel,National,2023-10-12,2023-10-16,1123,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2023-10-12,2023-10-16,1123,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2023-10-12,2023-10-16,1123,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2023-10-08,2023-10-10,1500,DEM,Biden,38
-YouGov,3,-1.1,Online Panel,National,2023-10-08,2023-10-10,1296,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2023-09-23,2023-09-26,1500,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2023-09-23,2023-09-26,1293,DEM,Biden,45
-Marquette Law School,3,-1.1,Probability Panel,National,2023-09-18,2023-09-25,1007,DEM,Biden,48
-Marquette Law School,3,-1.1,Probability Panel,National,2023-09-18,2023-09-25,868,DEM,Biden,48
-Marquette Law School,3,-1.1,Probability Panel,National,2023-09-18,2023-09-25,690,DEM,Biden,51
-Marquette Law School,3,-1.1,Probability Panel,National,2023-09-18,2023-09-25,1007,DEM,Biden,49
-Marquette Law School,3,-1.1,Probability Panel,National,2023-09-18,2023-09-25,868,DEM,Biden,48
-Marquette Law School,3,-1.1,Probability Panel,National,2023-09-18,2023-09-25,690,DEM,Biden,51
-ABC/Washington Post,3,-1.2,Live Phone,National,2023-09-15,2023-09-20,1006,DEM,Biden,42
-ABC/Washington Post,3,-1.2,Live Phone,National,2023-09-15,2023-09-20,890,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2023-09-14,2023-09-18,1097,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2023-09-14,2023-09-18,1097,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2023-09-14,2023-09-18,1097,DEM,Biden,42
-YouGov Blue,3,-1.1,Online Panel,National,2023-09-07,2023-09-18,3098,DEM,Biden,52
-YouGov Blue,3,-1.1,Online Panel,National,2023-09-07,2023-09-18,3098,DEM,Biden,51
-YouGov Blue,3,-1.1,Online Panel,National,2023-09-07,2023-09-18,3098,DEM,Biden,45
-YouGov Blue,3,-1.1,Online Panel,National,2023-09-07,2023-09-18,3098,DEM,Biden,46
-YouGov Blue,3,-1.1,Online Panel,National,2023-09-07,2023-09-18,3098,DEM,Biden,46
-YouGov Blue,3,-1.1,Online Panel,National,2023-09-07,2023-09-18,3098,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2023-09-12,2023-09-15,2525,DEM,Biden,49
-YouGov,3,-1.1,Online Panel,National,2023-09-10,2023-09-12,1334,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2023-08-26,2023-08-29,1303,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2023-08-17,2023-08-21,1113,DEM,Biden,47
-YouGov,3,-1.1,Online Panel,National,2023-08-17,2023-08-21,1116,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2023-08-12,2023-08-15,1500,DEM,Biden,38
-YouGov,3,-1.1,Online Panel,National,2023-08-12,2023-08-15,1321,DEM,Biden,43
-Siena/NYT,3,-1.5,Live Phone,National,2023-07-23,2023-07-27,1329,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2023-07-22,2023-07-25,1500,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2023-07-22,2023-07-25,1306,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2023-07-13,2023-07-17,1098,DEM,Biden,47
-YouGov,3,-1.1,Online Panel,National,2023-07-13,2023-07-17,1098,DEM,Biden,46
-Marquette Law School,3,-1.1,Probability Panel,National,2023-07-07,2023-07-12,1005,DEM,Biden,50
-Marquette Law School,3,-1.1,Probability Panel,National,2023-07-07,2023-07-12,788,DEM,Biden,50
-Marquette Law School,3,-1.1,Probability Panel,National,2023-07-07,2023-07-12,1005,DEM,Biden,49
-Marquette Law School,3,-1.1,Probability Panel,National,2023-07-07,2023-07-12,788,DEM,Biden,48
-YouGov,3,-1.1,Online Panel,National,2023-07-08,2023-07-11,1500,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2023-07-08,2023-07-11,1296,DEM,Biden,42
-YouGov Blue,3,-1.1,Online Panel,National,2023-06-20,2023-06-29,3012,DEM,Biden,47
-YouGov Blue,3,-1.1,Online Panel,National,2023-06-20,2023-06-29,3012,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2023-06-24,2023-06-27,1500,DEM,Biden,38
-YouGov,3,-1.1,Online Panel,National,2023-06-24,2023-06-27,1315,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2023-06-16,2023-06-20,1091,DEM,Biden,46
-YouGov,3,-1.1,Online Panel,National,2023-06-16,2023-06-20,1087,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2023-06-10,2023-06-13,1500,DEM,Biden,38
-YouGov,3,-1.1,Online Panel,National,2023-06-10,2023-06-13,1303,DEM,Biden,41
-Marquette Law School,3,-1.1,Live Phone/Online Panel/Mail-to-Web,Wisconsin,2023-06-08,2023-06-13,913,DEM,Biden,52
-Marquette Law School,3,-1.1,Live Phone/Online Panel/Mail-to-Web,Wisconsin,2023-06-08,2023-06-13,913,DEM,Biden,49
-YouGov,3,-1.1,Online Panel,National,2023-05-27,2023-05-31,1500,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2023-05-27,2023-05-31,1313,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2023-05-25,2023-05-30,1015,DEM,Biden,48
-YouGov,3,-1.1,Online Panel,National,2023-05-25,2023-05-30,1011,DEM,Biden,46
-Marquette Law School,3,-1.1,Probability Panel,National,2023-05-08,2023-05-18,1010,DEM,Biden,48
-Marquette Law School,3,-1.1,Probability Panel,National,2023-05-08,2023-05-18,833,DEM,Biden,47
-Marquette Law School,3,-1.1,Probability Panel,National,2023-05-08,2023-05-18,1010,DEM,Biden,49
-Marquette Law School,3,-1.1,Probability Panel,National,2023-05-08,2023-05-18,833,DEM,Biden,48
-YouGov,3,-1.1,Online Panel,National,2023-05-13,2023-05-16,1500,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2023-05-13,2023-05-16,1302,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2023-05-13,2023-05-16,1500,DEM,Biden,38
-YouGov,3,-1.1,Online Panel,National,2023-05-13,2023-05-16,1302,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2023-05-05,2023-05-08,1060,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2023-05-05,2023-05-08,1057,DEM,Biden,45
-ABC/Washington Post,3,-1.2,Live Phone,National,2023-04-28,2023-05-03,1006,DEM,Biden,42
-ABC/Washington Post,3,-1.2,Live Phone,National,2023-04-28,2023-05-03,900,DEM,Biden,43
-ABC/Washington Post,3,-1.2,Live Phone,National,2023-04-28,2023-05-03,1006,DEM,Biden,41
-ABC/Washington Post,3,-1.2,Live Phone,National,2023-04-28,2023-05-03,900,DEM,Biden,38
-YouGov,3,-1.1,Online Panel,National,2023-04-29,2023-05-02,1500,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2023-04-29,2023-05-02,1357,DEM,Biden,46
-YouGov,3,-1.1,Online Panel,National,2023-04-29,2023-05-02,1500,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2023-04-29,2023-05-02,1357,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2023-04-15,2023-04-18,1500,DEM,Biden,37
-YouGov,3,-1.1,Online Panel,National,2023-04-15,2023-04-18,1316,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2023-04-14,2023-04-17,1027,DEM,Biden,46
-YouGov,3,-1.1,Online Panel,National,2023-04-14,2023-04-17,1027,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2023-04-14,2023-04-17,1530,DEM,Biden,34
-YouGov,3,-1.1,Online Panel,National,2023-04-08,2023-04-11,1500,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2023-04-08,2023-04-11,1322,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2023-04-04,2023-04-06,1000,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2023-04-01,2023-04-04,1500,DEM,Biden,38
-YouGov,3,-1.1,Online Panel,National,2023-04-01,2023-04-04,1319,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2023-03-30,2023-03-31,729,DEM,Biden,45
-Marquette Law School,3,-1.1,Probability Panel,National,2023-03-13,2023-03-22,1004,DEM,Biden,33
-Marquette Law School,3,-1.1,Probability Panel,National,2023-03-13,2023-03-22,863,DEM,Biden,38
-Marquette Law School,3,-1.1,Probability Panel,National,2023-03-13,2023-03-22,1004,DEM,Biden,36
-Marquette Law School,3,-1.1,Probability Panel,National,2023-03-13,2023-03-22,863,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2023-03-16,2023-03-20,1059,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2023-03-16,2023-03-20,1060,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2023-02-23,2023-02-27,1014,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2023-02-23,2023-02-27,1014,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2023-02-23,2023-02-27,1014,DEM,Harris,42
-YouGov,3,-1.1,Online Panel,National,2023-02-23,2023-02-27,1014,DEM,Harris,40
-YouGov,3,-1.1,Online Panel,National,2023-02-22,2023-02-27,1000,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2023-02-22,2023-02-27,1000,DEM,Biden,36
-YouGov,3,-1.1,Online Panel,National,2023-02-02,2023-02-06,1063,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2023-02-02,2023-02-06,1063,DEM,Biden,47
-ABC/Washington Post,3,-1.2,Live Phone,National,2023-01-27,2023-02-01,895,DEM,Biden,45
-Marquette Law School,3,-1.1,Probability Panel,National,2023-01-09,2023-01-20,1000,DEM,Biden,38
-Marquette Law School,3,-1.1,Probability Panel,National,2023-01-09,2023-01-20,790,DEM,Biden,40
-Marquette Law School,3,-1.1,Probability Panel,National,2023-01-09,2023-01-20,1000,DEM,Biden,36
-Marquette Law School,3,-1.1,Probability Panel,National,2023-01-09,2023-01-20,790,DEM,Biden,38
-YouGov,3,-1.1,Online Panel,National,2023-01-14,2023-01-17,1500,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2023-01-14,2023-01-17,1314,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2023-01-14,2023-01-17,1500,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2023-01-14,2023-01-17,1314,DEM,Biden,46
-YouGov,3,-1.1,Online Panel,National,2023-01-12,2023-01-16,1028,DEM,Biden,46
-YouGov,3,-1.1,Online Panel,National,2023-01-12,2023-01-16,1028,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2022-12-15,2022-12-19,1041,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2022-12-15,2022-12-19,1041,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2022-12-01,2022-12-05,1635,DEM,Biden,37
-YouGov,3,-1.1,Online Panel,National,2022-12-01,2022-12-05,1204,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2022-12-01,2022-12-05,1635,DEM,Biden,37
-YouGov,3,-1.1,Online Panel,National,2022-12-01,2022-12-05,1204,DEM,Biden,44
-Marquette Law School,3,-1.1,Probability Panel,National,2022-11-15,2022-11-22,1004,DEM,Biden,39
-Marquette Law School,3,-1.1,Probability Panel,National,2022-11-15,2022-11-22,840,DEM,Biden,44
-Marquette Law School,3,-1.1,Probability Panel,National,2022-11-15,2022-11-22,1004,DEM,Biden,37
-Marquette Law School,3,-1.1,Probability Panel,National,2022-11-15,2022-11-22,840,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2022-10-27,2022-10-31,1641,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2022-10-27,2022-10-31,1172,DEM,Biden,48
-YouGov,3,-1.1,Online Panel,National,2022-10-13,2022-10-17,1629,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2022-10-13,2022-10-17,1209,DEM,Biden,46
-Siena/NYT,3,-1.5,Live Phone,National,2022-10-09,2022-10-12,792,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,National,2022-10-09,2022-10-12,792,DEM,Biden,42
-Siena/NYT,3,-1.5,Live Phone,National,2022-10-09,2022-10-12,792,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2022-09-23,2022-09-27,1566,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2022-09-23,2022-09-27,1138,DEM,Biden,47
-ABC/Washington Post,3,-1.2,Live Phone,National,2022-09-18,2022-09-21,1006,DEM,Biden,48
-ABC/Washington Post,3,-1.2,Live Phone,National,2022-09-18,2022-09-21,908,DEM,Biden,46
-Marquette Law School,3,-1.1,Probability Panel,National,2022-09-07,2022-09-14,1448,DEM,Biden,40
-Marquette Law School,3,-1.1,Probability Panel,National,2022-09-07,2022-09-14,1282,DEM,Biden,42
-Marquette Law School,3,-1.1,Probability Panel,National,2022-09-07,2022-09-14,1448,DEM,Biden,40
-Marquette Law School,3,-1.1,Probability Panel,National,2022-09-07,2022-09-14,1282,DEM,Biden,43
-Siena/NYT,3,-1.5,Live Phone,National,2022-09-06,2022-09-14,1399,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2022-09-02,2022-09-06,1634,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2022-09-02,2022-09-06,1247,DEM,Biden,48
-YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,1563,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,1185,DEM,Biden,46
-YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,1563,DEM,Biden,29
-YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,1185,DEM,Biden,32
-YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,1000,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,1000,DEM,Biden,36
-YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,1000,DEM,Biden,38
-YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,805,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,805,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,805,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2022-07-28,2022-08-01,1557,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2022-07-28,2022-08-01,1152,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2022-07-28,2022-08-01,1557,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2022-07-28,2022-08-01,1152,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2022-07-28,2022-08-01,1557,DEM,Harris,42
-YouGov,3,-1.1,Online Panel,National,2022-07-28,2022-08-01,1152,DEM,Harris,45
-YouGov,3,-1.1,Online Panel,National,2022-07-08,2022-07-11,1672,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2022-07-08,2022-07-11,1261,DEM,Biden,44
-Siena/NYT,3,-1.5,Live Phone,National,2022-07-05,2022-07-07,849,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1630,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1630,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1630,DEM,Harris,41
-YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1630,DEM,Harris,41
-YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1239,DEM,Biden,46
-YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1239,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1239,DEM,Harris,44
-YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1239,DEM,Harris,45
-YouGov,3,-1.1,Online Panel,National,2022-06-10,2022-06-13,1541,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2022-06-10,2022-06-13,1243,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2022-05-19,2022-05-22,1573,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2022-05-19,2022-05-22,1360,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2022-04-19,2022-04-22,1605,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2022-04-19,2022-04-22,1187,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2022-03-31,2022-04-04,1618,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2022-03-31,2022-04-04,1233,DEM,Biden,45
-Marquette Law School,3,-1.1,Probability Panel,National,2022-03-14,2022-03-24,1004,DEM,Biden,38
-Marquette Law School,3,-1.1,Probability Panel,National,2022-03-14,2022-03-24,1004,DEM,Biden,37
-Marquette Law School,3,-1.1,Probability Panel,National,2022-03-14,2022-03-24,1004,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2022-03-11,2022-03-21,2000,DEM,Biden,50.13
-YouGov,3,-1.1,Online Panel,National,2022-03-10,2022-03-14,1623,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2022-03-10,2022-03-14,1225,DEM,Biden,47
-YouGov,3,-1.1,Online Panel,National,2022-02-24,2022-02-27,1532,DEM,Biden,40
-YouGov,3,-1.1,Online Panel,National,2022-02-24,2022-02-27,1169,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2022-01-20,2022-01-24,1568,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2022-01-20,2022-01-24,1190,DEM,Biden,44
-YouGov,3,-1.1,Online Panel,National,2022-01-20,2022-01-24,1568,DEM,Biden,39
-YouGov,3,-1.1,Online Panel,National,2022-01-20,2022-01-24,1189,DEM,Biden,43
-Marquette Law School,3,-1.1,Probability Panel,National,2022-01-10,2022-01-21,1000,DEM,Biden,43
-Marquette Law School,3,-1.1,Probability Panel,National,2022-01-10,2022-01-21,1000,DEM,Biden,41
-YouGov,3,-1.1,Online Panel,National,2021-12-09,2021-12-13,574,DEM,Biden,47
-YouGov,3,-1.1,Online Panel,National,2021-12-09,2021-12-13,585,DEM,Biden,38
-YouGov,3,-1.1,Online Panel,National,2021-12-09,2021-12-13,777,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2021-12-09,2021-12-13,773,DEM,Biden,35
-Marquette Law School,3,-1.1,Probability Panel,National,2021-11-01,2021-11-10,1004,DEM,Biden,42
-YouGov,3,-1.1,Online Panel,National,2021-11-04,2021-11-08,1673,DEM,Biden,43
-Marquette Law School,3,-1.1,Live Phone,Wisconsin,2021-10-26,2021-10-31,805,DEM,Biden,45
-YouGov,3,-1.1,Online Panel,National,2021-10-19,2021-10-21,1704,DEM,Biden,43
-YouGov,3,-1.1,Online Panel,National,2021-07-30,2021-08-02,1552,DEM,Biden,47
-YouGov,3,-1.1,Online Panel,National,2021-06-22,2021-06-24,1592,DEM,Biden,47
-YouGov,3,-1.1,Online Panel,National,2021-05-24,2021-05-26,1588,DEM,Biden,46
-YouGov,3,-1.1,Online Panel,National,2021-05-11,2021-05-13,1561,DEM,Biden,48
+pollster,numeric_grade,pollscore,methodology,state,start_date,end_date,sample_size,party,answer,pct,num_DEM
+YouGov,3,-1.1,Online Panel,Arizona,2024-10-11,2024-10-16,1435,DEM,Harris,48,689
+YouGov,3,-1.1,Online Panel,National,2024-10-12,2024-10-15,1457,DEM,Harris,48,699
+YouGov,3,-1.1,Online Panel,National,2024-10-12,2024-10-15,1314,DEM,Harris,49,644
+YouGov,3,-1.1,Online Panel,National,2024-10-08,2024-10-11,2712,DEM,Harris,51,1383
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-10-07,2024-10-10,857,DEM,Harris,50,428
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-10-07,2024-10-10,857,DEM,Harris,49,420
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-10-07,2024-10-10,857,DEM,Harris,50,428
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-10-07,2024-10-10,857,DEM,Harris,49,420
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-10-07,2024-10-10,808,DEM,Harris,46,372
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-10-07,2024-10-10,808,DEM,Harris,45,364
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-10-07,2024-10-10,808,DEM,Harris,45,364
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-10-07,2024-10-10,808,DEM,Harris,44,356
+Marquette Law School,3,-1.1,Probability Panel,National,2024-10-01,2024-10-10,780,DEM,Harris,50,390
+Marquette Law School,3,-1.1,Probability Panel,National,2024-10-01,2024-10-10,780,DEM,Harris,43,335
+Marquette Law School,3,-1.1,Probability Panel,National,2024-10-01,2024-10-10,652,DEM,Harris,50,326
+Marquette Law School,3,-1.1,Probability Panel,National,2024-10-01,2024-10-10,652,DEM,Harris,44,287
+Siena/NYT,3,-1.5,Live Phone,Montana,2024-10-05,2024-10-08,656,DEM,Harris,39,256
+Siena/NYT,3,-1.5,Live Phone,Montana,2024-10-05,2024-10-08,656,DEM,Harris,38,249
+Siena/NYT,3,-1.5,Live Phone,Montana,2024-10-05,2024-10-08,656,DEM,Harris,40,262
+Siena/NYT,3,-1.5,Live Phone,Montana,2024-10-05,2024-10-08,656,DEM,Harris,39,256
+YouGov,3,-1.1,Online Panel,National,2024-10-06,2024-10-07,1414,DEM,Harris,47,665
+YouGov,3,-1.1,Online Panel,National,2024-10-06,2024-10-07,1230,DEM,Harris,49,603
+The Washington Post,3,-1.2,Live Phone/Text-to-Web,Ohio,2024-10-03,2024-10-07,1002,DEM,Harris,45,451
+The Washington Post,3,-1.2,Live Phone/Text-to-Web,Ohio,2024-10-03,2024-10-07,1002,DEM,Harris,44,441
+Siena/NYT,3,-1.5,Live Phone,National,2024-09-29,2024-10-06,3385,DEM,Harris,49,1659
+Siena/NYT,3,-1.5,Live Phone,National,2024-09-29,2024-10-06,3385,DEM,Harris,47,1591
+Siena/NYT,3,-1.5,Live Phone,Florida,2024-09-29,2024-10-06,622,DEM,Harris,41,255
+Siena/NYT,3,-1.5,Live Phone,Florida,2024-09-29,2024-10-06,622,DEM,Harris,40,249
+Siena/NYT,3,-1.5,Live Phone,Florida,2024-09-29,2024-10-06,622,DEM,Harris,41,255
+Siena/NYT,3,-1.5,Live Phone,Florida,2024-09-29,2024-10-06,622,DEM,Harris,40,249
+YouGov,3,-1.1,Online Panel,National,2024-10-02,2024-10-04,1150,DEM,Harris,46,529
+YouGov,3,-1.1,Online Panel,National,2024-10-02,2024-10-04,1032,DEM,Harris,47,485
+YouGov,3,-1.1,Online Panel,National,2024-10-02,2024-10-04,1151,DEM,Harris,48,552
+YouGov,3,-1.1,Online Panel,National,2024-10-02,2024-10-04,1033,DEM,Harris,48,496
+Siena/NYT,3,-1.5,Live Phone,Texas,2024-09-29,2024-10-04,617,DEM,Harris,44,271
+Siena/NYT,3,-1.5,Live Phone,Texas,2024-09-29,2024-10-04,617,DEM,Harris,42,259
+Siena/NYT,3,-1.5,Live Phone,Texas,2024-09-29,2024-10-04,617,DEM,Harris,44,271
+Siena/NYT,3,-1.5,Live Phone,Texas,2024-09-29,2024-10-04,617,DEM,Harris,41,253
+YouGov/Center for Working Class Politics,3,-1.1,Online Panel,Pennsylvania,2024-09-24,2024-10-02,1000,DEM,Harris,46.8,468
+YouGov,3,-1.1,Online Panel,National,2024-09-29,2024-10-01,1463,DEM,Harris,48,702
+YouGov,3,-1.1,Online Panel,National,2024-09-29,2024-10-01,1261,DEM,Harris,49,618
+The Washington Post,3,-1.2,Live Phone/Text-to-Web,North Carolina,2024-09-25,2024-09-29,1001,DEM,Harris,48,480
+The Washington Post,3,-1.2,Live Phone/Text-to-Web,North Carolina,2024-09-25,2024-09-29,1001,DEM,Harris,47,470
+McCourtney Institute/YouGov,3,-1.1,Online Panel,National,2024-09-23,2024-09-27,848,DEM,Harris,48,407
+Siena/NYT,3,-1.5,Live Phone,Nebraska CD-2,2024-09-24,2024-09-26,680,DEM,Harris,51,347
+Siena/NYT,3,-1.5,Live Phone,Nebraska CD-2,2024-09-24,2024-09-26,680,DEM,Harris,49,333
+Siena/NYT,3,-1.5,Live Phone,Nebraska CD-2,2024-09-24,2024-09-26,680,DEM,Harris,52,354
+Siena/NYT,3,-1.5,Live Phone,Nebraska CD-2,2024-09-24,2024-09-26,680,DEM,Harris,51,347
+Siena/NYT,3,-1.5,Live Phone,Michigan,2024-09-21,2024-09-26,688,DEM,Harris,45,310
+Siena/NYT,3,-1.5,Live Phone,Michigan,2024-09-21,2024-09-26,688,DEM,Harris,43,296
+Siena/NYT,3,-1.5,Live Phone,Michigan,2024-09-21,2024-09-26,688,DEM,Harris,48,330
+Siena/NYT,3,-1.5,Live Phone,Michigan,2024-09-21,2024-09-26,688,DEM,Harris,46,316
+Siena/NYT,3,-1.5,Live Phone,Ohio,2024-09-21,2024-09-26,687,DEM,Harris,45,309
+Siena/NYT,3,-1.5,Live Phone,Ohio,2024-09-21,2024-09-26,687,DEM,Harris,44,302
+Siena/NYT,3,-1.5,Live Phone,Ohio,2024-09-21,2024-09-26,687,DEM,Harris,44,302
+Siena/NYT,3,-1.5,Live Phone,Ohio,2024-09-21,2024-09-26,687,DEM,Harris,43,295
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-09-21,2024-09-26,680,DEM,Harris,49,333
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-09-21,2024-09-26,680,DEM,Harris,48,326
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-09-21,2024-09-26,680,DEM,Harris,49,333
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-09-21,2024-09-26,680,DEM,Harris,48,326
+Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-09-18,2024-09-26,882,DEM,Harris,52,459
+Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-09-18,2024-09-26,798,DEM,Harris,52,415
+Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-09-18,2024-09-26,882,DEM,Harris,48,423
+Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-09-18,2024-09-26,798,DEM,Harris,49,391
+YouGov,3,-1.1,Online Panel,National,2024-09-21,2024-09-24,1424,DEM,Harris,47,669
+YouGov,3,-1.1,Online Panel,National,2024-09-21,2024-09-24,1220,DEM,Harris,49,598
+YouGov,3,-1.1,Online Panel,Georgia,2024-09-20,2024-09-24,1441,DEM,Harris,49,706
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-09-17,2024-09-21,713,DEM,Harris,45,321
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-09-17,2024-09-21,713,DEM,Harris,45,321
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-09-17,2024-09-21,713,DEM,Harris,42,299
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-09-17,2024-09-21,713,DEM,Harris,43,307
+Siena/NYT,3,-1.5,Live Phone,Georgia,2024-09-17,2024-09-21,682,DEM,Harris,44,300
+Siena/NYT,3,-1.5,Live Phone,Georgia,2024-09-17,2024-09-21,682,DEM,Harris,45,307
+Siena/NYT,3,-1.5,Live Phone,Georgia,2024-09-17,2024-09-21,682,DEM,Harris,43,293
+Siena/NYT,3,-1.5,Live Phone,Georgia,2024-09-17,2024-09-21,682,DEM,Harris,44,300
+Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-09-17,2024-09-21,682,DEM,Harris,47,321
+Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-09-17,2024-09-21,682,DEM,Harris,47,321
+Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-09-17,2024-09-21,682,DEM,Harris,46,314
+Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-09-17,2024-09-21,682,DEM,Harris,45,307
+YouGov,3,-1.1,Online Panel,National,2024-09-18,2024-09-20,3129,DEM,Harris,52,1627
+YouGov,3,-1.1,Online Panel,National,2024-09-15,2024-09-17,1445,DEM,Harris,49,708
+The Washington Post,3,-1.2,Live Phone/Text-to-Web,Pennsylvania,2024-09-12,2024-09-16,1003,DEM,Harris,48,481
+The Washington Post,3,-1.2,Live Phone/Text-to-Web,Pennsylvania,2024-09-12,2024-09-16,1003,DEM,Harris,48,481
+Siena/NYT,3,-1.5,Live Phone,National,2024-09-11,2024-09-16,2437,DEM,Harris,47,1145
+Siena/NYT,3,-1.5,Live Phone,National,2024-09-11,2024-09-16,2437,DEM,Harris,46,1121
+Siena/NYT,3,-1.5,Live Phone,National,2024-09-11,2024-09-16,2437,DEM,Harris,45,1097
+Siena/NYT,3,-1.5,Live Phone,National,2024-09-11,2024-09-16,2437,DEM,Harris,46,1121
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-09-11,2024-09-16,1082,DEM,Harris,50,541
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-09-11,2024-09-16,1082,DEM,Harris,50,541
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-09-11,2024-09-16,1082,DEM,Harris,48,519
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-09-11,2024-09-16,1082,DEM,Harris,49,530
+YouGov,3,-1.1,Online Panel,National,2024-09-11,2024-09-13,1177,DEM,Harris,50,588
+YouGov,3,-1.1,Online Panel,National,2024-09-11,2024-09-13,1090,DEM,Harris,50,545
+YouGov,3,-1.1,Online Panel,National,2024-09-11,2024-09-13,1175,DEM,Harris,48,564
+YouGov,3,-1.1,Online Panel,National,2024-09-11,2024-09-13,1090,DEM,Harris,49,534
+YouGov,3,-1.1,Online Panel,National,2024-09-08,2024-09-10,1464,DEM,Harris,45,659
+YouGov,3,-1.1,Online Panel,Michigan,2024-09-03,2024-09-06,1077,DEM,Harris,50,538
+YouGov,3,-1.1,Online Panel,Pennsylvania,2024-09-03,2024-09-06,1078,DEM,Harris,50,539
+YouGov,3,-1.1,Online Panel,Wisconsin,2024-09-03,2024-09-06,946,DEM,Harris,51,482
+Siena/NYT,3,-1.5,Live Phone,National,2024-09-03,2024-09-06,1695,DEM,Harris,47,797
+Siena/NYT,3,-1.5,Live Phone,National,2024-09-03,2024-09-06,1695,DEM,Harris,45,763
+Siena/NYT,3,-1.5,Live Phone,National,2024-09-03,2024-09-06,1695,DEM,Harris,46,780
+Siena/NYT,3,-1.5,Live Phone,National,2024-09-03,2024-09-06,1695,DEM,Harris,44,746
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-08-28,2024-09-05,822,DEM,Harris,52,427
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-08-28,2024-09-05,738,DEM,Harris,52,384
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-08-28,2024-09-05,822,DEM,Harris,47,386
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-08-28,2024-09-05,738,DEM,Harris,48,354
+YouGov,3,-1.1,Online Panel,National,2024-09-01,2024-09-03,1389,DEM,Harris,47,653
+YouGov,3,-1.1,Online Panel,Texas,2024-08-23,2024-08-31,1200,DEM,Harris,44,528
+YouGov,3,-1.1,Online Panel,Texas,2024-08-23,2024-08-31,1200,DEM,Harris,44,528
+YouGov,3,-1.1,Online Panel,National,2024-08-25,2024-08-27,1368,DEM,Harris,47,643
+YouGov,3,-1.1,Online Panel,National,2024-08-22,2024-08-26,1194,DEM,Harris,46,549
+YouGov,3,-1.1,Online Panel,National,2024-08-22,2024-08-26,1197,DEM,Harris,47,563
+YouGov,3,-1.1,Online Panel,National,2024-08-22,2024-08-26,1788,DEM,Harris,39,697
+YouGov,3,-1.1,Online Panel,National,2024-08-22,2024-08-26,1200,DEM,Harris,44,528
+YouGov,3,-1.1,Online Panel,Pennsylvania,2024-08-15,2024-08-23,500,DEM,Harris,43,215
+YouGov,3,-1.1,Online Panel,Pennsylvania,2024-08-15,2024-08-23,500,DEM,Harris,43,215
+YouGov,3,-1.1,Online Panel,Wisconsin,2024-08-15,2024-08-23,500,DEM,Harris,48,240
+YouGov,3,-1.1,Online Panel,Wisconsin,2024-08-15,2024-08-23,500,DEM,Harris,45,225
+YouGov,3,-1.1,Online Panel,Michigan,2024-08-15,2024-08-23,500,DEM,Harris,44,220
+YouGov,3,-1.1,Online Panel,Michigan,2024-08-15,2024-08-23,500,DEM,Harris,44,220
+YouGov,3,-1.1,Online Panel,National,2024-08-15,2024-08-22,1835,DEM,Harris,44,807
+YouGov,3,-1.1,Online Panel,National,2024-08-17,2024-08-20,1371,DEM,Harris,46,631
+YouGov,3,-1.1,Online Panel,National,2024-08-14,2024-08-16,3253,DEM,Harris,51,1659
+YouGov,3,-1.1,Online Panel,National,2024-08-14,2024-08-16,3253,DEM,Harris,49,1594
+YouGov,3,-1.1,Online Panel,Missouri,2024-08-08,2024-08-16,900,DEM,Harris,41,369
+Siena/NYT,3,-1.5,Live Phone,Nevada,2024-08-12,2024-08-15,677,DEM,Harris,46,311
+Siena/NYT,3,-1.5,Live Phone,Nevada,2024-08-12,2024-08-15,677,DEM,Harris,47,318
+Siena/NYT,3,-1.5,Live Phone,Nevada,2024-08-12,2024-08-15,677,DEM,Harris,42,284
+Siena/NYT,3,-1.5,Live Phone,Nevada,2024-08-12,2024-08-15,677,DEM,Harris,44,298
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-08-08,2024-08-15,677,DEM,Harris,49,332
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-08-08,2024-08-15,677,DEM,Harris,50,338
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-08-08,2024-08-15,677,DEM,Harris,45,305
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-08-08,2024-08-15,677,DEM,Harris,47,318
+Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-08-09,2024-08-14,655,DEM,Harris,49,321
+Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-08-09,2024-08-14,655,DEM,Harris,49,321
+Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-08-09,2024-08-14,655,DEM,Harris,45,295
+Siena/NYT,3,-1.5,Live Phone,North Carolina,2024-08-09,2024-08-14,655,DEM,Harris,46,301
+Siena/NYT,3,-1.5,Live Phone,Georgia,2024-08-09,2024-08-14,661,DEM,Harris,44,291
+Siena/NYT,3,-1.5,Live Phone,Georgia,2024-08-09,2024-08-14,661,DEM,Harris,46,304
+Siena/NYT,3,-1.5,Live Phone,Georgia,2024-08-09,2024-08-14,661,DEM,Harris,41,271
+Siena/NYT,3,-1.5,Live Phone,Georgia,2024-08-09,2024-08-14,661,DEM,Harris,44,291
+YouGov,3,-1.1,Online Panel,National,2024-08-11,2024-08-13,1407,DEM,Harris,46,647
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-08-06,2024-08-09,693,DEM,Harris,49,340
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-08-06,2024-08-09,693,DEM,Harris,50,346
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-08-06,2024-08-09,693,DEM,Harris,45,312
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-08-06,2024-08-09,693,DEM,Harris,46,319
+YouGov Blue,3,-1.1,Online Panel,North Carolina,2024-08-05,2024-08-09,802,DEM,Harris,46,369
+Siena/NYT,3,-1.5,Live Phone,Michigan,2024-08-05,2024-08-08,619,DEM,Harris,45,279
+Siena/NYT,3,-1.5,Live Phone,Michigan,2024-08-05,2024-08-08,619,DEM,Harris,50,310
+Siena/NYT,3,-1.5,Live Phone,Michigan,2024-08-05,2024-08-08,619,DEM,Harris,44,272
+Siena/NYT,3,-1.5,Live Phone,Michigan,2024-08-05,2024-08-08,619,DEM,Harris,48,297
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-08-05,2024-08-08,661,DEM,Harris,50,330
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-08-05,2024-08-08,661,DEM,Harris,50,330
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-08-05,2024-08-08,661,DEM,Harris,49,324
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-08-05,2024-08-08,661,DEM,Harris,49,324
+YouGov,3,-1.1,Online Panel,National,2024-08-04,2024-08-06,1413,DEM,Harris,45,636
+YouGov,3,-1.1,Online Panel,National,2024-07-30,2024-08-02,3092,DEM,Harris,50,1546
+YouGov,3,-1.1,Online Panel,National,2024-07-30,2024-08-02,3092,DEM,Harris,49,1515
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-07-24,2024-08-01,877,DEM,Harris,49,430
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-07-24,2024-08-01,801,DEM,Harris,50,400
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-07-24,2024-08-01,877,DEM,Harris,45,395
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-07-24,2024-08-01,801,DEM,Harris,46,368
+Marquette Law School,3,-1.1,Probability Panel,National,2024-07-24,2024-08-01,879,DEM,Harris,52,457
+Marquette Law School,3,-1.1,Probability Panel,National,2024-07-24,2024-08-01,683,DEM,Harris,53,362
+Marquette Law School,3,-1.1,Probability Panel,National,2024-07-24,2024-08-01,879,DEM,Harris,47,413
+Marquette Law School,3,-1.1,Probability Panel,National,2024-07-24,2024-08-01,683,DEM,Harris,50,342
+YouGov,3,-1.1,Online Panel,National,2024-07-27,2024-07-30,1434,DEM,Harris,46,660
+Siena/NYT,3,-1.5,Live Phone,National,2024-07-22,2024-07-24,1142,DEM,Harris,46,525
+Siena/NYT,3,-1.5,Live Phone,National,2024-07-22,2024-07-24,1142,DEM,Harris,47,537
+Siena/NYT,3,-1.5,Live Phone,National,2024-07-22,2024-07-24,1142,DEM,Harris,42,480
+Siena/NYT,3,-1.5,Live Phone,National,2024-07-22,2024-07-24,1142,DEM,Harris,44,502
+YouGov,3,-1.1,Online Panel,National,2024-07-22,2024-07-23,1155,DEM,Harris,44,508
+YouGov,3,-1.1,Online Panel,National,2024-07-21,2024-07-23,1435,DEM,Harris,41,588
+YouGov,3,-1.1,Online Panel,National,2024-07-19,2024-07-22,1178,DEM,Biden,41,483
+YouGov,3,-1.1,Online Panel,National,2024-07-19,2024-07-22,1115,DEM,Biden,45,502
+YouGov,3,-1.1,Online Panel,National,2024-07-19,2024-07-22,1178,DEM,Harris,41,483
+YouGov,3,-1.1,Online Panel,National,2024-07-19,2024-07-22,1178,DEM,Harris,46,542
+YouGov,3,-1.1,Online Panel,National,2024-07-16,2024-07-18,2241,DEM,Biden,47,1053
+YouGov,3,-1.1,Online Panel,National,2024-07-16,2024-07-18,2240,DEM,Harris,48,1075
+YouGov,3,-1.1,Online Panel,National,2024-07-13,2024-07-16,1404,DEM,Biden,41,576
+YouGov,3,-1.1,Online Panel,National,2024-07-13,2024-07-16,1404,DEM,Harris,39,548
+Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Biden,46,304
+Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Biden,48,317
+Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Biden,38,251
+Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Biden,40,264
+Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Harris,48,317
+Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Harris,49,324
+Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Harris,41,271
+Siena/NYT,3,-1.5,Live Phone,Virginia,2024-07-09,2024-07-12,661,DEM,Harris,43,284
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Biden,44,384
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Biden,45,392
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Biden,38,331
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Biden,40,349
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Harris,46,401
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Harris,47,410
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Harris,40,349
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-07-09,2024-07-11,872,DEM,Harris,42,366
+YouGov,3,-1.1,Online Panel,National,2024-07-07,2024-07-09,1443,DEM,Biden,40,577
+YouGov,3,-1.1,Online Panel,National,2024-07-07,2024-07-09,1443,DEM,Harris,38,548
+YouGov,3,-1.1,Online Panel,National,2024-06-30,2024-07-02,1392,DEM,Biden,40,557
+YouGov,3,-1.1,Online Panel,National,2024-06-28,2024-07-02,2815,DEM,Biden,48,1351
+YouGov,3,-1.1,Online Panel,National,2024-06-28,2024-07-02,2815,DEM,Biden,40,1126
+Siena/NYT,3,-1.5,Live Phone,National,2024-06-28,2024-07-02,1532,DEM,Biden,41,628
+Siena/NYT,3,-1.5,Live Phone,National,2024-06-28,2024-07-02,1532,DEM,Biden,33,506
+Siena/NYT,3,-1.5,Live Phone,National,2024-06-28,2024-07-02,1532,DEM,Biden,43,659
+Siena/NYT,3,-1.5,Live Phone,National,2024-06-28,2024-07-02,1532,DEM,Biden,37,567
+YouGov,3,-1.1,Online Panel,National,2024-06-28,2024-07-01,1176,DEM,Biden,40,470
+YouGov,3,-1.1,Online Panel,National,2024-06-28,2024-07-01,1176,DEM,Biden,43,506
+YouGov,3,-1.1,Online Panel,National,2024-06-28,2024-07-01,1176,DEM,Harris,45,529
+YouGov,3,-1.1,Online Panel,National,2024-06-23,2024-06-25,1406,DEM,Biden,42,591
+Siena/NYT,3,-1.5,Live Phone,National,2024-06-20,2024-06-25,1226,DEM,Biden,42,515
+Siena/NYT,3,-1.5,Live Phone,National,2024-06-20,2024-06-25,1226,DEM,Biden,44,539
+Siena/NYT,3,-1.5,Live Phone,National,2024-06-20,2024-06-25,1226,DEM,Biden,32,392
+Siena/NYT,3,-1.5,Live Phone,National,2024-06-20,2024-06-25,1226,DEM,Biden,37,454
+YouGov,3,-1.1,Online Panel,National,2024-06-11,2024-06-24,2750,DEM,Biden,44.3,1218
+YouGov,3,-1.1,Online Panel,National,2024-06-17,2024-06-21,1878,DEM,Biden,49,920
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-06-12,2024-06-20,871,DEM,Biden,50,436
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-06-12,2024-06-20,784,DEM,Biden,51,400
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-06-12,2024-06-20,871,DEM,Biden,40,348
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-06-12,2024-06-20,784,DEM,Biden,42,329
+YouGov,3,-1.1,Online Panel,National,2024-06-16,2024-06-18,1396,DEM,Biden,42,586
+YouGov Blue,3,-1.1,Online Panel,National,2024-06-14,2024-06-18,2015,DEM,Biden,45,907
+YouGov,3,-1.1,Online Panel,National,2024-06-11,2024-06-14,1011,DEM,Biden,41,415
+YouGov,3,-1.1,Online Panel,National,2024-06-09,2024-06-11,1399,DEM,Biden,40,560
+YouGov,3,-1.1,Online Panel,Texas,2024-05-31,2024-06-09,1200,DEM,Biden,34,408
+YouGov,3,-1.1,Online Panel,Texas,2024-05-31,2024-06-09,1200,DEM,Biden,39,468
+YouGov,3,-1.1,Online Panel,National,2024-06-05,2024-06-07,1359,DEM,Biden,49,666
+YouGov,3,-1.1,Online Panel,National,2024-06-03,2024-06-06,1239,DEM,Biden,46,570
+YouGov,3,-1.1,Online Panel,National,2024-06-03,2024-06-06,1239,DEM,Biden,42,520
+YouGov,3,-1.1,Online Panel,National,2024-06-02,2024-06-04,1566,DEM,Biden,42,658
+YouGov,3,-1.1,Online Panel,National,2024-05-25,2024-05-28,1547,DEM,Biden,40,619
+YouGov,3,-1.1,Online Panel,National,2024-05-19,2024-05-21,1560,DEM,Biden,40,624
+YouGov,3,-1.1,Online Panel,Florida,2024-05-10,2024-05-16,1181,DEM,Biden,45,531
+YouGov,3,-1.1,Online Panel,Florida,2024-05-10,2024-05-16,1174,DEM,Biden,36,423
+YouGov,3,-1.1,Online Panel,Arizona,2024-05-10,2024-05-16,1193,DEM,Biden,47,561
+YouGov,3,-1.1,Online Panel,Arizona,2024-05-10,2024-05-16,1192,DEM,Biden,40,477
+Marquette Law School,3,-1.1,Probability Panel,National,2024-05-06,2024-05-15,902,DEM,Biden,50,451
+Marquette Law School,3,-1.1,Probability Panel,National,2024-05-06,2024-05-15,684,DEM,Biden,49,335
+Marquette Law School,3,-1.1,Probability Panel,National,2024-05-06,2024-05-15,902,DEM,Biden,37,334
+Marquette Law School,3,-1.1,Probability Panel,National,2024-05-06,2024-05-15,684,DEM,Biden,41,280
+YouGov,3,-1.1,Online Panel,National,2024-05-12,2024-05-14,1586,DEM,Biden,41,650
+YouGov,3,-1.1,Online Panel,National,2024-05-10,2024-05-13,1201,DEM,Biden,45,540
+YouGov,3,-1.1,Online Panel,National,2024-05-10,2024-05-13,1201,DEM,Biden,43,516
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-04-28,2024-05-09,626,DEM,Biden,33,207
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-04-28,2024-05-09,626,DEM,Biden,42,263
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-04-28,2024-05-09,626,DEM,Biden,35,219
+Siena/NYT,3,-1.5,Live Phone,Arizona,2024-04-28,2024-05-09,626,DEM,Biden,43,269
+Siena/NYT,3,-1.5,Live Phone,Georgia,2024-04-28,2024-05-09,604,DEM,Biden,31,187
+Siena/NYT,3,-1.5,Live Phone,Georgia,2024-04-28,2024-05-09,604,DEM,Biden,39,236
+Siena/NYT,3,-1.5,Live Phone,Georgia,2024-04-28,2024-05-09,604,DEM,Biden,34,205
+Siena/NYT,3,-1.5,Live Phone,Georgia,2024-04-28,2024-05-09,604,DEM,Biden,41,248
+Siena/NYT,3,-1.5,Live Phone,Michigan,2024-04-28,2024-05-09,616,DEM,Biden,36,222
+Siena/NYT,3,-1.5,Live Phone,Michigan,2024-04-28,2024-05-09,616,DEM,Biden,42,259
+Siena/NYT,3,-1.5,Live Phone,Michigan,2024-04-28,2024-05-09,616,DEM,Biden,42,259
+Siena/NYT,3,-1.5,Live Phone,Michigan,2024-04-28,2024-05-09,616,DEM,Biden,47,290
+Siena/NYT,3,-1.5,Live Phone,Nevada,2024-04-28,2024-05-09,614,DEM,Biden,27,166
+Siena/NYT,3,-1.5,Live Phone,Nevada,2024-04-28,2024-05-09,614,DEM,Biden,38,233
+Siena/NYT,3,-1.5,Live Phone,Nevada,2024-04-28,2024-05-09,614,DEM,Biden,30,184
+Siena/NYT,3,-1.5,Live Phone,Nevada,2024-04-28,2024-05-09,614,DEM,Biden,38,233
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-04-28,2024-05-09,1023,DEM,Biden,36,368
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-04-28,2024-05-09,1023,DEM,Biden,44,450
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-04-28,2024-05-09,1023,DEM,Biden,37,379
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2024-04-28,2024-05-09,1023,DEM,Biden,45,460
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-04-28,2024-05-09,614,DEM,Biden,38,233
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-04-28,2024-05-09,614,DEM,Biden,47,289
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-04-28,2024-05-09,614,DEM,Biden,39,239
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2024-04-28,2024-05-09,614,DEM,Biden,46,282
+YouGov,3,-1.1,Online Panel,National,2024-05-05,2024-05-07,1598,DEM,Biden,43,687
+YouGov,3,-1.1,Online Panel,National,2024-04-28,2024-04-30,1479,DEM,Biden,43,636
+YouGov,3,-1.1,Online Panel,Pennsylvania,2024-04-19,2024-04-25,1288,DEM,Biden,49,631
+YouGov,3,-1.1,Online Panel,Michigan,2024-04-19,2024-04-25,1262,DEM,Biden,51,644
+YouGov,3,-1.1,Online Panel,Michigan,2024-04-19,2024-04-25,1262,DEM,Biden,45,568
+YouGov,3,-1.1,Online Panel,Wisconsin,2024-04-19,2024-04-25,1226,DEM,Biden,49,601
+YouGov,3,-1.1,Online Panel,Wisconsin,2024-04-19,2024-04-25,1226,DEM,Biden,44,539
+YouGov,3,-1.1,Online Panel,National,2024-04-21,2024-04-23,1470,DEM,Biden,43,632
+YouGov,3,-1.1,Online Panel,Texas,2024-04-12,2024-04-22,1200,DEM,Biden,36,432
+YouGov,3,-1.1,Online Panel,Texas,2024-04-12,2024-04-22,1200,DEM,Biden,40,480
+YouGov,3,-1.1,Online Panel,National,2024-04-14,2024-04-16,1358,DEM,Biden,44,598
+YouGov,3,-1.1,Online Panel,National,2024-04-11,2024-04-15,1171,DEM,Biden,44,515
+YouGov,3,-1.1,Online Panel,National,2024-04-11,2024-04-15,1171,DEM,Biden,42,492
+Siena/NYT,3,-1.5,Live Phone,National,2024-04-07,2024-04-11,1059,DEM,Biden,45,477
+Siena/NYT,3,-1.5,Live Phone,National,2024-04-07,2024-04-11,1059,DEM,Biden,40,424
+Siena/NYT,3,-1.5,Live Phone,National,2024-04-07,2024-04-11,1059,DEM,Biden,46,487
+Siena/NYT,3,-1.5,Live Phone,National,2024-04-07,2024-04-11,1059,DEM,Biden,42,445
+Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-04-03,2024-04-10,814,DEM,Biden,49,399
+Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-04-03,2024-04-10,707,DEM,Biden,49,346
+Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-04-03,2024-04-10,814,DEM,Biden,40,326
+Marquette Law School,3,-1.1,Probability Panel,Wisconsin,2024-04-03,2024-04-10,707,DEM,Biden,41,290
+YouGov,3,-1.1,Online Panel,National,2024-04-06,2024-04-09,1583,DEM,Biden,42,665
+YouGov Blue,3,-1.1,Online Panel,National,2024-03-29,2024-04-05,4038,DEM,Biden,44,1777
+YouGov Blue,3,-1.1,Online Panel,National,2024-03-29,2024-04-05,4038,DEM,Biden,43,1736
+YouGov,3,-1.1,Online Panel,National,2024-03-30,2024-04-02,1604,DEM,Biden,43,690
+Marquette Law School,3,-1.1,Probability Panel,National,2024-03-18,2024-03-28,868,DEM,Biden,50,434
+Marquette Law School,3,-1.1,Probability Panel,National,2024-03-18,2024-03-28,674,DEM,Biden,52,350
+Marquette Law School,3,-1.1,Probability Panel,National,2024-03-18,2024-03-28,868,DEM,Biden,38,330
+Marquette Law School,3,-1.1,Probability Panel,National,2024-03-18,2024-03-28,674,DEM,Biden,41,276
+YouGov,3,-1.1,Online Panel,National,2024-03-24,2024-03-26,1415,DEM,Biden,43,608
+YouGov,3,-1.1,Online Panel,National,2024-03-16,2024-03-19,1510,DEM,Biden,44,664
+YouGov,3,-1.1,Online Panel,National,2024-03-10,2024-03-12,1367,DEM,Biden,42,574
+YouGov,3,-1.1,Online Panel,National,2024-03-08,2024-03-11,990,DEM,Biden,44,436
+YouGov,3,-1.1,Online Panel,National,2024-03-08,2024-03-11,992,DEM,Biden,41,407
+YouGov,3,-1.1,Online Panel,Georgia,2024-03-04,2024-03-11,1126,DEM,Biden,48,540
+YouGov,3,-1.1,Online Panel,National,2024-03-03,2024-03-05,1450,DEM,Biden,42,609
+YouGov,3,-1.1,Online Panel,National,2024-03-03,2024-03-05,1450,DEM,Biden,37,536
+YouGov,3,-1.1,Online Panel,National,2024-02-28,2024-03-01,1436,DEM,Biden,48,689
+Siena/NYT,3,-1.5,Live Phone,National,2024-02-25,2024-02-28,980,DEM,Biden,43,421
+Siena/NYT,3,-1.5,Live Phone,National,2024-02-25,2024-02-28,980,DEM,Biden,44,431
+Siena/NYT,3,-1.5,Live Phone,National,2024-02-25,2024-02-28,980,DEM,Biden,35,343
+Siena/NYT,3,-1.5,Live Phone,National,2024-02-25,2024-02-28,980,DEM,Biden,37,363
+Siena/NYT,3,-1.5,Live Phone,National,2024-02-25,2024-02-28,980,DEM,Harris,41,402
+Siena/NYT,3,-1.5,Live Phone,National,2024-02-25,2024-02-28,980,DEM,Harris,42,412
+YouGov,3,-1.1,Online Panel,National,2024-02-25,2024-02-27,1498,DEM,Biden,44,659
+YouGov,3,-1.1,Online Panel,National,2024-02-18,2024-02-20,1360,DEM,Biden,42,571
+Marquette Law School,3,-1.1,Probability Panel,National,2024-02-05,2024-02-15,787,DEM,Biden,49,386
+Marquette Law School,3,-1.1,Probability Panel,National,2024-02-05,2024-02-15,628,DEM,Biden,48,301
+Marquette Law School,3,-1.1,Probability Panel,National,2024-02-05,2024-02-15,787,DEM,Biden,42,331
+Marquette Law School,3,-1.1,Probability Panel,National,2024-02-05,2024-02-15,628,DEM,Biden,41,257
+Marquette Law School,3,-1.1,Probability Panel,National,2024-02-05,2024-02-15,787,DEM,Biden,39,307
+Marquette Law School,3,-1.1,Probability Panel,National,2024-02-05,2024-02-15,628,DEM,Biden,40,251
+YouGov,3,-1.1,Online Panel,National,2024-02-11,2024-02-13,1470,DEM,Biden,44,647
+YouGov,3,-1.1,Online Panel,Texas,2024-02-02,2024-02-12,1200,DEM,Biden,36,432
+YouGov,3,-1.1,Online Panel,Texas,2024-02-02,2024-02-12,1200,DEM,Biden,41,492
+YouGov,3,-1.1,Online Panel,Texas,2024-02-02,2024-02-12,1200,DEM,Biden,40,480
+YouGov,3,-1.1,Online Panel,National,2024-02-06,2024-02-09,869,DEM,Biden,44,382
+YouGov,3,-1.1,Online Panel,National,2024-02-04,2024-02-06,1399,DEM,Biden,43,602
+YouGov,3,-1.1,Online Panel,National,2024-01-31,2024-02-04,1765,DEM,Biden,42,741
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-01-24,2024-01-31,930,DEM,Biden,49,456
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-01-24,2024-01-31,808,DEM,Biden,49,396
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-01-24,2024-01-31,930,DEM,Biden,41,381
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-01-24,2024-01-31,808,DEM,Biden,42,339
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-01-24,2024-01-31,930,DEM,Biden,37,344
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2024-01-24,2024-01-31,808,DEM,Biden,39,315
+YouGov,3,-1.1,Online Panel,National,2024-01-28,2024-01-30,1486,DEM,Biden,43,639
+YouGov,3,-1.1,Online Panel,National,2024-01-24,2024-01-30,850,DEM,Biden,44,374
+YouGov,3,-1.1,Online Panel,National,2024-01-24,2024-01-30,847,DEM,Biden,39,330
+YouGov,3,-1.1,Online Panel,National,2024-01-25,2024-01-29,1069,DEM,Biden,44,470
+YouGov,3,-1.1,Online Panel,National,2024-01-25,2024-01-29,1069,DEM,Biden,41,438
+YouGov,3,-1.1,Online Panel,National,2024-01-25,2024-01-29,1069,DEM,Biden,40,428
+YouGov,3,-1.1,Online Panel,National,2024-01-21,2024-01-23,1497,DEM,Biden,43,644
+YouGov,3,-1.1,Online Panel,National,2024-01-14,2024-01-16,1472,DEM,Biden,44,648
+YouGov,3,-1.1,Online Panel,National,2024-01-10,2024-01-12,1906,DEM,Biden,48,915
+YouGov,3,-1.1,Online Panel,National,2024-01-10,2024-01-12,1906,DEM,Biden,48,915
+YouGov,3,-1.1,Online Panel,National,2024-01-10,2024-01-12,1906,DEM,Biden,45,858
+YouGov,3,-1.1,Online Panel,National,2024-01-07,2024-01-09,1417,DEM,Biden,43,609
+YouGov,3,-1.1,Online Panel,National,2023-12-31,2024-01-02,1343,DEM,Biden,44,591
+YouGov,3,-1.1,Online Panel,National,2023-12-31,2024-01-02,1343,DEM,Biden,44,591
+YouGov,3,-1.1,Online Panel,National,2023-12-31,2024-01-02,1343,DEM,Biden,41,551
+YouGov,3,-1.1,Online Panel,National,2023-12-18,2023-12-23,1765,DEM,Biden,41,724
+YouGov,3,-1.1,Online Panel,National,2023-12-16,2023-12-18,1336,DEM,Biden,43,574
+YouGov,3,-1.1,Online Panel,National,2023-12-14,2023-12-18,1027,DEM,Biden,44,452
+YouGov,3,-1.1,Online Panel,National,2023-12-14,2023-12-18,1027,DEM,Biden,41,421
+YouGov,3,-1.1,Online Panel,National,2023-12-14,2023-12-18,1027,DEM,Biden,39,401
+YouGov,3,-1.1,Online Panel,Colorado,2023-12-01,2023-12-18,800,DEM,Biden,47,376
+YouGov,3,-1.1,Online Panel,Colorado,2023-12-01,2023-12-18,800,DEM,Biden,46,368
+Siena/NYT,3,-1.5,Live Phone,National,2023-12-10,2023-12-14,1016,DEM,Biden,44,447
+Siena/NYT,3,-1.5,Live Phone,National,2023-12-10,2023-12-14,1016,DEM,Biden,47,478
+YouGov,3,-1.1,Online Panel,National,2023-12-09,2023-12-12,1332,DEM,Biden,43,573
+YouGov,3,-1.1,Online Panel,Texas,2023-12-01,2023-12-10,1200,DEM,Biden,39,468
+YouGov,3,-1.1,Online Panel,Texas,2023-12-01,2023-12-10,1200,DEM,Biden,37,444
+YouGov,3,-1.1,Online Panel,Texas,2023-12-01,2023-12-10,1200,DEM,Biden,37,444
+YouGov,3,-1.1,Online Panel,Texas,2023-12-01,2023-12-10,1200,DEM,Biden,36,432
+YouGov,3,-1.1,Online Panel,Texas,2023-12-01,2023-12-10,1200,DEM,Biden,34,408
+YouGov,3,-1.1,Online Panel,National,2023-12-02,2023-12-05,1291,DEM,Biden,42,542
+YouGov,3,-1.1,Online Panel,National,2023-11-25,2023-11-27,1323,DEM,Biden,44,582
+YouGov,3,-1.1,Online Panel,National,2023-11-20,2023-11-27,1000,DEM,Biden,39,390
+YouGov,3,-1.1,Online Panel,National,2023-11-20,2023-11-27,1000,DEM,Biden,38,380
+YouGov,3,-1.1,Online Panel,National,2023-11-11,2023-11-14,1272,DEM,Biden,42,534
+YouGov,3,-1.1,Online Panel,National,2023-11-09,2023-11-13,1058,DEM,Biden,42,444
+YouGov,3,-1.1,Online Panel,National,2023-11-09,2023-11-13,1061,DEM,Biden,39,414
+Marquette Law School,3,-1.1,Probability Panel,National,2023-11-02,2023-11-07,856,DEM,Biden,48,411
+Marquette Law School,3,-1.1,Probability Panel,National,2023-11-02,2023-11-07,668,DEM,Biden,49,327
+Marquette Law School,3,-1.1,Probability Panel,National,2023-11-02,2023-11-07,856,DEM,Biden,49,419
+Marquette Law School,3,-1.1,Probability Panel,National,2023-11-02,2023-11-07,668,DEM,Biden,49,327
+Marquette Law School,3,-1.1,Probability Panel,National,2023-11-02,2023-11-07,856,DEM,Biden,45,385
+Marquette Law School,3,-1.1,Probability Panel,National,2023-11-02,2023-11-07,668,DEM,Biden,44,294
+YouGov,3,-1.1,Online Panel,National,2023-10-30,2023-11-03,1759,DEM,Biden,48,844
+Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,44,265
+Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,44,265
+Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Harris,43,259
+Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Harris,43,259
+Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,41,247
+Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,42,253
+Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,38,229
+Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,37,223
+Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,33,199
+Siena/NYT,3,-1.5,Live Phone,Arizona,2023-10-22,2023-11-03,603,DEM,Biden,34,205
+Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,43,270
+Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,44,277
+Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Harris,44,277
+Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Harris,44,277
+Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,43,270
+Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,44,277
+Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,40,252
+Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,40,252
+Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,29,182
+Siena/NYT,3,-1.5,Live Phone,Georgia,2023-10-22,2023-11-03,629,DEM,Biden,31,195
+Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,43,265
+Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,46,283
+Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Harris,45,277
+Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Harris,48,296
+Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,42,259
+Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,44,271
+Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,35,216
+Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,36,222
+Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,31,191
+Siena/NYT,3,-1.5,Live Phone,Michigan,2023-10-22,2023-11-03,616,DEM,Biden,34,209
+Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,41,251
+Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,41,251
+Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Harris,42,257
+Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Harris,42,257
+Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,42,257
+Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,41,251
+Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,38,232
+Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,37,226
+Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,31,189
+Siena/NYT,3,-1.5,Live Phone,Nevada,2023-10-22,2023-11-03,611,DEM,Biden,34,208
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,44,264
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,44,264
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Harris,44,264
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Harris,44,264
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,43,258
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,43,258
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,38,228
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,39,234
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,35,210
+Siena/NYT,3,-1.5,Live Phone,Pennsylvania,2023-10-22,2023-11-03,600,DEM,Biden,36,216
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,47,283
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,47,283
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Harris,46,277
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Harris,46,277
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,44,265
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,44,265
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,39,235
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,39,235
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,37,223
+Siena/NYT,3,-1.5,Live Phone,Wisconsin,2023-10-22,2023-11-03,603,DEM,Biden,37,223
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2023-10-26,2023-11-02,908,DEM,Biden,50,454
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2023-10-26,2023-11-02,908,DEM,Biden,48,436
+Marquette Law School,3,-1.1,Live Phone/Email,Wisconsin,2023-10-26,2023-11-02,908,DEM,Biden,44,400
+YouGov,3,-1.1,Online Panel,National,2023-10-28,2023-10-31,1500,DEM,Biden,39,585
+YouGov,3,-1.1,Online Panel,National,2023-10-28,2023-10-31,1333,DEM,Biden,42,560
+YouGov,3,-1.1,Online Panel,Texas,2023-10-05,2023-10-17,1200,DEM,Biden,37,444
+YouGov,3,-1.1,Online Panel,Texas,2023-10-05,2023-10-17,1200,DEM,Biden,38,456
+YouGov,3,-1.1,Online Panel,Texas,2023-10-05,2023-10-17,1200,DEM,Biden,36,432
+YouGov,3,-1.1,Online Panel,Texas,2023-10-05,2023-10-17,1200,DEM,Biden,34,408
+YouGov,3,-1.1,Online Panel,Texas,2023-10-05,2023-10-17,1200,DEM,Biden,34,408
+YouGov,3,-1.1,Online Panel,Texas,2023-10-05,2023-10-17,1200,DEM,Biden,36,432
+YouGov,3,-1.1,Online Panel,National,2023-10-12,2023-10-16,1123,DEM,Biden,44,494
+YouGov,3,-1.1,Online Panel,National,2023-10-12,2023-10-16,1123,DEM,Biden,42,472
+YouGov,3,-1.1,Online Panel,National,2023-10-12,2023-10-16,1123,DEM,Biden,40,449
+YouGov,3,-1.1,Online Panel,National,2023-10-08,2023-10-10,1500,DEM,Biden,38,570
+YouGov,3,-1.1,Online Panel,National,2023-10-08,2023-10-10,1296,DEM,Biden,43,557
+YouGov,3,-1.1,Online Panel,National,2023-09-23,2023-09-26,1500,DEM,Biden,39,585
+YouGov,3,-1.1,Online Panel,National,2023-09-23,2023-09-26,1293,DEM,Biden,45,582
+Marquette Law School,3,-1.1,Probability Panel,National,2023-09-18,2023-09-25,1007,DEM,Biden,48,483
+Marquette Law School,3,-1.1,Probability Panel,National,2023-09-18,2023-09-25,868,DEM,Biden,48,417
+Marquette Law School,3,-1.1,Probability Panel,National,2023-09-18,2023-09-25,690,DEM,Biden,51,352
+Marquette Law School,3,-1.1,Probability Panel,National,2023-09-18,2023-09-25,1007,DEM,Biden,49,493
+Marquette Law School,3,-1.1,Probability Panel,National,2023-09-18,2023-09-25,868,DEM,Biden,48,417
+Marquette Law School,3,-1.1,Probability Panel,National,2023-09-18,2023-09-25,690,DEM,Biden,51,352
+ABC/Washington Post,3,-1.2,Live Phone,National,2023-09-15,2023-09-20,1006,DEM,Biden,42,423
+ABC/Washington Post,3,-1.2,Live Phone,National,2023-09-15,2023-09-20,890,DEM,Biden,42,374
+YouGov,3,-1.1,Online Panel,National,2023-09-14,2023-09-18,1097,DEM,Biden,44,483
+YouGov,3,-1.1,Online Panel,National,2023-09-14,2023-09-18,1097,DEM,Biden,44,483
+YouGov,3,-1.1,Online Panel,National,2023-09-14,2023-09-18,1097,DEM,Biden,42,461
+YouGov Blue,3,-1.1,Online Panel,National,2023-09-07,2023-09-18,3098,DEM,Biden,52,1611
+YouGov Blue,3,-1.1,Online Panel,National,2023-09-07,2023-09-18,3098,DEM,Biden,51,1580
+YouGov Blue,3,-1.1,Online Panel,National,2023-09-07,2023-09-18,3098,DEM,Biden,45,1394
+YouGov Blue,3,-1.1,Online Panel,National,2023-09-07,2023-09-18,3098,DEM,Biden,46,1425
+YouGov Blue,3,-1.1,Online Panel,National,2023-09-07,2023-09-18,3098,DEM,Biden,46,1425
+YouGov Blue,3,-1.1,Online Panel,National,2023-09-07,2023-09-18,3098,DEM,Biden,45,1394
+YouGov,3,-1.1,Online Panel,National,2023-09-12,2023-09-15,2525,DEM,Biden,49,1237
+YouGov,3,-1.1,Online Panel,National,2023-09-10,2023-09-12,1334,DEM,Biden,44,587
+YouGov,3,-1.1,Online Panel,National,2023-08-26,2023-08-29,1303,DEM,Biden,43,560
+YouGov,3,-1.1,Online Panel,National,2023-08-17,2023-08-21,1113,DEM,Biden,47,523
+YouGov,3,-1.1,Online Panel,National,2023-08-17,2023-08-21,1116,DEM,Biden,45,502
+YouGov,3,-1.1,Online Panel,National,2023-08-12,2023-08-15,1500,DEM,Biden,38,570
+YouGov,3,-1.1,Online Panel,National,2023-08-12,2023-08-15,1321,DEM,Biden,43,568
+Siena/NYT,3,-1.5,Live Phone,National,2023-07-23,2023-07-27,1329,DEM,Biden,43,571
+YouGov,3,-1.1,Online Panel,National,2023-07-22,2023-07-25,1500,DEM,Biden,40,600
+YouGov,3,-1.1,Online Panel,National,2023-07-22,2023-07-25,1306,DEM,Biden,44,575
+YouGov,3,-1.1,Online Panel,National,2023-07-13,2023-07-17,1098,DEM,Biden,47,516
+YouGov,3,-1.1,Online Panel,National,2023-07-13,2023-07-17,1098,DEM,Biden,46,505
+Marquette Law School,3,-1.1,Probability Panel,National,2023-07-07,2023-07-12,1005,DEM,Biden,50,502
+Marquette Law School,3,-1.1,Probability Panel,National,2023-07-07,2023-07-12,788,DEM,Biden,50,394
+Marquette Law School,3,-1.1,Probability Panel,National,2023-07-07,2023-07-12,1005,DEM,Biden,49,492
+Marquette Law School,3,-1.1,Probability Panel,National,2023-07-07,2023-07-12,788,DEM,Biden,48,378
+YouGov,3,-1.1,Online Panel,National,2023-07-08,2023-07-11,1500,DEM,Biden,39,585
+YouGov,3,-1.1,Online Panel,National,2023-07-08,2023-07-11,1296,DEM,Biden,42,544
+YouGov Blue,3,-1.1,Online Panel,National,2023-06-20,2023-06-29,3012,DEM,Biden,47,1416
+YouGov Blue,3,-1.1,Online Panel,National,2023-06-20,2023-06-29,3012,DEM,Biden,45,1355
+YouGov,3,-1.1,Online Panel,National,2023-06-24,2023-06-27,1500,DEM,Biden,38,570
+YouGov,3,-1.1,Online Panel,National,2023-06-24,2023-06-27,1315,DEM,Biden,40,526
+YouGov,3,-1.1,Online Panel,National,2023-06-16,2023-06-20,1091,DEM,Biden,46,502
+YouGov,3,-1.1,Online Panel,National,2023-06-16,2023-06-20,1087,DEM,Biden,44,478
+YouGov,3,-1.1,Online Panel,National,2023-06-10,2023-06-13,1500,DEM,Biden,38,570
+YouGov,3,-1.1,Online Panel,National,2023-06-10,2023-06-13,1303,DEM,Biden,41,534
+Marquette Law School,3,-1.1,Live Phone/Online Panel/Mail-to-Web,Wisconsin,2023-06-08,2023-06-13,913,DEM,Biden,52,475
+Marquette Law School,3,-1.1,Live Phone/Online Panel/Mail-to-Web,Wisconsin,2023-06-08,2023-06-13,913,DEM,Biden,49,447
+YouGov,3,-1.1,Online Panel,National,2023-05-27,2023-05-31,1500,DEM,Biden,39,585
+YouGov,3,-1.1,Online Panel,National,2023-05-27,2023-05-31,1313,DEM,Biden,43,565
+YouGov,3,-1.1,Online Panel,National,2023-05-25,2023-05-30,1015,DEM,Biden,48,487
+YouGov,3,-1.1,Online Panel,National,2023-05-25,2023-05-30,1011,DEM,Biden,46,465
+Marquette Law School,3,-1.1,Probability Panel,National,2023-05-08,2023-05-18,1010,DEM,Biden,48,485
+Marquette Law School,3,-1.1,Probability Panel,National,2023-05-08,2023-05-18,833,DEM,Biden,47,392
+Marquette Law School,3,-1.1,Probability Panel,National,2023-05-08,2023-05-18,1010,DEM,Biden,49,495
+Marquette Law School,3,-1.1,Probability Panel,National,2023-05-08,2023-05-18,833,DEM,Biden,48,400
+YouGov,3,-1.1,Online Panel,National,2023-05-13,2023-05-16,1500,DEM,Biden,40,600
+YouGov,3,-1.1,Online Panel,National,2023-05-13,2023-05-16,1302,DEM,Biden,42,547
+YouGov,3,-1.1,Online Panel,National,2023-05-13,2023-05-16,1500,DEM,Biden,38,570
+YouGov,3,-1.1,Online Panel,National,2023-05-13,2023-05-16,1302,DEM,Biden,41,534
+YouGov,3,-1.1,Online Panel,National,2023-05-05,2023-05-08,1060,DEM,Biden,45,477
+YouGov,3,-1.1,Online Panel,National,2023-05-05,2023-05-08,1057,DEM,Biden,45,476
+ABC/Washington Post,3,-1.2,Live Phone,National,2023-04-28,2023-05-03,1006,DEM,Biden,42,423
+ABC/Washington Post,3,-1.2,Live Phone,National,2023-04-28,2023-05-03,900,DEM,Biden,43,387
+ABC/Washington Post,3,-1.2,Live Phone,National,2023-04-28,2023-05-03,1006,DEM,Biden,41,412
+ABC/Washington Post,3,-1.2,Live Phone,National,2023-04-28,2023-05-03,900,DEM,Biden,38,342
+YouGov,3,-1.1,Online Panel,National,2023-04-29,2023-05-02,1500,DEM,Biden,41,615
+YouGov,3,-1.1,Online Panel,National,2023-04-29,2023-05-02,1357,DEM,Biden,46,624
+YouGov,3,-1.1,Online Panel,National,2023-04-29,2023-05-02,1500,DEM,Biden,41,615
+YouGov,3,-1.1,Online Panel,National,2023-04-29,2023-05-02,1357,DEM,Biden,45,611
+YouGov,3,-1.1,Online Panel,National,2023-04-15,2023-04-18,1500,DEM,Biden,37,555
+YouGov,3,-1.1,Online Panel,National,2023-04-15,2023-04-18,1316,DEM,Biden,43,566
+YouGov,3,-1.1,Online Panel,National,2023-04-14,2023-04-17,1027,DEM,Biden,46,472
+YouGov,3,-1.1,Online Panel,National,2023-04-14,2023-04-17,1027,DEM,Biden,45,462
+YouGov,3,-1.1,Online Panel,National,2023-04-14,2023-04-17,1530,DEM,Biden,34,520
+YouGov,3,-1.1,Online Panel,National,2023-04-08,2023-04-11,1500,DEM,Biden,39,585
+YouGov,3,-1.1,Online Panel,National,2023-04-08,2023-04-11,1322,DEM,Biden,43,568
+YouGov,3,-1.1,Online Panel,National,2023-04-04,2023-04-06,1000,DEM,Biden,39,390
+YouGov,3,-1.1,Online Panel,National,2023-04-01,2023-04-04,1500,DEM,Biden,38,570
+YouGov,3,-1.1,Online Panel,National,2023-04-01,2023-04-04,1319,DEM,Biden,42,554
+YouGov,3,-1.1,Online Panel,National,2023-03-30,2023-03-31,729,DEM,Biden,45,328
+Marquette Law School,3,-1.1,Probability Panel,National,2023-03-13,2023-03-22,1004,DEM,Biden,33,331
+Marquette Law School,3,-1.1,Probability Panel,National,2023-03-13,2023-03-22,863,DEM,Biden,38,328
+Marquette Law School,3,-1.1,Probability Panel,National,2023-03-13,2023-03-22,1004,DEM,Biden,36,361
+Marquette Law School,3,-1.1,Probability Panel,National,2023-03-13,2023-03-22,863,DEM,Biden,41,354
+YouGov,3,-1.1,Online Panel,National,2023-03-16,2023-03-20,1059,DEM,Biden,45,477
+YouGov,3,-1.1,Online Panel,National,2023-03-16,2023-03-20,1060,DEM,Biden,43,456
+YouGov,3,-1.1,Online Panel,National,2023-02-23,2023-02-27,1014,DEM,Biden,43,436
+YouGov,3,-1.1,Online Panel,National,2023-02-23,2023-02-27,1014,DEM,Biden,42,426
+YouGov,3,-1.1,Online Panel,National,2023-02-23,2023-02-27,1014,DEM,Harris,42,426
+YouGov,3,-1.1,Online Panel,National,2023-02-23,2023-02-27,1014,DEM,Harris,40,406
+YouGov,3,-1.1,Online Panel,National,2023-02-22,2023-02-27,1000,DEM,Biden,39,390
+YouGov,3,-1.1,Online Panel,National,2023-02-22,2023-02-27,1000,DEM,Biden,36,360
+YouGov,3,-1.1,Online Panel,National,2023-02-02,2023-02-06,1063,DEM,Biden,43,457
+YouGov,3,-1.1,Online Panel,National,2023-02-02,2023-02-06,1063,DEM,Biden,47,500
+ABC/Washington Post,3,-1.2,Live Phone,National,2023-01-27,2023-02-01,895,DEM,Biden,45,403
+Marquette Law School,3,-1.1,Probability Panel,National,2023-01-09,2023-01-20,1000,DEM,Biden,38,380
+Marquette Law School,3,-1.1,Probability Panel,National,2023-01-09,2023-01-20,790,DEM,Biden,40,316
+Marquette Law School,3,-1.1,Probability Panel,National,2023-01-09,2023-01-20,1000,DEM,Biden,36,360
+Marquette Law School,3,-1.1,Probability Panel,National,2023-01-09,2023-01-20,790,DEM,Biden,38,300
+YouGov,3,-1.1,Online Panel,National,2023-01-14,2023-01-17,1500,DEM,Biden,40,600
+YouGov,3,-1.1,Online Panel,National,2023-01-14,2023-01-17,1314,DEM,Biden,43,565
+YouGov,3,-1.1,Online Panel,National,2023-01-14,2023-01-17,1500,DEM,Biden,42,630
+YouGov,3,-1.1,Online Panel,National,2023-01-14,2023-01-17,1314,DEM,Biden,46,604
+YouGov,3,-1.1,Online Panel,National,2023-01-12,2023-01-16,1028,DEM,Biden,46,473
+YouGov,3,-1.1,Online Panel,National,2023-01-12,2023-01-16,1028,DEM,Biden,44,452
+YouGov,3,-1.1,Online Panel,National,2022-12-15,2022-12-19,1041,DEM,Biden,45,468
+YouGov,3,-1.1,Online Panel,National,2022-12-15,2022-12-19,1041,DEM,Biden,43,448
+YouGov,3,-1.1,Online Panel,National,2022-12-01,2022-12-05,1635,DEM,Biden,37,605
+YouGov,3,-1.1,Online Panel,National,2022-12-01,2022-12-05,1204,DEM,Biden,45,542
+YouGov,3,-1.1,Online Panel,National,2022-12-01,2022-12-05,1635,DEM,Biden,37,605
+YouGov,3,-1.1,Online Panel,National,2022-12-01,2022-12-05,1204,DEM,Biden,44,530
+Marquette Law School,3,-1.1,Probability Panel,National,2022-11-15,2022-11-22,1004,DEM,Biden,39,392
+Marquette Law School,3,-1.1,Probability Panel,National,2022-11-15,2022-11-22,840,DEM,Biden,44,370
+Marquette Law School,3,-1.1,Probability Panel,National,2022-11-15,2022-11-22,1004,DEM,Biden,37,371
+Marquette Law School,3,-1.1,Probability Panel,National,2022-11-15,2022-11-22,840,DEM,Biden,42,353
+YouGov,3,-1.1,Online Panel,National,2022-10-27,2022-10-31,1641,DEM,Biden,42,689
+YouGov,3,-1.1,Online Panel,National,2022-10-27,2022-10-31,1172,DEM,Biden,48,563
+YouGov,3,-1.1,Online Panel,National,2022-10-13,2022-10-17,1629,DEM,Biden,43,700
+YouGov,3,-1.1,Online Panel,National,2022-10-13,2022-10-17,1209,DEM,Biden,46,556
+Siena/NYT,3,-1.5,Live Phone,National,2022-10-09,2022-10-12,792,DEM,Biden,44,348
+Siena/NYT,3,-1.5,Live Phone,National,2022-10-09,2022-10-12,792,DEM,Biden,42,333
+Siena/NYT,3,-1.5,Live Phone,National,2022-10-09,2022-10-12,792,DEM,Biden,44,348
+YouGov,3,-1.1,Online Panel,National,2022-09-23,2022-09-27,1566,DEM,Biden,41,642
+YouGov,3,-1.1,Online Panel,National,2022-09-23,2022-09-27,1138,DEM,Biden,47,535
+ABC/Washington Post,3,-1.2,Live Phone,National,2022-09-18,2022-09-21,1006,DEM,Biden,48,483
+ABC/Washington Post,3,-1.2,Live Phone,National,2022-09-18,2022-09-21,908,DEM,Biden,46,418
+Marquette Law School,3,-1.1,Probability Panel,National,2022-09-07,2022-09-14,1448,DEM,Biden,40,579
+Marquette Law School,3,-1.1,Probability Panel,National,2022-09-07,2022-09-14,1282,DEM,Biden,42,538
+Marquette Law School,3,-1.1,Probability Panel,National,2022-09-07,2022-09-14,1448,DEM,Biden,40,579
+Marquette Law School,3,-1.1,Probability Panel,National,2022-09-07,2022-09-14,1282,DEM,Biden,43,551
+Siena/NYT,3,-1.5,Live Phone,National,2022-09-06,2022-09-14,1399,DEM,Biden,45,630
+YouGov,3,-1.1,Online Panel,National,2022-09-02,2022-09-06,1634,DEM,Biden,43,703
+YouGov,3,-1.1,Online Panel,National,2022-09-02,2022-09-06,1247,DEM,Biden,48,599
+YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,1563,DEM,Biden,42,656
+YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,1185,DEM,Biden,46,545
+YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,1563,DEM,Biden,29,453
+YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,1185,DEM,Biden,32,379
+YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,1000,DEM,Biden,39,390
+YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,1000,DEM,Biden,36,360
+YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,1000,DEM,Biden,38,380
+YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,805,DEM,Biden,45,362
+YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,805,DEM,Biden,43,346
+YouGov,3,-1.1,Online Panel,National,2022-08-18,2022-08-22,805,DEM,Biden,44,354
+YouGov,3,-1.1,Online Panel,National,2022-07-28,2022-08-01,1557,DEM,Biden,41,638
+YouGov,3,-1.1,Online Panel,National,2022-07-28,2022-08-01,1152,DEM,Biden,45,518
+YouGov,3,-1.1,Online Panel,National,2022-07-28,2022-08-01,1557,DEM,Biden,40,623
+YouGov,3,-1.1,Online Panel,National,2022-07-28,2022-08-01,1152,DEM,Biden,45,518
+YouGov,3,-1.1,Online Panel,National,2022-07-28,2022-08-01,1557,DEM,Harris,42,654
+YouGov,3,-1.1,Online Panel,National,2022-07-28,2022-08-01,1152,DEM,Harris,45,518
+YouGov,3,-1.1,Online Panel,National,2022-07-08,2022-07-11,1672,DEM,Biden,39,652
+YouGov,3,-1.1,Online Panel,National,2022-07-08,2022-07-11,1261,DEM,Biden,44,555
+Siena/NYT,3,-1.5,Live Phone,National,2022-07-05,2022-07-07,849,DEM,Biden,44,374
+YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1630,DEM,Biden,42,685
+YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1630,DEM,Biden,41,668
+YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1630,DEM,Harris,41,668
+YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1630,DEM,Harris,41,668
+YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1239,DEM,Biden,46,570
+YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1239,DEM,Biden,45,558
+YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1239,DEM,Harris,44,545
+YouGov,3,-1.1,Online Panel,National,2022-06-24,2022-06-27,1239,DEM,Harris,45,558
+YouGov,3,-1.1,Online Panel,National,2022-06-10,2022-06-13,1541,DEM,Biden,39,601
+YouGov,3,-1.1,Online Panel,National,2022-06-10,2022-06-13,1243,DEM,Biden,42,522
+YouGov,3,-1.1,Online Panel,National,2022-05-19,2022-05-22,1573,DEM,Biden,42,661
+YouGov,3,-1.1,Online Panel,National,2022-05-19,2022-05-22,1360,DEM,Biden,44,598
+YouGov,3,-1.1,Online Panel,National,2022-04-19,2022-04-22,1605,DEM,Biden,39,626
+YouGov,3,-1.1,Online Panel,National,2022-04-19,2022-04-22,1187,DEM,Biden,43,510
+YouGov,3,-1.1,Online Panel,National,2022-03-31,2022-04-04,1618,DEM,Biden,40,647
+YouGov,3,-1.1,Online Panel,National,2022-03-31,2022-04-04,1233,DEM,Biden,45,555
+Marquette Law School,3,-1.1,Probability Panel,National,2022-03-14,2022-03-24,1004,DEM,Biden,38,382
+Marquette Law School,3,-1.1,Probability Panel,National,2022-03-14,2022-03-24,1004,DEM,Biden,37,371
+Marquette Law School,3,-1.1,Probability Panel,National,2022-03-14,2022-03-24,1004,DEM,Biden,41,412
+YouGov,3,-1.1,Online Panel,National,2022-03-11,2022-03-21,2000,DEM,Biden,50.13,1003
+YouGov,3,-1.1,Online Panel,National,2022-03-10,2022-03-14,1623,DEM,Biden,41,665
+YouGov,3,-1.1,Online Panel,National,2022-03-10,2022-03-14,1225,DEM,Biden,47,576
+YouGov,3,-1.1,Online Panel,National,2022-02-24,2022-02-27,1532,DEM,Biden,40,613
+YouGov,3,-1.1,Online Panel,National,2022-02-24,2022-02-27,1169,DEM,Biden,45,526
+YouGov,3,-1.1,Online Panel,National,2022-01-20,2022-01-24,1568,DEM,Biden,42,659
+YouGov,3,-1.1,Online Panel,National,2022-01-20,2022-01-24,1190,DEM,Biden,44,524
+YouGov,3,-1.1,Online Panel,National,2022-01-20,2022-01-24,1568,DEM,Biden,39,612
+YouGov,3,-1.1,Online Panel,National,2022-01-20,2022-01-24,1189,DEM,Biden,43,511
+Marquette Law School,3,-1.1,Probability Panel,National,2022-01-10,2022-01-21,1000,DEM,Biden,43,430
+Marquette Law School,3,-1.1,Probability Panel,National,2022-01-10,2022-01-21,1000,DEM,Biden,41,410
+YouGov,3,-1.1,Online Panel,National,2021-12-09,2021-12-13,574,DEM,Biden,47,270
+YouGov,3,-1.1,Online Panel,National,2021-12-09,2021-12-13,585,DEM,Biden,38,222
+YouGov,3,-1.1,Online Panel,National,2021-12-09,2021-12-13,777,DEM,Biden,45,350
+YouGov,3,-1.1,Online Panel,National,2021-12-09,2021-12-13,773,DEM,Biden,35,271
+Marquette Law School,3,-1.1,Probability Panel,National,2021-11-01,2021-11-10,1004,DEM,Biden,42,422
+YouGov,3,-1.1,Online Panel,National,2021-11-04,2021-11-08,1673,DEM,Biden,43,719
+Marquette Law School,3,-1.1,Live Phone,Wisconsin,2021-10-26,2021-10-31,805,DEM,Biden,45,362
+YouGov,3,-1.1,Online Panel,National,2021-10-19,2021-10-21,1704,DEM,Biden,43,733
+YouGov,3,-1.1,Online Panel,National,2021-07-30,2021-08-02,1552,DEM,Biden,47,729
+YouGov,3,-1.1,Online Panel,National,2021-06-22,2021-06-24,1592,DEM,Biden,47,748
+YouGov,3,-1.1,Online Panel,National,2021-05-24,2021-05-26,1588,DEM,Biden,46,730
+YouGov,3,-1.1,Online Panel,National,2021-05-11,2021-05-13,1561,DEM,Biden,48,749

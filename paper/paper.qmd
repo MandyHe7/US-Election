@@ -5,7 +5,7 @@ author:
   - Mandy He
   - Wendy Yuan
 thanks: "Code and data are available at: https://github.com/MandyHe7/US-Election.git."
-date: today
+date: November 5, 2024
 date-format: long
 abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
 format: pdf
@@ -19,6 +19,15 @@ bibliography: references.bib
 #| message: false
 
 library(tidyverse)
+library(dplyr)
+library(readr)
+library(ggplot2)
+library(janitor)
+library(lubridate)
+library(broom)
+library(modelsummary)
+library(rstanarm)
+library(splines)
 
 polling_data <- read_csv(here::here("data/02-analysis_data/analysis_data.csv"))
 ```
@@ -36,11 +45,6 @@ Why it matters paragraph
 
 Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data....
 
-
-
-
-
-
 # Data {#sec-data}
 
 ## Overview
@@ -55,99 +59,14 @@ Some paragraphs about how we go from a phenomena in the world to an entry in the
 
 ## Outcome variables
 
-Add graphs, tables and text. Use sub-sub-headings for each outcome variable or update the subheading to be singular.
 
-
-
-Some of our data is of penguins (@fig-bills), from @palmerpenguins.
-
-```{r}
-#| label: fig-bills
-#| fig-cap: Bills of penguins
-#| echo: false
-
-ggplot(penguins, aes(x = island, fill = species)) +
-  geom_bar(alpha = 0.8) +
-  scale_fill_manual(values = c("darkorange","purple","cyan4"),
-                    guide = "none") +
-  theme_minimal() +
-  facet_wrap(~species, ncol = 1) +
-  coord_flip()
-```
-
-Talk more about it.
-
-And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
-
-```{r}
-#| label: fig-planes
-#| fig-cap: Relationship between wing length and width
-#| echo: false
-#| warning: false
-#| message: false
-
-
-cleaned_data |> 
-  ggplot(aes(x = width, y = length)) +
-  geom_point(alpha = 0.8) +
-  theme_minimal() +
-  labs(x = "Wing width (mm)",
-       y = "Wing length (mm)")
-```
-
-Talk way more about it. 
 
 ## Predictor variables
-
-Add graphs, tables and text.
-
-Use sub-sub-headings for each outcome variable and feel free to combine a few into one if they go together naturally.
-
-
-
-
-
 
 
 
 # Model
-```{r}
 
-
-```
-
-
-The goal of our modelling strategy is twofold. Firstly,...
-
-Here we briefly describe the Bayesian analysis model used to investigate... Background details and diagnostics are included in [Appendix -@sec-model-details].
-```{r}
-
-# Load necessary libraries
-library(dplyr)
-library(ggplot2)
-library(readr)
-
-# Convert state and methodology to factors
-polling_data$state <- as.factor(polling_data$state)
-polling_data$methodology <- as.factor(polling_data$methodology)
-polling_data$pollster <- as.factor(polling_data$pollster)
-
-
-# Multiple Linear Regression with interaction between state and pollster
-model_interaction <- lm(pct ~ sample_size + state, data = polling_data)
-
-# Summary of the model
-summary(model_interaction)
-
-# Plot predicted vs actual percentages
-ggplot(polling_data, aes(x = predict(model_interaction), y = pct)) +
-  geom_point() +
-  geom_abline(intercept = 0, slope = 1, color = "blue") +
-  labs(title = "Predicted vs Actual Polling Percentages", x = "Predicted", y = "Actual") +
-  theme_minimal()
-
-
-```
 
 
 ```{r}
@@ -164,96 +83,50 @@ base_plot +
   geom_smooth()
 
 ```
+
+
+
 ```{r}
-
 # Facet by pollster
-
 base_plot +
   geom_point() +
   geom_smooth() +
   facet_wrap(vars(pollster))
+```
 
+
+
+```{r}
 # Facet by state
-
 base_plot +
   geom_point() +
   geom_smooth() +
   facet_wrap(vars(state))
-
 ```
 
 
+
+# Results
+
+Our results are summarized in @tbl-modelresults.
+
 ```{r}
-# Color by pollster
-# This gets messy - need to add a filter - see line 21
-base_plot +
-  geom_point(aes(color = pollster)) +
-  geom_smooth() +
-  theme(legend.position = "bottom")
-
-# Facet by pollster
-# Make the line 21 issue obvious
-# Also - is there duplication???? Need to go back and check
-base_plot +
-  geom_point() +
-  geom_smooth() +
-  facet_wrap(vars(pollster))
-
-# Color by pollscore
-base_plot +
-  geom_point(aes(color = factor(pollscore))) +
-  geom_smooth() +
-  theme(legend.position = "bottom")
-
-
-#### Starter models ####
-# Model 1: pct as a function of end_date
-model_date <- lm(pct ~ end_date, data = just_harris_high_quality)
-
-# Model 2: pct as a function of end_date and pollster
-model_date_pollster <- lm(pct ~ end_date + pollster, data = just_harris_high_quality)
-
-# Augment data with model predictions
-just_harris_high_quality <- just_harris_high_quality |>
-  mutate(
-    fitted_date = predict(model_date),
-    fitted_date_pollster = predict(model_date_pollster)
-  )
-
-# Plot model predictions
-# Model 1
-ggplot(just_harris_high_quality, aes(x = end_date)) +
-  geom_point(aes(y = pct), color = "black") +
-  geom_line(aes(y = fitted_date), color = "blue", linetype = "dotted") +
-  theme_classic() +
-  labs(y = "Harris percent", x = "Date", title = "Linear Model: pct ~ end_date")
-
-# Model 2
-ggplot(just_harris_high_quality, aes(x = end_date)) +
-  geom_point(aes(y = pct), color = "black") +
-  geom_line(aes(y = fitted_date_pollster), color = "blue", linetype = "dotted") +
-  facet_wrap(vars(pollster)) +
-  theme_classic() +
-  labs(y = "Harris percent", x = "Date", title = "Linear Model: pct ~ end_date + pollster")
-
-# All of the above would be in scripts - data cleaning scripts and modelling scripts. 
-# This is an example of how you get a results table that you could put into your Quarto doc
-modelsummary(models = list("Model 1" = model_date, "Model 2" = model_date_pollster))
-
-
-#### Bayesian models ####
+#### Bayesian modeling ####
 # Change 'pollster' and 'state' to factor variables
-just_harris_high_quality <- just_harris_high_quality |>
+polling_data <- polling_data |>
   mutate(
     pollster = factor(pollster),
     state = factor(state)
   )
 
-# Model 1
-model_formula_1 <- cbind(num_harris, sample_size - num_harris) ~ (1 | pollster)
+# Check if 'num_DEM' and 'sample_size' exist; if not, create them (adjust based on actual column names)
+# Assuming 'pct_DEM' is the percentage of Democrat votes (adjust if necessary)
+if (!("num_DEM" %in% colnames(polling_data))) {
+  polling_data <- polling_data |> mutate(num_DEM = round(pct_DEM * sample_size / 100))
+}
 
-# Model 2
-model_formula_2 <- cbind(num_harris, sample_size - num_harris) ~ (1 | pollster) + (1 | state)
+# Model 1
+model_formula_1 <- cbind(num_DEM, sample_size - num_DEM) ~ (1 | pollster)
 
 # Specify priors
 priors <- normal(0, 2.5, autoscale = TRUE)
@@ -261,54 +134,29 @@ priors <- normal(0, 2.5, autoscale = TRUE)
 # Fit the models
 bayesian_model_1 <- stan_glmer(
   formula = model_formula_1,
-  data = just_harris_high_quality,
+  data = polling_data,
   family = binomial(link = "logit"),
   prior = priors,
   prior_intercept = priors,
   seed = 123,
-  cores = 4,
-  adapt_delta = 0.95
+  cores = 1,
+  adapt_delta = 0.99  # Increase adapt_delta to avoid divergent transitions
 )
-
-bayesian_model_2 <- stan_glmer(
-  formula = model_formula_2,
-  data = just_harris_high_quality,
-  family = binomial(link = "logit"),
-  prior = priors,
-  prior_intercept = priors,
-  seed = 123,
-  cores = 4,
-  adapt_delta = 0.95
-)
-# Note the warnings here and follow the instructions for dealing with it - come back and fix.
 
 # Posterior predictive checks
 pp_check(bayesian_model_1)
-pp_check(bayesian_model_2)
-
-# Summarize the model
-summary(bayesian_model_1)
-summary(bayesian_model_2)
-
-# Plot random effects
-plot(bayesian_model_1, pars = "(Intercept)", prob = 0.95)
-plot(bayesian_model_2, pars = "(Intercept)", prob = 0.95)
-
-# Model summary works the same as above for Bayesian models.
-
 
 #### Bayesian models and splines ####
 # Change date to be number of days since she declared - it's a counter not a date
-just_harris_high_quality <- just_harris_high_quality |>
+polling_data <- polling_data |>
   mutate(
     end_date_num = as.numeric(end_date - min(end_date))
   )
 
 # Fit Bayesian model with spline and pollster as fixed effect
-# cf bayesian_model_1 and bayesian_model_2 where it's a random effect - note the different interpretations
 spline_model <- stan_glm(
-  pct ~ ns(end_date_num, df = 5) + pollster, # Change df for the number of "bits" - higher numbers - more "wiggly" - but then need to worry about overfitting.
-  data = just_harris_high_quality,
+  pct ~ ns(end_date, df = 5) + pollster,  # Change df for the number of "bits"
+  data = polling_data,
   family = gaussian(),
   prior = normal(0, 5),
   prior_intercept = normal(50, 10),
@@ -318,21 +166,17 @@ spline_model <- stan_glm(
   refresh = 0
 )
 
-# Summarize the model
-summary(spline_model)
-
 # Posterior predictive checks
 pp_check(spline_model)
 
 # Predict and plot
-# Create new data for prediction
 new_data <- data.frame(
-  end_date_num = seq(
-    min(just_harris_high_quality$end_date_num),
-    max(just_harris_high_quality$end_date_num),
+  end_date = seq(
+    min(polling_data$end_date),
+    max(polling_data$end_date),
     length.out = 100
   ),
-  pollster = factor("YouGov", levels = levels(just_harris_high_quality$pollster))
+  pollster = factor("YouGov", levels = levels(polling_data$pollster))
 )
 
 # Predict posterior draws
@@ -347,17 +191,17 @@ pred_summary <- new_data |>
   )
 
 # Plot the spline fit
-ggplot(just_harris_high_quality, aes(x = end_date_num, y = pct, color = pollster)) +
+ggplot(polling_data, aes(x = end_date, y = pct, color = pollster)) +
   geom_point() +
   geom_line(
     data = pred_summary,
-    aes(x = end_date_num, y = pred_mean),
+    aes(x = end_date, y = pred_mean),
     color = "blue",
     inherit.aes = FALSE
   ) +
   geom_ribbon(
     data = pred_summary,
-    aes(x = end_date_num, ymin = pred_lower, ymax = pred_upper),
+    aes(x = end_date, ymin = pred_lower, ymax = pred_upper),
     alpha = 0.2,
     inherit.aes = FALSE
   ) +
@@ -367,68 +211,107 @@ ggplot(just_harris_high_quality, aes(x = end_date_num, y = pct, color = pollster
     title = "Poll Percentage over Time with Spline Fit"
   ) +
   theme_minimal()
-
-```
-
-
-
-## Model set-up
-
-Define $y_i$ as the number of seconds that the plane remained aloft. Then $\beta_i$ is the wing width and $\gamma_i$ is the wing length, both measured in millimeters.  
-
-\begin{align} 
-y_i|\mu_i, \sigma &\sim \mbox{Normal}(\mu_i, \sigma) \\
-\mu_i &= \alpha + \beta_i + \gamma_i\\
-\alpha &\sim \mbox{Normal}(0, 2.5) \\
-\beta &\sim \mbox{Normal}(0, 2.5) \\
-\gamma &\sim \mbox{Normal}(0, 2.5) \\
-\sigma &\sim \mbox{Exponential}(1)
-\end{align}
-
-We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
-
-
-### Model justification
-
-We expect a positive relationship between the size of the wings and time spent aloft. In particular...
-
-We can use maths by including latex between dollar signs, for instance $\theta$.
-
-
-# Results
-
-Our results are summarized in @tbl-modelresults.
-
-```{r}
-#| echo: false
-#| eval: true
-#| warning: false
-#| message: false
-
-library(rstanarm)
-
-first_model <-
-  readRDS(file = here::here("models/first_model.rds"))
 ```
 
 ```{r}
-#| echo: false
-#| eval: true
-#| label: tbl-modelresults
-#| tbl-cap: "Explanatory models of flight time based on wing width and wing length"
-#| warning: false
+#### Bayesian modeling ####
+# Change 'pollster' and 'state' to factor variables
+polling_data_2 <- polling_data |>
+  mutate(
+    pollster = factor(pollster),
+    state = factor(state)  # State as a factor variable
+  )
 
-modelsummary::modelsummary(
-  list(
-    "First model" = first_model
-  ),
-  statistic = "mad",
-  fmt = 2
+# Check if 'num_DEM' and 'sample_size' exist; if not, create them (adjust based on actual column names)
+# Assuming 'pct_DEM' is the percentage of Democrat votes (adjust if necessary)
+if (!("num_DEM" %in% colnames(polling_data))) {
+  polling_data_2 <- polling_data_2 |> mutate(num_DEM = round(pct_DEM * sample_size / 100))
+}
+
+# Model 1: Random effect for state instead of pollster
+model_formula_2 <- cbind(num_DEM, sample_size - num_DEM) ~ (1 | state)
+
+# Specify priors
+priors <- normal(0, 2.5, autoscale = TRUE)
+
+# Fit the model with random effect for state
+bayesian_model_2 <- stan_glmer(
+  formula = model_formula_1,
+  data = polling_data,
+  family = binomial(link = "logit"),
+  prior = priors,
+  prior_intercept = priors,
+  seed = 123,
+  cores = 1,
+  adapt_delta = 0.99  # Increase adapt_delta to avoid divergent transitions
 )
+
+# Posterior predictive checks
+pp_check(bayesian_model_2)
+
+#### Bayesian models and splines ####
+# Change date to be number of days since she declared - it's a counter not a date
+polling_data_2 <- polling_data_2 |>
+  mutate(
+    end_date_num = as.numeric(end_date - min(end_date))
+  )
+
+# Fit Bayesian model with spline and random effect for state
+spline_model_2 <- stan_glm(
+  pct ~ ns(end_date, df = 5) + state,  # State as random effect
+  data = polling_data_2,
+  family = gaussian(),
+  prior = normal(0, 5),
+  prior_intercept = normal(50, 10),
+  seed = 1234,
+  iter = 2000,
+  chains = 4,
+  refresh = 0
+)
+
+# Posterior predictive checks
+pp_check(spline_model_2)
+
+# Predict and plot
+new_data_2 <- data.frame(
+  end_date = seq(
+    min(polling_data$end_date),
+    max(polling_data$end_date),
+    length.out = 100
+  ),
+  state = factor("California", levels = levels(polling_data$state))  # Example state
+)
+
+# Summarize predictions
+pred_summary_2 <- new_data_2 |>
+  mutate(
+    pred_mean = colMeans(posterior_preds),
+    pred_lower = apply(posterior_preds, 2, quantile, probs = 0.025),
+    pred_upper = apply(posterior_preds, 2, quantile, probs = 0.975)
+  )
+
+# Plot the spline fit
+ggplot(polling_data_2, aes(x = end_date, y = pct, color = state)) +
+  geom_point() +
+  geom_line(
+    data = pred_summary_2,
+    aes(x = end_date, y = pred_mean),
+    color = "blue",
+    inherit.aes = FALSE
+  ) +
+  geom_ribbon(
+    data = pred_summary_2,
+    aes(x = end_date, ymin = pred_lower, ymax = pred_upper),
+    alpha = 0.2,
+    inherit.aes = FALSE
+  ) +
+  labs(
+    x = "Days since earliest poll",
+    y = "Percentage",
+    title = "Poll Percentage over Time with Spline Fit"
+  ) +
+  theme_minimal()
 ```
-
-
-
 
 # Discussion
 
@@ -441,6 +324,8 @@ If my paper were 10 pages, then should be be at least 2.5 pages. The discussion 
 Please don't use these as sub-heading labels - change them to be what your point actually is.
 
 ## Third discussion point
+
+
 
 ## Weaknesses and next steps
 
@@ -457,18 +342,12 @@ Weaknesses and next steps should also be included.
 1. Overview of YouGov
 YouGov is a widely recognized international polling firm known for its political forecasting, especially through its "poll-of-polls" methodology, which aggregates results from numerous individual surveys. YouGov primarily utilizes online panel polling, offering timely and cost-effective results, especially for U.S. presidential elections. Below is a detailed exploration of YouGov's polling methodology.
 
-
 2. Population, Frame, and Sample
-
 Population: YouGov’s target population consists of U.S. likely voters, defined by their eligibility and likelihood to vote, assessed through past voting behavior, voter registration, and expressed intent.
-
 Frame: The sampling frame is YouGov’s online panel, which includes millions of U.S. residents recruited through various methods. The panel is stratified and weighted to represent key demographics such as age, gender, race, education, and region.
-
 Sample: YouGov uses non-probability sampling from its panel, adjusting for biases using sophisticated weighting to reflect the U.S. electorate's composition.
 
-
 3. Sample Recruitment
-
 YouGov recruits panelists through:
 Targeted online ads: Ads across websites and social media attract diverse participants.
 Affiliate marketing: Collaborations with other websites help reach a broad audience.
@@ -486,7 +365,6 @@ Targeting: Specific groups, such as likely voters, can be efficiently targeted.
 Disadvantages:
 Non-probability sample: Not all individuals have an equal chance of being selected, risking bias.
 Internet access bias: Those without internet access may be underrepresented, skewing results, particularly for older or lower-income demographics.
-
 
 5. Handling Non-response
 To combat non-response, YouGov:
@@ -508,7 +386,6 @@ Exclusion of offline participants: Individuals without internet access are exclu
 
 7. Conclusion
 YouGov’s online panel approach offers cost efficiency, speed, and adaptability, making it suitable for political forecasting. While its methodology effectively mitigates some biases through stratification and weighting, limitations like non-response bias, self-selection, and internet access gaps must be acknowledged. Despite these challenges, YouGov remains a leading firm in modern political forecasting.
-
 
 # Appendix B: Idealized Methodology and Survey
 1. Overview
@@ -565,11 +442,6 @@ Pilot testing: Before full deployment, the survey will be tested on a small samp
 
 Form link: https://forms.gle/epk9ptyVxZpVRVLq9
 
-
-
 \newpage
 
-
 # References
-
-

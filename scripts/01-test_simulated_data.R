@@ -9,6 +9,8 @@
 
 
 #### Workspace setup ####
+library(tidyverse)
+library(dplyr)
 library(readr)
 
 # Load the simulated data
@@ -87,6 +89,3 @@ negative_sample_size_test <- function(data) {
 
 # Run Test 5
 negative_sample_size_test(simulated_data)
-
-
-
