@@ -1,52 +1,55 @@
 #### Preamble ####
-# Purpose: Simulates a dataset of Australian electoral divisions, including the 
-  #state and party that won each division.
-# Author: Rohan Alexander
-# Date: 26 September 2024
-# Contact: rohan.alexander@utoronto.ca
-# License: MIT
-# Pre-requisites: The `tidyverse` package must be installed
-# Any other information needed? Make sure you are in the `starter_folder` rproj
+# Purpose: Simulates a dataset to understand expected outcomes and potential errors in analysis
+# Author: Mandy He and Wendy Yuan
+# Date: 18 October 2024 
+# Contact: Mandyxy.he@mail.utoronto.ca and w.yuan@mail.utoronto.ca
+# License: N/A
+# Pre-requisites: N/A
 
 
 #### Workspace setup ####
+# Load necessary libraries
+
 library(tidyverse)
+library(dplyr)       # For data manipulation
+library(ggplot2)     # For visualization
+library(broom)       # For tidying model output
 set.seed(853)
 
+# Load the dataset
+data <- read.csv("data/02-analysis_data/analysis_data.csv")
 
-#### Simulate data ####
-# State names
-states <- c(
-  "New South Wales",
-  "Victoria",
-  "Queensland",
-  "South Australia",
-  "Western Australia",
-  "Tasmania",
-  "Northern Territory",
-  "Australian Capital Territory"
-)
+# Data Cleaning and Preparation
+# Filter out only Democrats and Republicans for simplicity
+data <- data %>% 
+  filter(party %in% c("DEM", "REP"))
 
-# Political parties
-parties <- c("Labor", "Liberal", "Greens", "National", "Other")
+# Create a binary variable for the outcome where 1 = Democrat, 0 = Republican
+data <- data %>%
+  mutate(outcome = ifelse(party == "DEM", 1, 0))
 
-# Create a dataset by randomly assigning states and parties to divisions
-analysis_data <- tibble(
-  division = paste("Division", 1:151),  # Add "Division" to make it a character
-  state = sample(
-    states,
-    size = 151,
-    replace = TRUE,
-    prob = c(0.25, 0.25, 0.15, 0.1, 0.1, 0.1, 0.025, 0.025) # Rough state population distribution
-  ),
-  party = sample(
-    parties,
-    size = 151,
-    replace = TRUE,
-    prob = c(0.40, 0.40, 0.05, 0.1, 0.05) # Rough party distribution
-  )
-)
+# Prepare data for logistic regression
+# We will use the percentage (pct) and sample size as predictors for the outcome (DEM win or not)
+# Ensure the necessary columns are numeric
+data$pct <- as.numeric(data$pct)
+data$sample_size <- as.numeric(data$sample_size)
+
+# Fit a logistic regression model
+# This model predicts the outcome based on polling percentages and sample size
+model <- glm(outcome ~ pct + sample_size, data = data, family = binomial())
+
+# Summarize the model
+summary(model)
+
+# Simulate Predictions
+# Predict probabilities for each row
+data$predicted_prob <- predict(model, type = "response")
+
+# Generate winner prediction (1 if probability > 0.5, else 0)
+data$predicted_winner <- ifelse(data$predicted_prob > 0.5, "DEM", "REP")
 
 
+
+# Save the updated dataset with predictions
 #### Save data ####
-write_csv(analysis_data, "data/00-simulated_data/simulated_data.csv")
+write_csv(data, "data/00-simulated_data/simulated_data.csv")
