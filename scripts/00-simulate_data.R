@@ -8,48 +8,45 @@
 
 
 #### Workspace setup ####
-# Load necessary libraries
+# Load necessary library
+library(dplyr)
 
-library(tidyverse)
-library(dplyr)       # For data manipulation
-library(ggplot2)     # For visualization
-library(broom)       # For tidying model output
-set.seed(853)
+# Set seed for reproducibility
+set.seed(12345)
 
-# Load the dataset
-data <- read.csv("data/02-analysis_data/analysis_data.csv")
+# Define parameters for the simulation
+states <- c("Arizona", "Wisconsin", "Michigan", "Georgia", "Pennsylvania", "Florida", "Ohio", "North Carolina")
+pollsters <- c("YouGov")
+methodologies <- c("Online Panel")
+candidates <- c("Donald Trump", "Joe Biden", "Kamala Harris")
+parties <- c("DEM", "REP")
 
-# Data Cleaning and Preparation
-# Filter out only Democrats and Republicans for simplicity
-data <- data %>% 
-  filter(party %in% c("DEM", "REP"))
+# Number of simulated polls
+n_polls <- 100
 
-# Create a binary variable for the outcome where 1 = Democrat, 0 = Republican
-data <- data %>%
-  mutate(outcome = ifelse(party == "DEM", 1, 0))
+# Simulate data
+simulated_data <- data.frame(
+  state = sample(states, n_polls, replace = TRUE),
+  pollster = sample(pollsters, n_polls, replace = TRUE),
+  start_date = sample(seq(as.Date('2024-09-01'), as.Date('2024-10-15'), by="day"), n_polls, replace = TRUE),
+  end_date = sample(seq(as.Date('2024-09-10'), as.Date('2024-10-20'), by="day"), n_polls, replace = TRUE),
+  sample_size = sample(500:2000, n_polls, replace = TRUE),
+  population = rep("lv", n_polls),
+  candidate_name = sample(candidates, n_polls, replace = TRUE),
+  pct = round(runif(n_polls, 40, 55), 1),  # Random polling percentages between 40% and 55%
+  party = ifelse(sample(candidates, n_polls, replace = TRUE) == "Kamala Harris" | 
+                   sample(candidates, n_polls, replace = TRUE) == "Joe Biden", "DEM", "REP"),
+  methodology = sample(methodologies, n_polls, replace = TRUE)
+)
 
-# Prepare data for logistic regression
-# We will use the percentage (pct) and sample size as predictors for the outcome (DEM win or not)
-# Ensure the necessary columns are numeric
-data$pct <- as.numeric(data$pct)
-data$sample_size <- as.numeric(data$sample_size)
-
-# Fit a logistic regression model
-# This model predicts the outcome based on polling percentages and sample size
-model <- glm(outcome ~ pct + sample_size, data = data, family = binomial())
-
-# Summarize the model
-summary(model)
-
-# Simulate Predictions
-# Predict probabilities for each row
-data$predicted_prob <- predict(model, type = "response")
-
-# Generate winner prediction (1 if probability > 0.5, else 0)
-data$predicted_winner <- ifelse(data$predicted_prob > 0.5, "DEM", "REP")
-
+# Simulate outcome based on polling percentages (randomly assign winner based on poll data)
+simulated_data <- simulated_data %>%
+  group_by(state, pollster) %>%
+  mutate(outcome = ifelse(pct > 50, 1, 0),  # Assume if pct > 50, the candidate "wins"
+         predicted_prob = pct / 100,        # Simulate a probability based on pct
+         predicted_winner = ifelse(predicted_prob >= 0.5, "DEM", "REP"))
 
 
 # Save the updated dataset with predictions
 #### Save data ####
-write_csv(data, "data/00-simulated_data/simulated_data.csv")
+write_csv(simulated_data, "data/00-simulated_data/simulated_data.csv")

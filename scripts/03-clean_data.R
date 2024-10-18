@@ -32,6 +32,8 @@ cleaned_data <- raw_data |>
 cleaned_data <- cleaned_data |>
   filter(candidate_name %in% c("Kamala Harris", "Donald Trump", "Joe Biden"))
   
+cleaned_data <- cleaned_data |>
+  filter(pollster == "YouGov")
 
 #### Save data ####
 

@@ -117,9 +117,9 @@ candidate_list_test <- function(data) {
   all_valid_candidates <- all(data$candidate_name %in% valid_candidates)
   
   if (all_valid_candidates) {
-    print("Test Passed: All candidate names are either Donald Trump, Joe Biden, or Kamala Harris.")
+    print("Test 7 Passed: All candidate names are either Donald Trump, Joe Biden, or Kamala Harris.")
   } else {
-    print("Test Failed: Some candidate names are not in the expected list.")
+    print("Test 7 Failed: Some candidate names are not in the expected list.")
     
     # Print the rows where the candidate name is not in the valid list
     invalid_candidates <- data[!data$candidate_name %in% valid_candidates, ]

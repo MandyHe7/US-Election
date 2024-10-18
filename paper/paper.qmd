@@ -196,58 +196,118 @@ Weaknesses and next steps should also be included.
 
 # Appendix {-}
 
+# Appendix A: YouGov Pollster Methodology and Evaluation
 
-# Additional data details
+1. Overview of YouGov
+YouGov is a widely recognized international polling firm known for its political forecasting, especially through its "poll-of-polls" methodology, which aggregates results from numerous individual surveys. YouGov primarily utilizes online panel polling, offering timely and cost-effective results, especially for U.S. presidential elections. Below is a detailed exploration of YouGov's polling methodology.
 
-# Model details {#sec-model-details}
 
-## Posterior predictive check
+2. Population, Frame, and Sample
 
-In @fig-ppcheckandposteriorvsprior-1 we implement a posterior predictive check. This shows...
+Population: YouGov’s target population consists of U.S. likely voters, defined by their eligibility and likelihood to vote, assessed through past voting behavior, voter registration, and expressed intent.
 
-In @fig-ppcheckandposteriorvsprior-2 we compare the posterior with the prior. This shows... 
+Frame: The sampling frame is YouGov’s online panel, which includes millions of U.S. residents recruited through various methods. The panel is stratified and weighted to represent key demographics such as age, gender, race, education, and region.
 
-```{r}
-#| eval: true
-#| echo: false
-#| message: false
-#| warning: false
-#| label: fig-ppcheckandposteriorvsprior
-#| layout-ncol: 2
-#| fig-cap: "Examining how the model fits, and is affected by, the data"
-#| fig-subcap: ["Posterior prediction check", "Comparing the posterior with the prior"]
+Sample: YouGov uses non-probability sampling from its panel, adjusting for biases using sophisticated weighting to reflect the U.S. electorate's composition.
 
-pp_check(first_model) +
-  theme_classic() +
-  theme(legend.position = "bottom")
 
-posterior_vs_prior(first_model) +
-  theme_minimal() +
-  scale_color_brewer(palette = "Set1") +
-  theme(legend.position = "bottom") +
-  coord_flip()
-```
+3. Sample Recruitment
 
-## Diagnostics
+YouGov recruits panelists through:
+Targeted online ads: Ads across websites and social media attract diverse participants.
+Affiliate marketing: Collaborations with other websites help reach a broad audience.
+Incentives: Respondents earn points for surveys, increasing participation and retention.
+However, because respondents voluntarily join the panel, there is potential for self-selection bias, as certain demographics may be more likely to participate.
 
-@fig-stanareyouokay-1 is a trace plot. It shows... This suggests...
+4. Sampling Approach and Trade-offs
+YouGov applies stratified sampling, setting quotas for demographics such as age, gender, race, education, and region. After data collection, post-stratification weighting adjusts for imbalances between the sample and the population.
 
-@fig-stanareyouokay-2 is a Rhat plot. It shows... This suggests...
+Advantages:
+Cost-effectiveness: Online panels are cheaper than traditional phone surveys.
+Speed: Surveys are completed quickly online.
+Targeting: Specific groups, such as likely voters, can be efficiently targeted.
 
-```{r}
-#| echo: false
-#| eval: true
-#| message: false
-#| warning: false
-#| label: fig-stanareyouokay
-#| fig-cap: "Checking the convergence of the MCMC algorithm"
-#| fig-subcap: ["Trace plot", "Rhat plot"]
-#| layout-ncol: 2
+Disadvantages:
+Non-probability sample: Not all individuals have an equal chance of being selected, risking bias.
+Internet access bias: Those without internet access may be underrepresented, skewing results, particularly for older or lower-income demographics.
 
-plot(first_model, "trace")
 
-plot(first_model, "rhat")
-```
+5. Handling Non-response
+To combat non-response, YouGov:
+Incentivizes participation with rewards to increase survey completion.
+Sends follow-ups for longer surveys, reminding respondents to complete them.
+Applies weighting to adjust for differential non-response (e.g., giving more weight to younger voters if they are underrepresented).
+Despite these efforts, some non-response bias may persist, as those opting out may differ systematically from respondents (e.g., lower political engagement).
+
+6. Questionnaire Design: Strengths and Weaknesses
+Strengths:
+Clarity: Questions are designed for consistency in interpretation.
+Pre-testing: Surveys are often tested with smaller groups to refine clarity and accuracy.
+Flexibility: Questions are adapted to political events, maintaining relevance.
+
+Weaknesses:
+Limited depth: Online surveys favor simpler, multiple-choice questions, limiting nuanced responses.
+Response fatigue: Frequent survey participation may cause rushed or less thoughtful responses.
+Exclusion of offline participants: Individuals without internet access are excluded, impacting representativeness, particularly in underserved demographics.
+
+7. Conclusion
+YouGov’s online panel approach offers cost efficiency, speed, and adaptability, making it suitable for political forecasting. While its methodology effectively mitigates some biases through stratification and weighting, limitations like non-response bias, self-selection, and internet access gaps must be acknowledged. Despite these challenges, YouGov remains a leading firm in modern political forecasting.
+
+
+# Appendix B: Idealized Methodology and Survey
+1. Overview
+With a $100K budget, the objective of this survey is to forecast the outcome of the upcoming U.S. presidential election using a robust sampling strategy, respondent recruitment process, and careful poll aggregation techniques. This methodology is designed to minimize bias and ensure a representative sample that accurately reflects the voting population.
+
+2. Sampling Approach
+The goal of the survey is to represent the U.S. electorate. To achieve this, the sampling strategy should include a multi-stage stratified random sampling approach. The following demographic groups should be stratified to ensure diversity:
+Age: Ensure a balanced representation across different age groups (e.g., 18-29, 30-44, 45-64, 65+).
+Gender: Include a balanced proportion of male and female respondents, and allow space for non-binary respondents.
+Race/Ethnicity: Ensure representation of major racial and ethnic groups, including White, Black, Hispanic/Latino, Asian, and other minorities.
+Education: Include respondents with various educational backgrounds (no high school, high school graduate, college graduate, post-graduate education).
+Region: Sample respondents from different geographic regions (Northeast, Midwest, South, West) to capture regional variations in voting behavior.
+Sample Size
+Given the budget constraints and the need for statistical reliability, the survey would target a sample size of 5,000 respondents, which allows for meaningful subgroup analysis while keeping costs manageable. This should provide a margin of error around ±1.5% at a 95% confidence level.
+
+3. Recruitment of Respondents
+To recruit a diverse and representative sample, the following methods will be used:
+Online recruitment via targeted ads: Similar to YouGov, targeted ads on social media platforms (e.g., Facebook, Instagram, YouTube) and websites can be used to attract a broad range of respondents. Ads will be tailored to reach different demographic groups based on age, region, and other factors.
+Email outreach to existing voter databases: Leveraging voter registration lists and databases (where legally permissible) will allow for targeted invitations to participate in the survey.
+Incentives: Offering incentives, such as entry into a lottery or digital rewards, will increase the participation rate and reduce non-response bias.
+Given the budget, $80,000 will be allocated for recruitment efforts and respondent compensation, including targeted online ads and incentives for participants.
+
+4. Data Validation
+To ensure the data's accuracy and reduce the risk of fraudulent responses or duplicate submissions, the following measures will be implemented:
+Captcha verification: This will prevent bots from filling out the survey.
+Email and phone verification: Respondents will be required to verify their email or phone number to ensure that each respondent is unique.
+Cross-verification with voter rolls: For respondents who voluntarily provide voter registration details, cross-checking with public voter rolls can validate their voting eligibility.
+Time tracking and completion rate monitoring: To detect inattentive or rushed responses, the time spent on each question will be tracked, and surveys completed unusually quickly will be flagged for further review.
+
+5. Poll Aggregation
+To provide a more robust forecast, this survey will be integrated into a broader poll-of-polls approach, aggregating data from multiple sources, including:
+Public polling data: In addition to this survey, data from other reputable pollsters (like YouGov, Ipsos, etc.) will be aggregated.
+Weighting and adjusting: Each poll's results will be weighted based on its sample size, methodological rigor, and recency. Larger, more recent, and methodologically sound polls will have a greater influence on the final aggregated forecast.
+Adjustments for known biases: If a particular demographic is underrepresented (e.g., younger voters, rural voters), post-stratification weighting will be applied to ensure the aggregate data reflects the overall voting population.
+
+6. Budget Breakdown
+Recruitment (online ads and outreach): $60,000
+Incentives for respondents: $20,000
+Survey development and data validation: $10,000
+Poll aggregation and analysis tools: $10,000
+
+7. Survey Implementation
+To demonstrate the methodology, a Google Forms survey will be developed and deployed. The survey will be structured as follows:
+Introduction: A brief explanation of the survey’s purpose, ensuring that respondents understand its relevance and importance.
+Demographic questions: These questions will collect essential data on the respondents’ age, gender, race/ethnicity, education, and region.
+Political questions: The core section will ask about voting intent, candidate preference, party affiliation, and important political issues. These questions will be designed to minimize bias and allow for nuanced responses (e.g., Likert scales, multiple-choice options).
+Verification and consent: Respondents will be asked to verify their information and give consent for data use.
+A link to the Google Forms survey will be included in the appendix, alongside a downloadable copy of the survey questions for transparency.
+
+8. Survey Design Considerations
+Question clarity and neutrality: The questions will be carefully worded to avoid leading responses or introducing bias.
+Ordering of questions: Demographic questions will be asked first to set a neutral tone before moving into political questions.
+Pilot testing: Before full deployment, the survey will be tested on a small sample to ensure clarity and to refine any confusing questions.
+
+Form link: https://forms.gle/epk9ptyVxZpVRVLq9
 
 
 

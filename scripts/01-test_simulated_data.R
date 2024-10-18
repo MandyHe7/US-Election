@@ -1,89 +1,102 @@
 #### Preamble ####
-# Purpose: Tests the structure and validity of the simulated Australian 
+# Purpose: Tests the structure and validity of the simulated US election clean data 
   #electoral divisions dataset.
-# Author: Rohan Alexander
-# Date: 26 September 2024
-# Contact: rohan.alexander@utoronto.ca
-# License: MIT
-# Pre-requisites: 
-  # - The `tidyverse` package must be installed and loaded
-  # - 00-simulate_data.R must have been run
-# Any other information needed? Make sure you are in the `starter_folder` rproj
+# Author: Mandy He and Wendy Yuan
+# Date: 18 October 2024 
+# Contact: Mandyxy.he@mail.utoronto.ca and w.yuan@mail.utoronto.ca
+# License: N/A
+# Pre-requisites: N/A
 
 
 #### Workspace setup ####
-library(tidyverse)
+library(readr)
 
-analysis_data <- read_csv("data/00-simulated_data/simulated_data.csv")
+# Load the simulated data
+simulated_data <- read_csv("data/00-simulated_data/simulated_data.csv")
 
-# Test if the data was successfully loaded
-if (exists("analysis_data")) {
-  message("Test Passed: The dataset was successfully loaded.")
-} else {
-  stop("Test Failed: The dataset could not be loaded.")
+# 1. Test for Missing Values
+missing_data_test <- function(data) {
+  has_missing <- any(is.na(data[c("candidate_name", "pct", "sample_size", "party", "methodology", "predicted_prob", "predicted_winner")]))
+  
+  if (!has_missing) {
+    print("Test 1 Passed: No missing values in critical columns.")
+  } else {
+    print("Test 1 Failed: Some missing values found in critical columns.")
+  }
 }
 
-
-#### Test data ####
-
-# Check if the dataset has 151 rows
-if (nrow(analysis_data) == 151) {
-  message("Test Passed: The dataset has 151 rows.")
-} else {
-  stop("Test Failed: The dataset does not have 151 rows.")
+# 2. Test for Polling Percentages Between 0 and 100
+polling_percentage_test <- function(data) {
+  valid_pct <- all(data$pct >= 0 & data$pct <= 100)
+  
+  if (valid_pct) {
+    print("Test 2 Passed: All polling percentages are between 0 and 100.")
+  } else {
+    print("Test 2 Failed: Some polling percentages are outside the range 0-100.")
+  }
 }
 
-# Check if the dataset has 3 columns
-if (ncol(analysis_data) == 3) {
-  message("Test Passed: The dataset has 3 columns.")
-} else {
-  stop("Test Failed: The dataset does not have 3 columns.")
+# 3. Test for Candidate Names
+candidate_list_test <- function(data) {
+  valid_candidates <- c("Donald Trump", "Joe Biden", "Kamala Harris")
+  all_valid_candidates <- all(data$candidate_name %in% valid_candidates)
+  
+  if (all_valid_candidates) {
+    print("Test 3 Passed: All candidate names are Donald Trump, Joe Biden, or Kamala Harris.")
+  } else {
+    print("Test 3 Failed: Some candidate names are not in the expected list.")
+    
+    invalid_candidates <- unique(data$candidate_name[!data$candidate_name %in% valid_candidates])
+    print("Invalid candidate names found:")
+    print(invalid_candidates)
+  }
 }
 
-# Check if all values in the 'division' column are unique
-if (n_distinct(analysis_data$division) == nrow(analysis_data)) {
-  message("Test Passed: All values in 'division' are unique.")
-} else {
-  stop("Test Failed: The 'division' column contains duplicate values.")
+# 4. Test for Reasonable Sample Size (>100)
+sample_size_test <- function(data, min_sample_size = 100) {
+  valid_sample_size <- all(data$sample_size > min_sample_size)
+  
+  if (valid_sample_size) {
+    print("Test 4 Passed: All sample sizes are above the minimum threshold.")
+  } else {
+    print("Test 4 Failed: Some sample sizes are below the minimum threshold.")
+  }
 }
 
-# Check if the 'state' column contains only valid Australian state names
-valid_states <- c("New South Wales", "Victoria", "Queensland", "South Australia", 
-                  "Western Australia", "Tasmania", "Northern Territory", 
-                  "Australian Capital Territory")
-
-if (all(analysis_data$state %in% valid_states)) {
-  message("Test Passed: The 'state' column contains only valid Australian state names.")
-} else {
-  stop("Test Failed: The 'state' column contains invalid state names.")
+# 5. Test for Outcome Consistency
+outcome_consistency_test <- function(data) {
+  consistent_outcome <- all(
+    (data$predicted_prob >= 0.5 & data$predicted_winner == "DEM") |
+      (data$predicted_prob < 0.5 & data$predicted_winner == "REP")
+  )
+  
+  if (consistent_outcome) {
+    print("Test 5 Passed: Predicted winners are consistent with predicted probabilities.")
+  } else {
+    print("Test 5 Failed: Some predicted winners are inconsistent with predicted probabilities.")
+  }
 }
 
-# Check if the 'party' column contains only valid party names
-valid_parties <- c("Labor", "Liberal", "Greens", "National", "Other")
-
-if (all(analysis_data$party %in% valid_parties)) {
-  message("Test Passed: The 'party' column contains only valid party names.")
-} else {
-  stop("Test Failed: The 'party' column contains invalid party names.")
+# 6. Test for Valid Party Labels
+party_test <- function(data) {
+  valid_parties <- c("DEM", "REP")
+  all_valid_parties <- all(data$party %in% valid_parties)
+  
+  if (all_valid_parties) {
+    print("Test 6 Passed: All party labels are valid.")
+  } else {
+    print("Test 6 Failed: Some party labels are invalid.")
+    
+    invalid_parties <- unique(data$party[!data$party %in% valid_parties])
+    print("Invalid party labels found:")
+    print(invalid_parties)
+  }
 }
 
-# Check if there are any missing values in the dataset
-if (all(!is.na(analysis_data))) {
-  message("Test Passed: The dataset contains no missing values.")
-} else {
-  stop("Test Failed: The dataset contains missing values.")
-}
-
-# Check if there are no empty strings in 'division', 'state', and 'party' columns
-if (all(analysis_data$division != "" & analysis_data$state != "" & analysis_data$party != "")) {
-  message("Test Passed: There are no empty strings in 'division', 'state', or 'party'.")
-} else {
-  stop("Test Failed: There are empty strings in one or more columns.")
-}
-
-# Check if the 'party' column has at least two unique values
-if (n_distinct(analysis_data$party) >= 2) {
-  message("Test Passed: The 'party' column contains at least two unique values.")
-} else {
-  stop("Test Failed: The 'party' column contains less than two unique values.")
-}
+# Run the tests
+missing_data_test(simulated_data)
+polling_percentage_test(simulated_data)
+candidate_list_test(simulated_data)
+sample_size_test(simulated_data)
+outcome_consistency_test(simulated_data)
+party_test(simulated_data)
