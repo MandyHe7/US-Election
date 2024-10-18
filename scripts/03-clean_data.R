@@ -9,32 +9,27 @@
 #### Workspace setup ####
 library(tidyverse)
 library(dplyr)
-library(lubridate)
 
 #### Clean data ####
 raw_data <- read_csv("data/01-raw_data/raw_data.csv")
 
 
-# Clean the data
-cleaned_data <- raw_data |>
-  # Select relevant columns
-  select(state, pollster, start_date, end_date, sample_size, population, candidate_name, pct, party, methodology) |>
-  drop_na(state, pollster, start_date, end_date, sample_size, population, candidate_name, pct, party, methodology)|>
-  # Convert start_date to Date format
+# Filter data to DEM estimates based on high-quality polls after DEM declared
+just_DEM_high_quality <- raw_data |>
+  filter(
+    party == "DEM",
+    numeric_grade >= 3 
+  ) |>
   mutate(
-    start_date = case_when(
-      grepl("^[0-9]{4}-[0-9]{2}-[0-9]{2}$", start_date) ~ as.Date(start_date),  # YYYY-MM-DD
-      grepl("^[0-9]{1,2}/[0-9]{1,2}/[0-9]{2}$", start_date) ~ as.Date(start_date, format = "%m/%d/%y"),  # MM/DD/YY
-      TRUE ~ NA_Date_  # Set to NA for any unrecognized format
-    )
-  )
-
-cleaned_data <- cleaned_data |>
-  filter(candidate_name %in% c("Kamala Harris", "Donald Trump", "Joe Biden"))
-  
-cleaned_data <- cleaned_data |>
-  filter(pollster == "YouGov")
+    state = if_else(is.na(state), "National", state), # Hacky fix for national polls - come back and check
+    end_date = mdy(end_date),
+    start_date = mdy(start_date)
+  ) |>
+  mutate(
+    num_DEM = round((pct / 100) * sample_size, 0) # Need number not percent for some models
+  ) |>
+  select(pollster, numeric_grade, pollscore, methodology, state, start_date, end_date, sample_size, party, answer, pct) |>
+  drop_na(pollster, numeric_grade, pollscore, methodology, state, start_date, end_date, sample_size, party, answer, pct)
 
 #### Save data ####
-
-write_csv(cleaned_data, "data/02-analysis_data/analysis_data.csv")
+write_csv(just_DEM_high_quality, "data/02-analysis_data/analysis_data.csv")
