@@ -1,4 +1,4 @@
-# Starter folder
+# Modeling 2024 U.S. Presidential Polling Trends
 
 ## Overview
 
