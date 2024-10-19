@@ -1,14 +1,15 @@
 ---
-title: "My title"
-subtitle: "My subtitle if needed"
+title: "Modeling 2024 U.S. Presidential Polling Trends"
+subtitle: "Biden’s Steady Support and Harris’s Fluctuations Across Time, Pollsters, and Regions"
 author: 
   - Mandy He
   - Wendy Yuan
 thanks: "Code and data are available at: https://github.com/MandyHe7/US-Election.git."
 date: November 5, 2024
 date-format: long
-abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+abstract: "This paper looks at polling data from the 2024 U.S. Presidential election to see how candidate support changes and what factors affect polling results. We found that Biden’s support stayed steady, while Harris’s numbers fluctuated more, with differences across time, pollsters, and regions. These findings show that polling methods and location are important in predicting election results. Understanding these trends helps give a clearer view of public opinion before the election, leading to more accurate predictions."
 format: pdf
+toc: true
 number-sections: true
 bibliography: references.bib
 ---
@@ -35,41 +36,72 @@ polling_data <- read_csv(here::here("data/02-analysis_data/analysis_data.csv"))
 
 # Introduction
 
-Overview paragraph
+The 2024 U.S. Presidential election is a major event in American politics, with polling data playing a vital role in shaping public opinion and campaign strategies. Polls are used to measure public sentiment and predict election outcomes, but the reliability of these predictions depends on factors such as polling methodology and geographic focus. Although there is a large amount of polling data available, understanding how these factors affect the accuracy of predictions remains a challenge.
 
-Estimand paragraph
+This paper estimates trends in polling support over time and analyzes the factors that contribute to variations in candidate support. We use data from FiveThirtyEight’s U.S. Presidential election polls, collected from pollsters such as YouGov and Siena/NYT. The analysis models polling percentages for each candidate, considering variables such as polling methods, sample size, and region. These variables are examined to better understand how they influence polling outcomes and improve the accuracy of election predictions.
 
-Results paragraph
+The results show clear trends in candidate support leading up to the election, with differences based on pollster methods, geography, and timing. These findings are important for improving election forecasting by providing a clearer view of how public opinion changes as the election date approaches.
 
-Why it matters paragraph
-
-Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data....
+The remainder of the paper is structured as follows: Section 2 details the data and measurement process. Section 3 describes the methodology, including linear and Bayesian models. Section 4 presents the results, highlighting trends in polling, and Section 5 discusses the implications of the findings for future election forecasting and research.
 
 # Data {#sec-data}
 
 ## Overview
 
-We use the statistical programming language R [@citeR].... Our data [@shelter].... Following @tellingstories, we consider...
-
-Overview text
+We use the statistical programming language R [@citeR] to analyze polling data sourced from FiveThirtyEight’s U.S. Presidential election polls [@fivethirtyeight], collected by organizations like YouGov and Siena/NYT through online surveys and phone interviews. The dataset includes key details such as pollster, methodology, sample size, and location, allowing us to track how public opinion shifts over time and across regions. After cleaning the data for accuracy, we analyze trends in candidate support using the outcome variable pct (polling percentage) and predictor variables like pollster, methodology, and state to model and forecast public opinion trends as the election approaches.
 
 ## Measurement
 	
-Some paragraphs about how we go from a phenomena in the world to an entry in the dataset.
+Our data represents real-world public opinion on the 2024 U.S. Presidential election, gathered through polls conducted by various organizations. These polls ask people which candidate they plan to support, using methods like online surveys or phone interviews. This process starts with asking a group of people, typically selected to represent the larger population, about their voting preferences.
+
+The information gathered from these people—such as who they support, where they are located, and when the poll was conducted—is then recorded in a structured format. For example, in a YouGov poll conducted in Arizona from October 11 to 16, 2024, a percentage of respondents supported Harris. These real-world responses become data points in our dataset, capturing the details of the poll, including the pollster, methodology, sample size, and dates.
+
+Once this data is collected, it’s cleaned to ensure accuracy, removing any inconsistencies or missing values. This allows us to analyze and track how public opinion changes over time and in different regions, turning individual responses into a clear and usable dataset.
 
 ## Outcome variables
 
-
+The primary outcome variable in this dataset is pct, representing the percentage of respondents in a particular poll who support a specific candidate. This variable is the central focus of our analysis, as it reflects the level of public support for each candidate at the time the poll was conducted. Additionally, the variable num_DEM captures the number of Democratic respondents in each sample, providing context on party-based support patterns.
 
 ## Predictor variables
 
+The following predictor variables explain variations in polling outcomes:
 
+- pollster: Identifies the polling organization (e.g., YouGov, Siena/NYT). Different pollsters may use varied methodologies, which can introduce variability in results.
+- numeric_grade: Reflects the grading assigned to pollsters by FiveThirtyEight, based on their historical accuracy and reliability.
+- methodology: Specifies the polling method used (e.g., Online Panel, Live Phone), which can influence the type of respondents and the accuracy of the poll.
+- state: Indicates the region or national focus of the poll, capturing geographical differences in voter behavior.
+- sample_size: Represents the number of respondents in each poll, affecting the poll's margin of error and statistical reliability.
+- start_date and end_date: Capture the timeframe in which the poll was conducted, enabling the analysis of trends over time.
 
-# Model
+These variables allow us to model polling percentages and forecast trends, taking into account factors such as methodology, sample size, and regional variations.
 
+## Methodology 
 
+Data Collection and Preprocessing
+We used R (R Core Team 2023) to process polling data for the 2024 U.S. Presidential Election from [source]. The data includes results across demographic groups and time periods. Missing values were addressed, and dummy variables created for categorical predictors like region and pollster. Post-stratification weighting ensured the sample represented the U.S. population, reducing bias.
+
+Model Selection
+We tested various regression models to predict candidate vote percentages, using predictors like polling date, candidate, and pollster. Models ranged from simple linear regressions to Bayesian models, incorporating historical election data through Bayesian priors.
+
+Bayesian Modeling
+For the Bayesian model, MCMC sampling estimated parameters, providing credible intervals. The model updated dynamically with new polling data, improving forecasts over time.
+
+Assumptions and Limitations
+We assumed a linear relationship between predictors and outcomes. Although Bayesian methods helped capture non-linearities, some complexities may remain. Non-response bias could still affect results despite weighting.
+
+Software and Tools
+We use the statistical programming language R [@citeR] and the following packages: tidyverse, dplyr, readr, ggplot2, janitor, lubridate, broom, modelsummary, rstanarm, and splines.
+
+# Results
 
 ```{r}
+#| warning: false
+#| message: false
+#| label: fig-figure1
+#| fig-cap: "Figure 1"
+#| fig_caption: true
+#| echo: false
+
 #### Plot data ####
 base_plot <- ggplot(polling_data, aes(x = end_date, y = pct, color = answer)) +
   geom_point() +  # Add points to the plot
@@ -81,12 +113,18 @@ base_plot <- ggplot(polling_data, aes(x = end_date, y = pct, color = answer)) +
 base_plot +
   geom_point() +
   geom_smooth()
-
 ```
 
-
+@fig-figure1 illustrates a simple linear regression between end date and pct. It shows a positive trend between the variable but with a noticeable dip around the middle of the X-axis. This dip may indicate some underlying complexity that the simple linear model doesn’t fully capture, but the model does a reasonable job fitting the general positive direction of the data. The regression line captures this linear relationship, with most data points clustering near the line, suggesting a moderate fit. The confidence interval shows some uncertainty at extreme values, where the data becomes more dispersed.
 
 ```{r}
+#| warning: false
+#| message: false
+#| label: fig-figure2
+#| fig-cap: "Figure 2"
+#| fig_caption: true
+#| echo: false
+
 # Facet by pollster
 base_plot +
   geom_point() +
@@ -94,9 +132,16 @@ base_plot +
   facet_wrap(vars(pollster))
 ```
 
-
+@fig-figure2 shows a linear regression applied to multiple subsets of the data using facet wrap. Each panel represents a different pollsters and the regression line within each panel shows a generally consistent positive trend across most subsets - although there are some dips in the trend. Some subsets, like YouGov, have more data points than others, leading to more robust lines with narrower confidence intervals. The individual panels help highlight how the relationship between end date and pct across different pollster,  revealing subtle variations between groups.
 
 ```{r}
+#| warning: false
+#| message: false
+#| label: fig-figure3
+#| fig-cap: "Figure3"
+#| fig_caption: true
+#| echo: false
+
 # Facet by state
 base_plot +
   geom_point() +
@@ -104,13 +149,13 @@ base_plot +
   facet_wrap(vars(state))
 ```
 
-
-
-# Results
-
-Our results are summarized in @tbl-modelresults.
+@fig-figure3 uses facet wrap to apply a linear regression across various states. Each panel depicts a clear linear relationship within its subset, with a up and down wave trend in most. Some panels, particularly those with more data points, show stronger, clearer lines, while others may have flatter trends or greater variability due to smaller sample sizes. The use of facet wrap here provides a clear comparison across groups, making it easy to see where the linear relationship holds strongly and where it varies.
 
 ```{r}
+#| include: false
+#| warning: false
+#| message: false
+
 #### Bayesian modeling ####
 # Change 'pollster' and 'state' to factor variables
 polling_data <- polling_data |>
@@ -189,6 +234,15 @@ pred_summary <- new_data |>
     pred_lower = apply(posterior_preds, 2, quantile, probs = 0.025),
     pred_upper = apply(posterior_preds, 2, quantile, probs = 0.975)
   )
+```
+
+```{r}
+#| warning: false
+#| message: false
+#| label: fig-figure4
+#| fig-cap: "Figure4"
+#| fig_caption: true
+#| echo: false
 
 # Plot the spline fit
 ggplot(polling_data, aes(x = end_date, y = pct, color = pollster)) +
@@ -213,7 +267,13 @@ ggplot(polling_data, aes(x = end_date, y = pct, color = pollster)) +
   theme_minimal()
 ```
 
+The Bayesian model in @fig-figure4 shows a moderate upward trend where pct increases as end date rises. The fitted line follows a generally smooth, linear shape, though there are slight fluctuations around the line. The credible intervals are wider at the more recent year values of end date, indicating increased uncertainty. The overall shape is slightly curved, but still retains a mostly linear form, with the credible intervals giving the graph a distinctive funnel shape—wider at the edges where the data is sparser, and narrower in the middle where data points are concentrated.
+
 ```{r}
+#| include: false
+#| warning: false
+#| message: false
+
 #### Bayesian modeling ####
 # Change 'pollster' and 'state' to factor variables
 polling_data_2 <- polling_data |>
@@ -289,6 +349,15 @@ pred_summary_2 <- new_data_2 |>
     pred_lower = apply(posterior_preds, 2, quantile, probs = 0.025),
     pred_upper = apply(posterior_preds, 2, quantile, probs = 0.975)
   )
+```
+
+```{r}
+#| warning: false
+#| message: false
+#| label: fig-figure5
+#| fig-cap: "Figure5"
+#| fig_caption: true
+#| echo: false
 
 # Plot the spline fit
 ggplot(polling_data_2, aes(x = end_date, y = pct, color = state)) +
@@ -313,23 +382,77 @@ ggplot(polling_data_2, aes(x = end_date, y = pct, color = state)) +
   theme_minimal()
 ```
 
+@fig-figure5 in a Bayesian model that shows different colour points each corresponding to different states. The overall trend across most groups is an upward slope, though some groups have flatter or even slightly downward trends. The lines vary in steepness, and the credible intervals for each group give the plot a multi-layered shape, with each group showing distinct levels of uncertainty. The shape of the data suggests that  many groups follow a similar positive trend. The graph as a whole has a spread-out, fan-like appearance, with a spreading out across the plot, reflecting the varied behaviors.
+
 # Discussion
 
-## First discussion point {#sec-first-point}
+## Analyzing Polling Trends Over Time: Comparing Biden and Harris {#sec-first-point}
 
-If my paper were 10 pages, then should be be at least 2.5 pages. The discussion is a chance to show off what you know and what you learnt from all this. 
+@fig-figure1 shows the polling trends for Biden (blue) and Harris (orange) over time using a linear model with spline fit. Biden's polling starts above 45%, gradually declines, and then stabilizes toward 2024. His trendline is relatively flat, with narrow confidence intervals, indicating stable support and less variability in the data.
 
-## Second discussion point
+Harris shows a different pattern, with her polling starting around 40%, dipping significantly mid-2023, and then rising sharply into 2024. The wider confidence intervals around her trend, especially during the dip and rise, reflect greater uncertainty and fluctuation in her polling.
 
-Please don't use these as sub-heading labels - change them to be what your point actually is.
+This model effectively captures the key trends: Biden's steady support versus Harris's more volatile polling. The model highlights the differences in public opinion dynamics for each candidate during the given period.
 
-## Third discussion point
+## Analyzing Pollster-Specific Trends in Candidate Support
 
+@fig-figure2 uses a linear model with facet wrap to illustrate the polling trends for Biden (blue) and Harris (orange) across different pollsters. Each panel represents the polling data from a specific pollster, showing how candidate support varied over time from 2022 to 2024.
 
+For most pollsters, Biden shows a relatively stable trend with minor fluctuations, as seen in panels like ABC/Washington Post and YouGov Blue. However, in the Marquette Law School and YouGov panels, Biden’s polling follows a slight upward trend toward the end, indicating a potential rise in support over time. Harris’s trend is more variable, particularly in pollsters like Siena/NYT and YouGov, where her polling dips mid-period but recovers sharply as 2024 approaches.
+
+The shaded regions represent confidence intervals, with wider intervals in some panels reflecting greater uncertainty in those pollster’s results. For instance, Siena/NYT has notably larger confidence intervals, signaling more variability in the data compared to YouGov, where the intervals are narrower, indicating more consistent polling results.
+
+@fig-figure2 highlights how different pollsters capture varying dynamics in candidate support. While the overall trend for Biden remains more stable, Harris’s support appears to fluctuate more significantly, with clear differences in polling outcomes between certain pollsters. These variations emphasize the importance of considering pollster-specific methodologies when interpreting election forecasts.
+
+## Analyzing State-by-State Polling Trends in Candidate Support 
+
+@fig-figure3 shows the polling trends for Biden (blue) and Harris (orange) across various U.S. states using a linear model with facet wrap. Each panel represents a separate state or district, allowing for comparison of candidate support trends from 2022 to 2024. The National panel includes polls that do not have state-specific data, providing a broader, generalized view of national polling trends.
+
+In most states, Biden's polling is relatively stable, as seen in Arizona, Michigan, and Wisconsin. He maintains consistent support, with narrow confidence intervals indicating lower uncertainty. In Ohio and National, Biden experiences a dip around 2023, but recovers toward 2024, mirroring broader national trends.
+
+Harris's support is more variable across states. In states like Georgia and Nebraska CD-2, her polling is sparse, and in some cases, no clear trend is discernible. However, in Michigan and Wisconsin, Harris's polling tracks closely with Biden’s. In the National panel, Harris shows a significant dip in 2023, followed by a sharp recovery leading into 2024, which is consistent with the trends seen in other key states like Ohio.
+
+The National panel helps contextualize overall candidate trends by showing the aggregate polling data, without specific state breakdowns. This allows us to see general patterns in polling, though it doesn't capture state-specific variations, which are crucial for understanding electoral dynamics.
+
+This analysis highlights Biden's more stable polling trends across most states, while Harris's polling exhibits more fluctuation, with the National data serving as a useful broad comparison for state-level trends.
+
+## Analyzing Bayesian Polling Trends of Different Pollsters
+
+@fig-figure4 presents polling percentages over time, color-coded by different pollsters, using a Bayesian model with a spline fit. The key feature of the Bayesian model is the incorporation of uncertainty directly into the analysis, represented by the shaded credible interval. This interval helps capture the range of likely polling percentages, accounting for both the variability in the data and differences across pollsters.
+
+The spline fit shows a general decline in polling percentages up until mid-2023, followed by a sharp rise as the election approaches in 2024. The credible intervals are wider earlier on, indicating greater uncertainty due to less consistent polling data, and narrow closer to the election, reflecting increased confidence as more data is collected.
+
+The color coding by pollster highlights how different organizations contribute to this trend. Pollsters such as YouGov and The Washington Post provide a larger volume of data points over the timeline, which helps tighten the credible intervals. Pollsters with fewer data points, like YouGov Blue or Siena/NYT, contribute less, leading to more uncertainty in their sections of the plot.
+
+The Bayesian model is particularly important here as it explicitly models the uncertainty, allowing us to see where our predictions are more or less certain. This is crucial when comparing data from multiple pollsters, as some provide more consistent data than others. By incorporating this uncertainty, the model gives a clearer, more reliable picture of overall polling trends.
+
+## Analyzing Bayesian Polling Trends Differentiated By States
+
+@fig-figure5 presents polling percentages over time, separated by states, using a Bayesian model with a spline fit. Each state is represented by a different color, providing a clear comparison of state-specific polling trends. The blue spline line shows the overall trend across all states, and the shaded area represents the credible interval, capturing the uncertainty in the predictions.
+
+The Bayesian spline model reveals a decline in polling percentages leading up to 2023, followed by a notable increase approaching 2024. The credible interval is wider earlier on, reflecting greater uncertainty in polling results, and narrows as we move closer to the election, indicating more confidence in the predictions as more data becomes available.
+
+The data points from various states, such as Michigan (green) and Ohio (light blue), cluster around the overall trend, contributing significantly to the model’s fit. States with fewer data points, like Virginia (pink) and Nebraska CD-2 (light blue), contribute less and have higher variability, adding to the overall uncertainty in those periods.
+
+This figure highlights the importance of incorporating state-level polling into the analysis, as each state has a different polling trajectory. The Bayesian model's ability to incorporate uncertainty provides a more reliable view of the overall trend, while still allowing for variability between states.
 
 ## Weaknesses and next steps
 
-Weaknesses and next steps should also be included.
+A key weakness in the analysis is the variation between pollsters. Despite adjustments and the use of Bayesian modeling, differences in methodologies, sampling techniques, and respondent recruitment remain a challenge. Some pollsters, particularly those with fewer data points, contribute to greater uncertainty, which can make predictions less reliable in certain cases. Additionally, relying on self-reported polling data carries the risk of biases, such as non-response bias or unrepresentative samples.
+
+The use of spline models to capture non-linear trends is also a limitation. While it smooths fluctuations, it may overlook significant events or shifts in public opinion during the election period. Although the Bayesian model helps account for uncertainty, it relies on historical data for priors, which may not fully reflect the unique aspects of the 2024 election.
+
+For future improvements, incorporating more detailed data, such as voter demographics and turnout probabilities, could enhance the accuracy of the forecasts. Integrating real-time polling updates or analyzing social media sentiment could make the models more responsive to changing conditions. Expanding the analysis to include more pollsters and considering the impact of electoral college dynamics would provide a more complete understanding of election outcomes beyond the popular vote.
+
+# Conclusion 
+
+This paper analyzed polling data for the 2024 U.S. Presidential election, focusing on trends in candidate support and the factors that influence polling outcomes. Using data from FiveThirtyEight, which compiles polls from organizations like YouGov and Siena/NYT, we modeled polling percentages across different timeframes, pollsters, and states. Both linear regression and Bayesian models were applied to capture variations in the data and estimate the uncertainty in polling predictions.
+
+The analysis showed that Biden's support remained fairly stable throughout the election period, while Harris's polling was more variable, with notable fluctuations over time and across pollsters. State-specific trends demonstrated the importance of regional differences in voter preferences, with certain states showing stronger or weaker support for each candidate. Bayesian models provided a way to quantify uncertainty, particularly for states or pollsters with fewer data points.
+
+While the analysis provides useful trends, it is limited by pollster variability and the potential for bias in self-reported polling data. Future work should include more detailed voter demographics and real-time polling updates to enhance the accuracy of forecasts.
+
+Based on the current trends in the data, the Democratic Party shows stable support, especially for Biden, heading into the election. Although there are fluctuations in Harris’s polling, the overall trend suggests that the Democrats are in a relatively strong position. However, continued monitoring of polling trends, particularly at the state level, will be important for a more precise forecast of the election outcome.
 
 \newpage
 
