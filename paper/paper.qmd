@@ -1,14 +1,15 @@
 ---
-title: "My title"
-subtitle: "My subtitle if needed"
+title: "Modeling 2024 U.S. Presidential Polling Trends"
+subtitle: "Biden’s Steady Support and Harris’s Fluctuations Across Time, Pollsters, and Regions"
 author: 
   - Mandy He
   - Wendy Yuan
 thanks: "Code and data are available at: https://github.com/MandyHe7/US-Election.git."
-date: today
+date: November 5, 2024
 date-format: long
-abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+abstract: "This paper looks at polling data from the 2024 U.S. Presidential election to see how candidate support changes and what factors affect polling results. We found that Biden’s support stayed steady, while Harris’s numbers fluctuated more, with differences across time, pollsters, and regions. These findings show that polling methods and location are important in predicting election results. Understanding these trends helps give a clearer view of public opinion before the election, leading to more accurate predictions."
 format: pdf
+toc: true
 number-sections: true
 bibliography: references.bib
 ---
@@ -19,6 +20,15 @@ bibliography: references.bib
 #| message: false
 
 library(tidyverse)
+library(dplyr)
+library(readr)
+library(ggplot2)
+library(janitor)
+library(lubridate)
+library(broom)
+library(modelsummary)
+library(rstanarm)
+library(splines)
 
 polling_data <- read_csv(here::here("data/02-analysis_data/analysis_data.csv"))
 ```
@@ -26,234 +36,151 @@ polling_data <- read_csv(here::here("data/02-analysis_data/analysis_data.csv"))
 
 # Introduction
 
-Overview paragraph
+The 2024 U.S. Presidential election is a major event in American politics, with polling data playing a vital role in shaping public opinion and campaign strategies. Polls are used to measure public sentiment and predict election outcomes, but the reliability of these predictions depends on factors such as polling methodology and geographic focus. Although there is a large amount of polling data available, understanding how these factors affect the accuracy of predictions remains a challenge.
 
-Estimand paragraph
+This paper estimates trends in polling support over time and analyzes the factors that contribute to variations in candidate support. We use data from FiveThirtyEight’s U.S. Presidential election polls, collected from pollsters such as YouGov and Siena/NYT. The analysis models polling percentages for each candidate, considering variables such as polling methods, sample size, and region. These variables are examined to better understand how they influence polling outcomes and improve the accuracy of election predictions.
 
-Results paragraph
+The results show clear trends in candidate support leading up to the election, with differences based on pollster methods, geography, and timing. These findings are important for improving election forecasting by providing a clearer view of how public opinion changes as the election date approaches.
 
-Why it matters paragraph
-
-Telegraphing paragraph: The remainder of this paper is structured as follows. @sec-data....
-
-
-
-
-
+The remainder of the paper is structured as follows: @sec-data details the data and measurement process. @sec-Methodology describes the methodology, including linear and Bayesian models. @sec-Results presents the results, highlighting trends in polling, and @sec-Discussion discusses the implications of the findings for future election forecasting and research.
 
 # Data {#sec-data}
 
 ## Overview
 
-We use the statistical programming language R [@citeR].... Our data [@shelter].... Following @tellingstories, we consider...
-
-Overview text
+We use the statistical programming language R [@citeR] to analyze polling data sourced from FiveThirtyEight’s U.S. Presidential election polls [@fivethirtyeight], collected by organizations like YouGov and Siena/NYT through online surveys and phone interviews. The dataset includes key details such as pollster, methodology, sample size, and location, allowing us to track how public opinion shifts over time and across regions. After cleaning the data for accuracy, we analyze trends in candidate support using the outcome variable pct (polling percentage) and predictor variables like pollster, methodology, and state to model and forecast public opinion trends as the election approaches.
 
 ## Measurement
 	
-Some paragraphs about how we go from a phenomena in the world to an entry in the dataset.
+Our data represents real-world public opinion on the 2024 U.S. Presidential election, gathered through polls conducted by various organizations. These polls ask people which candidate they plan to support, using methods like online surveys or phone interviews. This process starts with asking a group of people, typically selected to represent the larger population, about their voting preferences.
+
+The information gathered from these people—such as who they support, where they are located, and when the poll was conducted—is then recorded in a structured format. For example, in a YouGov poll conducted in Arizona from October 11 to 16, 2024, a percentage of respondents supported Harris. These real-world responses become data points in our dataset, capturing the details of the poll, including the pollster, methodology, sample size, and dates.
+
+Once this data is collected, it’s cleaned to ensure accuracy, removing any inconsistencies or missing values. This allows us to analyze and track how public opinion changes over time and in different regions, turning individual responses into a clear and usable dataset.
 
 ## Outcome variables
 
-Add graphs, tables and text. Use sub-sub-headings for each outcome variable or update the subheading to be singular.
-
-
-
-Some of our data is of penguins (@fig-bills), from @palmerpenguins.
-
-```{r}
-#| label: fig-bills
-#| fig-cap: Bills of penguins
-#| echo: false
-
-ggplot(penguins, aes(x = island, fill = species)) +
-  geom_bar(alpha = 0.8) +
-  scale_fill_manual(values = c("darkorange","purple","cyan4"),
-                    guide = "none") +
-  theme_minimal() +
-  facet_wrap(~species, ncol = 1) +
-  coord_flip()
-```
-
-Talk more about it.
-
-And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
-
-```{r}
-#| label: fig-planes
-#| fig-cap: Relationship between wing length and width
-#| echo: false
-#| warning: false
-#| message: false
-
-
-cleaned_data |> 
-  ggplot(aes(x = width, y = length)) +
-  geom_point(alpha = 0.8) +
-  theme_minimal() +
-  labs(x = "Wing width (mm)",
-       y = "Wing length (mm)")
-```
-
-Talk way more about it. 
+The primary outcome variable in this dataset is pct, representing the percentage of respondents in a particular poll who support a specific candidate. This variable is the central focus of our analysis, as it reflects the level of public support for each candidate at the time the poll was conducted. Additionally, the variable num_DEM captures the number of Democratic respondents in each sample, providing context on party-based support patterns.
 
 ## Predictor variables
 
-Add graphs, tables and text.
+The following predictor variables explain variations in polling outcomes:
 
-Use sub-sub-headings for each outcome variable and feel free to combine a few into one if they go together naturally.
+- pollster: Identifies the polling organization (e.g., YouGov, Siena/NYT). Different pollsters may use varied methodologies, which can introduce variability in results.
+- numeric_grade: Reflects the grading assigned to pollsters by FiveThirtyEight, based on their historical accuracy and reliability.
+- methodology: Specifies the polling method used (e.g., Online Panel, Live Phone), which can influence the type of respondents and the accuracy of the poll.
+- state: Indicates the region or national focus of the poll, capturing geographical differences in voter behavior.
+- sample_size: Represents the number of respondents in each poll, affecting the poll's margin of error and statistical reliability.
+- start_date and end_date: Capture the timeframe in which the poll was conducted, enabling the analysis of trends over time.
 
+These variables allow us to model polling percentages and forecast trends, taking into account factors such as methodology, sample size, and regional variations.
 
+# Methodology {#sec-Methodology}
 
+## Data Collection and Preprocessing
 
+We used R (R Core Team 2023) to process polling data for the 2024 U.S. Presidential Election from [@fivethirtyeight]. The data includes results across demographic groups and time periods. Missing values were addressed, and dummy variables created for categorical predictors like region and pollster. Post-stratification weighting ensured the sample represented the U.S. population, reducing bias.
 
+## Model Selection
 
+We tested various regression models to predict candidate vote percentages, using predictors like polling date, candidate, and pollster. Models ranged from simple linear regressions to Bayesian models, incorporating historical election data through Bayesian priors.
 
+## Bayesian Modeling
 
-# Model
-```{r}
+For the Bayesian model, MCMC sampling estimated parameters, providing credible intervals. The model updated dynamically with new polling data, improving forecasts over time.
 
+## Assumptions and Limitations
 
-```
+We assumed a linear relationship between predictors and outcomes. Although Bayesian methods helped capture non-linearities, some complexities may remain. Non-response bias could still affect results despite weighting.
 
+## Software and Tools
 
-The goal of our modelling strategy is twofold. Firstly,...
+We use the statistical programming language R [@citeR] and the following packages: tidyverse, dplyr, readr, ggplot2, janitor, lubridate, broom, modelsummary, rstanarm, and splines.
 
-Here we briefly describe the Bayesian analysis model used to investigate... Background details and diagnostics are included in [Appendix -@sec-model-details].
-```{r}
-
-# Load necessary libraries
-library(dplyr)
-library(ggplot2)
-library(readr)
-
-# Convert state and methodology to factors
-polling_data$state <- as.factor(polling_data$state)
-polling_data$methodology <- as.factor(polling_data$methodology)
-polling_data$pollster <- as.factor(polling_data$pollster)
-
-
-# Multiple Linear Regression with interaction between state and pollster
-model_interaction <- lm(pct ~ sample_size + state, data = polling_data)
-
-# Summary of the model
-summary(model_interaction)
-
-# Plot predicted vs actual percentages
-ggplot(polling_data, aes(x = predict(model_interaction), y = pct)) +
-  geom_point() +
-  geom_abline(intercept = 0, slope = 1, color = "blue") +
-  labs(title = "Predicted vs Actual Polling Percentages", x = "Predicted", y = "Actual") +
-  theme_minimal()
-
-
-```
-
+# Results {#sec-Results}
 
 ```{r}
+#| warning: false
+#| message: false
+#| label: fig-figure1
+#| fig-cap: "illustrates a simple linear regression between end date and pct, showing a positive trend with a noticeable dip in the middle."
+#| fig_caption: true
+#| echo: false
+
 #### Plot data ####
 base_plot <- ggplot(polling_data, aes(x = end_date, y = pct, color = answer)) +
   geom_point() +  # Add points to the plot
   theme_classic() +
-  labs(y = "Percent", x = "Date", color = "Candidate") +  # Add a label for the legend
-  scale_color_manual(values = c("Biden" = "blue", "Harris" = "orange"))  # Customize colors
+  labs(y = "Percentage of respondents", x = "End Date", color = "Candidate") +  # Add a label for the legend
+  scale_color_manual(values = c("Biden" = "blue", "Harris" = "orange"))   # Customize colors
+
 
 # Plots poll estimates and overall smoothing
 base_plot +
   geom_point() +
-  geom_smooth()
-
+  geom_smooth()+
+  labs(title = "Election Trends: Regression of End Date and Respondents of Vote")
 ```
+
+@fig-figure1 illustrates a simple linear regression between end date and pct. It shows a positive trend between the variable but with a noticeable dip around the middle of the X-axis. This dip may indicate some underlying complexity that the simple linear model doesn’t fully capture, but the model does a reasonable job fitting the general positive direction of the data. The regression line captures this linear relationship, with most data points clustering near the line, suggesting a moderate fit. The confidence interval shows some uncertainty at extreme values, where the data becomes more dispersed.
+
 ```{r}
+#| warning: false
+#| message: false
+#| label: fig-figure2
+#| fig-cap: "Shows a linear regression applied to multiple subsets of the data using facet wrap. Each panel represents a different pollster, with regression lines indicating a generally consistent positive trend, despite some dips."
+#| fig_caption: true
+#| echo: false
 
 # Facet by pollster
-
 base_plot +
   geom_point() +
   geom_smooth() +
-  facet_wrap(vars(pollster))
+  facet_wrap(vars(pollster))+
+  labs(title = "Election Trends: Linear Regression Across Pollster Subsets")
+```
+
+@fig-figure2 shows a linear regression applied to multiple subsets of the data using facet wrap. Each panel represents a different pollsters and the regression line within each panel shows a generally consistent positive trend across most subsets - although there are some dips in the trend. Some subsets, like YouGov, have more data points than others, leading to more robust lines with narrower confidence intervals. The individual panels help highlight how the relationship between end date and pct across different pollster,  revealing subtle variations between groups.
+
+```{r}
+#| warning: false
+#| message: false
+#| label: fig-figure3
+#| fig-cap: "uses facet wrap to show linear regression across various states. Each panel reveals a linear relationship, with clearer trends in panels with more data points."
+#| fig_caption: true
+#| echo: false
 
 # Facet by state
-
 base_plot +
   geom_point() +
   geom_smooth() +
-  facet_wrap(vars(state))
-
+  facet_wrap(vars(state))+
+  labs(title = "Election Trends: Linear Regression Across States")
 ```
 
+@fig-figure3 uses facet wrap to apply a linear regression across various states. Each panel depicts a clear linear relationship within its subset, with a up and down wave trend in most. Some panels, particularly those with more data points, show stronger, clearer lines, while others may have flatter trends or greater variability due to smaller sample sizes. The use of facet wrap here provides a clear comparison across groups, making it easy to see where the linear relationship holds strongly and where it varies.
 
 ```{r}
-# Color by pollster
-# This gets messy - need to add a filter - see line 21
-base_plot +
-  geom_point(aes(color = pollster)) +
-  geom_smooth() +
-  theme(legend.position = "bottom")
+#| include: false
+#| warning: false
+#| message: false
 
-# Facet by pollster
-# Make the line 21 issue obvious
-# Also - is there duplication???? Need to go back and check
-base_plot +
-  geom_point() +
-  geom_smooth() +
-  facet_wrap(vars(pollster))
-
-# Color by pollscore
-base_plot +
-  geom_point(aes(color = factor(pollscore))) +
-  geom_smooth() +
-  theme(legend.position = "bottom")
-
-
-#### Starter models ####
-# Model 1: pct as a function of end_date
-model_date <- lm(pct ~ end_date, data = just_harris_high_quality)
-
-# Model 2: pct as a function of end_date and pollster
-model_date_pollster <- lm(pct ~ end_date + pollster, data = just_harris_high_quality)
-
-# Augment data with model predictions
-just_harris_high_quality <- just_harris_high_quality |>
-  mutate(
-    fitted_date = predict(model_date),
-    fitted_date_pollster = predict(model_date_pollster)
-  )
-
-# Plot model predictions
-# Model 1
-ggplot(just_harris_high_quality, aes(x = end_date)) +
-  geom_point(aes(y = pct), color = "black") +
-  geom_line(aes(y = fitted_date), color = "blue", linetype = "dotted") +
-  theme_classic() +
-  labs(y = "Harris percent", x = "Date", title = "Linear Model: pct ~ end_date")
-
-# Model 2
-ggplot(just_harris_high_quality, aes(x = end_date)) +
-  geom_point(aes(y = pct), color = "black") +
-  geom_line(aes(y = fitted_date_pollster), color = "blue", linetype = "dotted") +
-  facet_wrap(vars(pollster)) +
-  theme_classic() +
-  labs(y = "Harris percent", x = "Date", title = "Linear Model: pct ~ end_date + pollster")
-
-# All of the above would be in scripts - data cleaning scripts and modelling scripts. 
-# This is an example of how you get a results table that you could put into your Quarto doc
-modelsummary(models = list("Model 1" = model_date, "Model 2" = model_date_pollster))
-
-
-#### Bayesian models ####
+#### Bayesian modeling ####
 # Change 'pollster' and 'state' to factor variables
-just_harris_high_quality <- just_harris_high_quality |>
+polling_data <- polling_data |>
   mutate(
     pollster = factor(pollster),
     state = factor(state)
   )
 
-# Model 1
-model_formula_1 <- cbind(num_harris, sample_size - num_harris) ~ (1 | pollster)
+# Check if 'num_DEM' and 'sample_size' exist; if not, create them (adjust based on actual column names)
+# Assuming 'pct_DEM' is the percentage of Democrat votes (adjust if necessary)
+if (!("num_DEM" %in% colnames(polling_data))) {
+  polling_data <- polling_data |> mutate(num_DEM = round(pct_DEM * sample_size / 100))
+}
 
-# Model 2
-model_formula_2 <- cbind(num_harris, sample_size - num_harris) ~ (1 | pollster) + (1 | state)
+# Model 1
+model_formula_1 <- cbind(num_DEM, sample_size - num_DEM) ~ (1 | pollster)
 
 # Specify priors
 priors <- normal(0, 2.5, autoscale = TRUE)
@@ -261,54 +188,29 @@ priors <- normal(0, 2.5, autoscale = TRUE)
 # Fit the models
 bayesian_model_1 <- stan_glmer(
   formula = model_formula_1,
-  data = just_harris_high_quality,
+  data = polling_data,
   family = binomial(link = "logit"),
   prior = priors,
   prior_intercept = priors,
   seed = 123,
-  cores = 4,
-  adapt_delta = 0.95
+  cores = 1,
+  adapt_delta = 0.99  # Increase adapt_delta to avoid divergent transitions
 )
-
-bayesian_model_2 <- stan_glmer(
-  formula = model_formula_2,
-  data = just_harris_high_quality,
-  family = binomial(link = "logit"),
-  prior = priors,
-  prior_intercept = priors,
-  seed = 123,
-  cores = 4,
-  adapt_delta = 0.95
-)
-# Note the warnings here and follow the instructions for dealing with it - come back and fix.
 
 # Posterior predictive checks
 pp_check(bayesian_model_1)
-pp_check(bayesian_model_2)
-
-# Summarize the model
-summary(bayesian_model_1)
-summary(bayesian_model_2)
-
-# Plot random effects
-plot(bayesian_model_1, pars = "(Intercept)", prob = 0.95)
-plot(bayesian_model_2, pars = "(Intercept)", prob = 0.95)
-
-# Model summary works the same as above for Bayesian models.
-
 
 #### Bayesian models and splines ####
 # Change date to be number of days since she declared - it's a counter not a date
-just_harris_high_quality <- just_harris_high_quality |>
+polling_data <- polling_data |>
   mutate(
     end_date_num = as.numeric(end_date - min(end_date))
   )
 
 # Fit Bayesian model with spline and pollster as fixed effect
-# cf bayesian_model_1 and bayesian_model_2 where it's a random effect - note the different interpretations
 spline_model <- stan_glm(
-  pct ~ ns(end_date_num, df = 5) + pollster, # Change df for the number of "bits" - higher numbers - more "wiggly" - but then need to worry about overfitting.
-  data = just_harris_high_quality,
+  pct ~ ns(end_date, df = 5) + pollster,  # Change df for the number of "bits"
+  data = polling_data,
   family = gaussian(),
   prior = normal(0, 5),
   prior_intercept = normal(50, 10),
@@ -318,21 +220,17 @@ spline_model <- stan_glm(
   refresh = 0
 )
 
-# Summarize the model
-summary(spline_model)
-
 # Posterior predictive checks
 pp_check(spline_model)
 
 # Predict and plot
-# Create new data for prediction
 new_data <- data.frame(
-  end_date_num = seq(
-    min(just_harris_high_quality$end_date_num),
-    max(just_harris_high_quality$end_date_num),
+  end_date = seq(
+    min(polling_data$end_date),
+    max(polling_data$end_date),
     length.out = 100
   ),
-  pollster = factor("YouGov", levels = levels(just_harris_high_quality$pollster))
+  pollster = factor("YouGov", levels = levels(polling_data$pollster))
 )
 
 # Predict posterior draws
@@ -345,19 +243,28 @@ pred_summary <- new_data |>
     pred_lower = apply(posterior_preds, 2, quantile, probs = 0.025),
     pred_upper = apply(posterior_preds, 2, quantile, probs = 0.975)
   )
+```
+
+```{r}
+#| warning: false
+#| message: false
+#| label: fig-figure4
+#| fig-cap: "illustrates a Bayesian model showing a moderate upward trend, where percentage increases with end date."
+#| fig_caption: true
+#| echo: false
 
 # Plot the spline fit
-ggplot(just_harris_high_quality, aes(x = end_date_num, y = pct, color = pollster)) +
+ggplot(polling_data, aes(x = end_date, y = pct, color = pollster)) +
   geom_point() +
   geom_line(
     data = pred_summary,
-    aes(x = end_date_num, y = pred_mean),
+    aes(x = end_date, y = pred_mean),
     color = "blue",
     inherit.aes = FALSE
   ) +
   geom_ribbon(
     data = pred_summary,
-    aes(x = end_date_num, ymin = pred_lower, ymax = pred_upper),
+    aes(x = end_date, ymin = pred_lower, ymax = pred_upper),
     alpha = 0.2,
     inherit.aes = FALSE
   ) +
@@ -367,84 +274,194 @@ ggplot(just_harris_high_quality, aes(x = end_date_num, y = pct, color = pollster
     title = "Poll Percentage over Time with Spline Fit"
   ) +
   theme_minimal()
-
 ```
 
-
-
-## Model set-up
-
-Define $y_i$ as the number of seconds that the plane remained aloft. Then $\beta_i$ is the wing width and $\gamma_i$ is the wing length, both measured in millimeters.  
-
-\begin{align} 
-y_i|\mu_i, \sigma &\sim \mbox{Normal}(\mu_i, \sigma) \\
-\mu_i &= \alpha + \beta_i + \gamma_i\\
-\alpha &\sim \mbox{Normal}(0, 2.5) \\
-\beta &\sim \mbox{Normal}(0, 2.5) \\
-\gamma &\sim \mbox{Normal}(0, 2.5) \\
-\sigma &\sim \mbox{Exponential}(1)
-\end{align}
-
-We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
-
-
-### Model justification
-
-We expect a positive relationship between the size of the wings and time spent aloft. In particular...
-
-We can use maths by including latex between dollar signs, for instance $\theta$.
-
-
-# Results
-
-Our results are summarized in @tbl-modelresults.
+The Bayesian model in @fig-figure4 shows a moderate upward trend where pct increases as end date rises. The fitted line follows a generally smooth, linear shape, though there are slight fluctuations around the line. The credible intervals are wider at the more recent year values of end date, indicating increased uncertainty. The overall shape is slightly curved, but still retains a mostly linear form, with the credible intervals giving the graph a distinctive funnel shape—wider at the edges where the data is sparser, and narrower in the middle where data points are concentrated.
 
 ```{r}
-#| echo: false
-#| eval: true
+#| include: false
 #| warning: false
 #| message: false
 
-library(rstanarm)
+#### Bayesian modeling ####
+# Change 'pollster' and 'state' to factor variables
+polling_data_2 <- polling_data |>
+  mutate(
+    pollster = factor(pollster),
+    state = factor(state)  # State as a factor variable
+  )
 
-first_model <-
-  readRDS(file = here::here("models/first_model.rds"))
+# Check if 'num_DEM' and 'sample_size' exist; if not, create them (adjust based on actual column names)
+# Assuming 'pct_DEM' is the percentage of Democrat votes (adjust if necessary)
+if (!("num_DEM" %in% colnames(polling_data))) {
+  polling_data_2 <- polling_data_2 |> mutate(num_DEM = round(pct_DEM * sample_size / 100))
+}
+
+# Model 1: Random effect for state instead of pollster
+model_formula_2 <- cbind(num_DEM, sample_size - num_DEM) ~ (1 | state)
+
+# Specify priors
+priors <- normal(0, 2.5, autoscale = TRUE)
+
+# Fit the model with random effect for state
+bayesian_model_2 <- stan_glmer(
+  formula = model_formula_1,
+  data = polling_data,
+  family = binomial(link = "logit"),
+  prior = priors,
+  prior_intercept = priors,
+  seed = 123,
+  cores = 1,
+  adapt_delta = 0.99  # Increase adapt_delta to avoid divergent transitions
+)
+
+# Posterior predictive checks
+pp_check(bayesian_model_2)
+
+#### Bayesian models and splines ####
+# Change date to be number of days since she declared - it's a counter not a date
+polling_data_2 <- polling_data_2 |>
+  mutate(
+    end_date_num = as.numeric(end_date - min(end_date))
+  )
+
+# Fit Bayesian model with spline and random effect for state
+spline_model_2 <- stan_glm(
+  pct ~ ns(end_date, df = 5) + state,  # State as random effect
+  data = polling_data_2,
+  family = gaussian(),
+  prior = normal(0, 5),
+  prior_intercept = normal(50, 10),
+  seed = 1234,
+  iter = 2000,
+  chains = 4,
+  refresh = 0
+)
+
+# Posterior predictive checks
+pp_check(spline_model_2)
+
+# Predict and plot
+new_data_2 <- data.frame(
+  end_date = seq(
+    min(polling_data$end_date),
+    max(polling_data$end_date),
+    length.out = 100
+  ),
+  state = factor("California", levels = levels(polling_data$state))  # Example state
+)
+
+# Summarize predictions
+pred_summary_2 <- new_data_2 |>
+  mutate(
+    pred_mean = colMeans(posterior_preds),
+    pred_lower = apply(posterior_preds, 2, quantile, probs = 0.025),
+    pred_upper = apply(posterior_preds, 2, quantile, probs = 0.975)
+  )
 ```
 
 ```{r}
-#| echo: false
-#| eval: true
-#| label: tbl-modelresults
-#| tbl-cap: "Explanatory models of flight time based on wing width and wing length"
 #| warning: false
+#| message: false
+#| label: fig-figure5
+#| fig-cap: "presents a Bayesian model with color-coded points for different states."
+#| fig_caption: true
+#| echo: false
 
-modelsummary::modelsummary(
-  list(
-    "First model" = first_model
-  ),
-  statistic = "mad",
-  fmt = 2
-)
+# Plot the spline fit
+ggplot(polling_data_2, aes(x = end_date, y = pct, color = state)) +
+  geom_point() +
+  geom_line(
+    data = pred_summary_2,
+    aes(x = end_date, y = pred_mean),
+    color = "blue",
+    inherit.aes = FALSE
+  ) +
+  geom_ribbon(
+    data = pred_summary_2,
+    aes(x = end_date, ymin = pred_lower, ymax = pred_upper),
+    alpha = 0.2,
+    inherit.aes = FALSE
+  ) +
+  labs(
+    x = "Days since earliest poll",
+    y = "Percentage",
+    title = "Poll Percentage over Time with Spline Fit"
+  ) +
+  theme_minimal()
 ```
 
+@fig-figure5 in a Bayesian model that shows different colour points each corresponding to different states. The overall trend across most groups is an upward slope, though some groups have flatter or even slightly downward trends. The lines vary in steepness, and the credible intervals for each group give the plot a multi-layered shape, with each group showing distinct levels of uncertainty. The shape of the data suggests that  many groups follow a similar positive trend. The graph as a whole has a spread-out, fan-like appearance, with a spreading out across the plot, reflecting the varied behaviors.
 
+# Discussion {#sec-Discussion}
 
+## Analyzing Polling Trends Over Time: Comparing Biden and Harris {#sec-first-point}
 
-# Discussion
+@fig-figure1 shows the polling trends for Biden (blue) and Harris (orange) over time using a linear model with spline fit. Biden's polling starts above 45%, gradually declines, and then stabilizes toward 2024. His trendline is relatively flat, with narrow confidence intervals, indicating stable support and less variability in the data.
 
-## First discussion point {#sec-first-point}
+Harris shows a different pattern, with her polling starting around 40%, dipping significantly mid-2023, and then rising sharply into 2024. The wider confidence intervals around her trend, especially during the dip and rise, reflect greater uncertainty and fluctuation in her polling.
 
-If my paper were 10 pages, then should be be at least 2.5 pages. The discussion is a chance to show off what you know and what you learnt from all this. 
+This model effectively captures the key trends: Biden's steady support versus Harris's more volatile polling. The model highlights the differences in public opinion dynamics for each candidate during the given period.
 
-## Second discussion point
+## Analyzing Pollster-Specific Trends in Candidate Support
 
-Please don't use these as sub-heading labels - change them to be what your point actually is.
+@fig-figure2 uses a linear model with facet wrap to illustrate the polling trends for Biden (blue) and Harris (orange) across different pollsters. Each panel represents the polling data from a specific pollster, showing how candidate support varied over time from 2022 to 2024.
 
-## Third discussion point
+For most pollsters, Biden shows a relatively stable trend with minor fluctuations, as seen in panels like ABC/Washington Post and YouGov Blue. However, in the Marquette Law School and YouGov panels, Biden’s polling follows a slight upward trend toward the end, indicating a potential rise in support over time. Harris’s trend is more variable, particularly in pollsters like Siena/NYT and YouGov, where her polling dips mid-period but recovers sharply as 2024 approaches.
+
+The shaded regions represent confidence intervals, with wider intervals in some panels reflecting greater uncertainty in those pollster’s results. For instance, Siena/NYT has notably larger confidence intervals, signaling more variability in the data compared to YouGov, where the intervals are narrower, indicating more consistent polling results.
+
+@fig-figure2 highlights how different pollsters capture varying dynamics in candidate support. While the overall trend for Biden remains more stable, Harris’s support appears to fluctuate more significantly, with clear differences in polling outcomes between certain pollsters. These variations emphasize the importance of considering pollster-specific methodologies when interpreting election forecasts.
+
+## Analyzing State-by-State Polling Trends in Candidate Support 
+
+@fig-figure3 shows the polling trends for Biden (blue) and Harris (orange) across various U.S. states using a linear model with facet wrap. Each panel represents a separate state or district, allowing for comparison of candidate support trends from 2022 to 2024. The National panel includes polls that do not have state-specific data, providing a broader, generalized view of national polling trends.
+
+In most states, Biden's polling is relatively stable, as seen in Arizona, Michigan, and Wisconsin. He maintains consistent support, with narrow confidence intervals indicating lower uncertainty. In Ohio and National, Biden experiences a dip around 2023, but recovers toward 2024, mirroring broader national trends.
+
+Harris's support is more variable across states. In states like Georgia and Nebraska CD-2, her polling is sparse, and in some cases, no clear trend is discernible. However, in Michigan and Wisconsin, Harris's polling tracks closely with Biden’s. In the National panel, Harris shows a significant dip in 2023, followed by a sharp recovery leading into 2024, which is consistent with the trends seen in other key states like Ohio.
+
+The National panel helps contextualize overall candidate trends by showing the aggregate polling data, without specific state breakdowns. This allows us to see general patterns in polling, though it doesn't capture state-specific variations, which are crucial for understanding electoral dynamics.
+
+This analysis highlights Biden's more stable polling trends across most states, while Harris's polling exhibits more fluctuation, with the National data serving as a useful broad comparison for state-level trends.
+
+## Analyzing Bayesian Polling Trends of Different Pollsters
+
+@fig-figure4 presents polling percentages over time, color-coded by different pollsters, using a Bayesian model with a spline fit. The key feature of the Bayesian model is the incorporation of uncertainty directly into the analysis, represented by the shaded credible interval. This interval helps capture the range of likely polling percentages, accounting for both the variability in the data and differences across pollsters.
+
+The spline fit shows a general decline in polling percentages up until mid-2023, followed by a sharp rise as the election approaches in 2024. The credible intervals are wider earlier on, indicating greater uncertainty due to less consistent polling data, and narrow closer to the election, reflecting increased confidence as more data is collected.
+
+The color coding by pollster highlights how different organizations contribute to this trend. Pollsters such as YouGov and The Washington Post provide a larger volume of data points over the timeline, which helps tighten the credible intervals. Pollsters with fewer data points, like YouGov Blue or Siena/NYT, contribute less, leading to more uncertainty in their sections of the plot.
+
+The Bayesian model is particularly important here as it explicitly models the uncertainty, allowing us to see where our predictions are more or less certain. This is crucial when comparing data from multiple pollsters, as some provide more consistent data than others. By incorporating this uncertainty, the model gives a clearer, more reliable picture of overall polling trends.
+
+## Analyzing Bayesian Polling Trends Differentiated By States
+
+@fig-figure5 presents polling percentages over time, separated by states, using a Bayesian model with a spline fit. Each state is represented by a different color, providing a clear comparison of state-specific polling trends. The blue spline line shows the overall trend across all states, and the shaded area represents the credible interval, capturing the uncertainty in the predictions.
+
+The Bayesian spline model reveals a decline in polling percentages leading up to 2023, followed by a notable increase approaching 2024. The credible interval is wider earlier on, reflecting greater uncertainty in polling results, and narrows as we move closer to the election, indicating more confidence in the predictions as more data becomes available.
+
+The data points from various states, such as Michigan (green) and Ohio (light blue), cluster around the overall trend, contributing significantly to the model’s fit. States with fewer data points, like Virginia (pink) and Nebraska CD-2 (light blue), contribute less and have higher variability, adding to the overall uncertainty in those periods.
+
+This figure highlights the importance of incorporating state-level polling into the analysis, as each state has a different polling trajectory. The Bayesian model's ability to incorporate uncertainty provides a more reliable view of the overall trend, while still allowing for variability between states.
 
 ## Weaknesses and next steps
 
-Weaknesses and next steps should also be included.
+A key weakness in the analysis is the variation between pollsters. Despite adjustments and the use of Bayesian modeling, differences in methodologies, sampling techniques, and respondent recruitment remain a challenge. Some pollsters, particularly those with fewer data points, contribute to greater uncertainty, which can make predictions less reliable in certain cases. Additionally, relying on self-reported polling data carries the risk of biases, such as non-response bias or unrepresentative samples.
+
+The use of spline models to capture non-linear trends is also a limitation. While it smooths fluctuations, it may overlook significant events or shifts in public opinion during the election period. Although the Bayesian model helps account for uncertainty, it relies on historical data for priors, which may not fully reflect the unique aspects of the 2024 election.
+
+For future improvements, incorporating more detailed data, such as voter demographics and turnout probabilities, could enhance the accuracy of the forecasts. Integrating real-time polling updates or analyzing social media sentiment could make the models more responsive to changing conditions. Expanding the analysis to include more pollsters and considering the impact of electoral college dynamics would provide a more complete understanding of election outcomes beyond the popular vote.
+
+# Conclusion 
+
+This paper analyzed polling data for the 2024 U.S. Presidential election, focusing on trends in candidate support and the factors that influence polling outcomes. Using data from FiveThirtyEight, which compiles polls from organizations like YouGov and Siena/NYT, we modeled polling percentages across different timeframes, pollsters, and states. Both linear regression and Bayesian models were applied to capture variations in the data and estimate the uncertainty in polling predictions.
+
+The analysis showed that Biden's support remained fairly stable throughout the election period, while Harris's polling was more variable, with notable fluctuations over time and across pollsters. State-specific trends demonstrated the importance of regional differences in voter preferences, with certain states showing stronger or weaker support for each candidate. Bayesian models provided a way to quantify uncertainty, particularly for states or pollsters with fewer data points.
+
+While the analysis provides useful trends, it is limited by pollster variability and the potential for bias in self-reported polling data. Future work should include more detailed voter demographics and real-time polling updates to enhance the accuracy of forecasts.
+
+Based on the current trends in the data, the Democratic Party shows stable support, especially for Biden, heading into the election. Although there are fluctuations in Harris’s polling, the overall trend suggests that the Democrats are in a relatively strong position. However, continued monitoring of polling trends, particularly at the state level, will be important for a more precise forecast of the election outcome.
 
 \newpage
 
@@ -454,122 +471,133 @@ Weaknesses and next steps should also be included.
 
 # Appendix A: YouGov Pollster Methodology and Evaluation
 
-1. Overview of YouGov
+**Overview of YouGov**
+
 YouGov is a widely recognized international polling firm known for its political forecasting, especially through its "poll-of-polls" methodology, which aggregates results from numerous individual surveys. YouGov primarily utilizes online panel polling, offering timely and cost-effective results, especially for U.S. presidential elections. Below is a detailed exploration of YouGov's polling methodology.
 
+**Population, Frame, and Sample**
 
-2. Population, Frame, and Sample
++ Population: YouGov’s target population consists of U.S. likely voters, defined by their eligibility and likelihood to vote, assessed through past voting behavior, voter registration, and expressed intent.
++ Frame: The sampling frame is YouGov’s online panel, which includes millions of U.S. residents recruited through various methods. The panel is stratified and weighted to represent key demographics such as age, gender, race, education, and region.
++ Sample: YouGov uses non-probability sampling from its panel, adjusting for biases using sophisticated weighting to reflect the U.S. electorate's composition.
 
-Population: YouGov’s target population consists of U.S. likely voters, defined by their eligibility and likelihood to vote, assessed through past voting behavior, voter registration, and expressed intent.
+**Sample Recruitment**
 
-Frame: The sampling frame is YouGov’s online panel, which includes millions of U.S. residents recruited through various methods. The panel is stratified and weighted to represent key demographics such as age, gender, race, education, and region.
++ YouGov recruits panelists through:
 
-Sample: YouGov uses non-probability sampling from its panel, adjusting for biases using sophisticated weighting to reflect the U.S. electorate's composition.
+  + Targeted online ads: Ads across websites and social media attract diverse participants.
+  + Affiliate marketing: Collaborations with other websites help reach a broad audience.
+  + Incentives: Respondents earn points for surveys, increasing participation and retention.
 
-
-3. Sample Recruitment
-
-YouGov recruits panelists through:
-Targeted online ads: Ads across websites and social media attract diverse participants.
-Affiliate marketing: Collaborations with other websites help reach a broad audience.
-Incentives: Respondents earn points for surveys, increasing participation and retention.
 However, because respondents voluntarily join the panel, there is potential for self-selection bias, as certain demographics may be more likely to participate.
 
-4. Sampling Approach and Trade-offs
+**Sampling Approach and Trade-offs**
+
 YouGov applies stratified sampling, setting quotas for demographics such as age, gender, race, education, and region. After data collection, post-stratification weighting adjusts for imbalances between the sample and the population.
 
-Advantages:
-Cost-effectiveness: Online panels are cheaper than traditional phone surveys.
-Speed: Surveys are completed quickly online.
-Targeting: Specific groups, such as likely voters, can be efficiently targeted.
+- Advantages:
+  - Cost-effectiveness: Online panels are cheaper than traditional phone surveys.
+  - Speed: Surveys are completed quickly online.
+  - Targeting: Specific groups, such as likely voters, can be efficiently targeted.
 
-Disadvantages:
-Non-probability sample: Not all individuals have an equal chance of being selected, risking bias.
-Internet access bias: Those without internet access may be underrepresented, skewing results, particularly for older or lower-income demographics.
+- Disadvantages:
+  - Non-probability sample: Not all individuals have an equal chance of being selected, risking bias.
+  - Internet access bias: Those without internet access may be underrepresented, skewing results,    - particularly for older or lower-income demographics.
 
+**Handling Non-response**
 
-5. Handling Non-response
 To combat non-response, YouGov:
-Incentivizes participation with rewards to increase survey completion.
-Sends follow-ups for longer surveys, reminding respondents to complete them.
-Applies weighting to adjust for differential non-response (e.g., giving more weight to younger voters if they are underrepresented).
-Despite these efforts, some non-response bias may persist, as those opting out may differ systematically from respondents (e.g., lower political engagement).
 
-6. Questionnaire Design: Strengths and Weaknesses
-Strengths:
-Clarity: Questions are designed for consistency in interpretation.
-Pre-testing: Surveys are often tested with smaller groups to refine clarity and accuracy.
-Flexibility: Questions are adapted to political events, maintaining relevance.
++ Incentivizes participation with rewards to increase survey completion.
++ Sends follow-ups for longer surveys, reminding respondents to complete them.
++ Applies weighting to adjust for differential non-response (e.g., giving more weight to younger voters if they are underrepresented).
++ Despite these efforts, some non-response bias may persist, as those opting out may differ systematically from respondents (e.g., lower political engagement).
 
-Weaknesses:
-Limited depth: Online surveys favor simpler, multiple-choice questions, limiting nuanced responses.
-Response fatigue: Frequent survey participation may cause rushed or less thoughtful responses.
-Exclusion of offline participants: Individuals without internet access are excluded, impacting representativeness, particularly in underserved demographics.
+**Questionnaire Design: Strengths and Weaknesses**
 
-7. Conclusion
++ Strengths:
+  + Clarity: Questions are designed for consistency in interpretation.
+  + Pre-testing: Surveys are often tested with smaller groups to refine clarity and accuracy.
+  + Flexibility: Questions are adapted to political events, maintaining relevance.
+
++ Weaknesses:
+  + Limited depth: Online surveys favor simpler, multiple-choice questions, limiting nuanced responses.
+  + Response fatigue: Frequent survey participation may cause rushed or less thoughtful responses.
+  + Exclusion of offline participants: Individuals without internet access are excluded, impacting representativeness, particularly in underserved demographics.
+
+**Conclusion** 
+
 YouGov’s online panel approach offers cost efficiency, speed, and adaptability, making it suitable for political forecasting. While its methodology effectively mitigates some biases through stratification and weighting, limitations like non-response bias, self-selection, and internet access gaps must be acknowledged. Despite these challenges, YouGov remains a leading firm in modern political forecasting.
 
-
 # Appendix B: Idealized Methodology and Survey
-1. Overview
+**Overview** 
+
 With a $100K budget, the objective of this survey is to forecast the outcome of the upcoming U.S. presidential election using a robust sampling strategy, respondent recruitment process, and careful poll aggregation techniques. This methodology is designed to minimize bias and ensure a representative sample that accurately reflects the voting population.
 
-2. Sampling Approach
-The goal of the survey is to represent the U.S. electorate. To achieve this, the sampling strategy should include a multi-stage stratified random sampling approach. The following demographic groups should be stratified to ensure diversity:
-Age: Ensure a balanced representation across different age groups (e.g., 18-29, 30-44, 45-64, 65+).
-Gender: Include a balanced proportion of male and female respondents, and allow space for non-binary respondents.
-Race/Ethnicity: Ensure representation of major racial and ethnic groups, including White, Black, Hispanic/Latino, Asian, and other minorities.
-Education: Include respondents with various educational backgrounds (no high school, high school graduate, college graduate, post-graduate education).
-Region: Sample respondents from different geographic regions (Northeast, Midwest, South, West) to capture regional variations in voting behavior.
-Sample Size
-Given the budget constraints and the need for statistical reliability, the survey would target a sample size of 5,000 respondents, which allows for meaningful subgroup analysis while keeping costs manageable. This should provide a margin of error around ±1.5% at a 95% confidence level.
+**Sampling Approach** 
 
-3. Recruitment of Respondents
+The goal of the survey is to represent the U.S. electorate. To achieve this, the sampling strategy should include a multi-stage stratified random sampling approach. The following demographic groups should be stratified to ensure diversity:
+
++ Age: Ensure a balanced representation across different age groups (e.g., 18-29, 30-44, 45-64, 65+).
++ Gender: Include a balanced proportion of male and female respondents, and allow space for non-binary respondents.
++ Race/Ethnicity: Ensure representation of major racial and ethnic groups, including White, Black, Hispanic/Latino, Asian, and other minorities.
++ Education: Include respondents with various educational backgrounds (no high school, high school graduate, college graduate, post-graduate education).
++ Region: Sample respondents from different geographic regions (Northeast, Midwest, South, West) to capture regional variations in voting behavior.
++ Sample Size: Given the budget constraints and the need for statistical reliability, the survey would target a sample size of 5,000 respondents, which allows for meaningful subgroup analysis while keeping costs manageable. This should provide a margin of error around ±1.5% at a 95% confidence level.
+
+**Recruitment of Respondents** 
+
 To recruit a diverse and representative sample, the following methods will be used:
-Online recruitment via targeted ads: Similar to YouGov, targeted ads on social media platforms (e.g., Facebook, Instagram, YouTube) and websites can be used to attract a broad range of respondents. Ads will be tailored to reach different demographic groups based on age, region, and other factors.
-Email outreach to existing voter databases: Leveraging voter registration lists and databases (where legally permissible) will allow for targeted invitations to participate in the survey.
-Incentives: Offering incentives, such as entry into a lottery or digital rewards, will increase the participation rate and reduce non-response bias.
+
++ Online recruitment via targeted ads: Similar to YouGov, targeted ads on social media platforms (e.g., Facebook, Instagram, YouTube) and websites can be used to attract a broad range of respondents. Ads will be tailored to reach different demographic groups based on age, region, and other factors.
++ Email outreach to existing voter databases: Leveraging voter registration lists and databases (where legally permissible) will allow for targeted invitations to participate in the survey.
++ Incentives: Offering incentives, such as entry into a lottery or digital rewards, will increase the participation rate and reduce non-response bias.
+
 Given the budget, $80,000 will be allocated for recruitment efforts and respondent compensation, including targeted online ads and incentives for participants.
 
-4. Data Validation
+**Data Validation** 
+
 To ensure the data's accuracy and reduce the risk of fraudulent responses or duplicate submissions, the following measures will be implemented:
-Captcha verification: This will prevent bots from filling out the survey.
-Email and phone verification: Respondents will be required to verify their email or phone number to ensure that each respondent is unique.
-Cross-verification with voter rolls: For respondents who voluntarily provide voter registration details, cross-checking with public voter rolls can validate their voting eligibility.
-Time tracking and completion rate monitoring: To detect inattentive or rushed responses, the time spent on each question will be tracked, and surveys completed unusually quickly will be flagged for further review.
 
-5. Poll Aggregation
++ Captcha verification: This will prevent bots from filling out the survey.
++ Email and phone verification: Respondents will be required to verify their email or phone number to ensure that each respondent is unique.
++ Cross-verification with voter rolls: For respondents who voluntarily provide voter registration details, cross-checking with public voter rolls can validate their voting eligibility.
++ Time tracking and completion rate monitoring: To detect inattentive or rushed responses, the time spent on each question will be tracked, and surveys completed unusually quickly will be flagged for further review.
+
+**Poll Aggregation** 
+
 To provide a more robust forecast, this survey will be integrated into a broader poll-of-polls approach, aggregating data from multiple sources, including:
-Public polling data: In addition to this survey, data from other reputable pollsters (like YouGov, Ipsos, etc.) will be aggregated.
-Weighting and adjusting: Each poll's results will be weighted based on its sample size, methodological rigor, and recency. Larger, more recent, and methodologically sound polls will have a greater influence on the final aggregated forecast.
-Adjustments for known biases: If a particular demographic is underrepresented (e.g., younger voters, rural voters), post-stratification weighting will be applied to ensure the aggregate data reflects the overall voting population.
 
-6. Budget Breakdown
-Recruitment (online ads and outreach): $60,000
-Incentives for respondents: $20,000
-Survey development and data validation: $10,000
-Poll aggregation and analysis tools: $10,000
++ Public polling data: In addition to this survey, data from other reputable pollsters (like YouGov, Ipsos, etc.) will be aggregated.
++ Weighting and adjusting: Each poll's results will be weighted based on its sample size, methodological rigor, and recency. Larger, more recent, and methodologically sound polls will have a greater influence on the final aggregated forecast.
++ Adjustments for known biases: If a particular demographic is underrepresented (e.g., younger voters, rural voters), post-stratification weighting will be applied to ensure the aggregate data reflects the overall voting population.
 
-7. Survey Implementation
+**Budget Breakdown** 
+
++ Recruitment (online ads and outreach): $60,000
++ Incentives for respondents: $20,000
++ Survey development and data validation: $10,000
++ Poll aggregation and analysis tools: $10,000
+
+**Survey Implementation** 
+
 To demonstrate the methodology, a Google Forms survey will be developed and deployed. The survey will be structured as follows:
-Introduction: A brief explanation of the survey’s purpose, ensuring that respondents understand its relevance and importance.
-Demographic questions: These questions will collect essential data on the respondents’ age, gender, race/ethnicity, education, and region.
-Political questions: The core section will ask about voting intent, candidate preference, party affiliation, and important political issues. These questions will be designed to minimize bias and allow for nuanced responses (e.g., Likert scales, multiple-choice options).
-Verification and consent: Respondents will be asked to verify their information and give consent for data use.
+
++ Introduction: A brief explanation of the survey’s purpose, ensuring that respondents understand its relevance and importance.
++ Demographic questions: These questions will collect essential data on the respondents’ age, gender, race/ethnicity, education, and region.
++ Political questions: The core section will ask about voting intent, candidate preference, party affiliation, and important political issues. These questions will be designed to minimize bias and allow for nuanced responses (e.g., Likert scales, multiple-choice options).
++ Verification and consent: Respondents will be asked to verify their information and give consent for data use.
+
 A link to the Google Forms survey will be included in the appendix, alongside a downloadable copy of the survey questions for transparency.
 
-8. Survey Design Considerations
-Question clarity and neutrality: The questions will be carefully worded to avoid leading responses or introducing bias.
-Ordering of questions: Demographic questions will be asked first to set a neutral tone before moving into political questions.
-Pilot testing: Before full deployment, the survey will be tested on a small sample to ensure clarity and to refine any confusing questions.
+**Survey Design Considerations**
+
++ Question clarity and neutrality: The questions will be carefully worded to avoid leading responses or introducing bias.
++ Ordering of questions: Demographic questions will be asked first to set a neutral tone before moving into political questions.
++ Pilot testing: Before full deployment, the survey will be tested on a small sample to ensure clarity and to refine any confusing questions.
 
 Form link: https://forms.gle/epk9ptyVxZpVRVLq9
 
-
-
 \newpage
 
-
 # References
-
-
