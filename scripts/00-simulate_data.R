@@ -9,9 +9,10 @@
 
 #### Workspace setup ####
 # Load necessary library
-
+library(tidyverse)
 library(dplyr)
-library(lubridate)  # For date manipulation
+library(readr)
+library(lubridate)
 
 # Set seed for reproducibility
 set.seed(12345)

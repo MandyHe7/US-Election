@@ -1,9 +1,8 @@
-# Starter folder
+# Modeling 2024 U.S. Presidential Polling Trends
 
 ## Overview
 
-This repo provides students with a foundation for their own projects associated with *Telling Stories with Data*. You do not need every aspect for every paper and you should delete aspects that you do not need.
-
+This project analyzes polling data for the 2024 U.S. Presidential election, using data from FiveThirtyEight's aggregation of polls conducted by organizations such as YouGov and Siena/NYT. The goal is to examine trends in candidate support over time and across different regions, while accounting for factors like polling methodology and sample size. By applying both linear regression and Bayesian models, this analysis estimates the variability in polling results and highlights the uncertainty inherent in election predictions. The findings provide insights into how public opinion shifts leading up to the election and help improve the accuracy of forecasts. The code used for data cleaning, modeling, and visualization is included in this repository for full transparency and reproducibility.
 
 ## File Structure
 
@@ -16,16 +15,6 @@ The repo is structured as:
 -   `paper` contains the files used to generate the paper, including the Quarto document and reference bibliography file, as well as the PDF of the paper. 
 -   `scripts` contains the R scripts used to simulate, download and clean data.
 
-
 ## Statement on LLM usage
 
-Aspects of the code were written with the help of the ChatGPT 4o. Graphing, simulating, cleaning, and editing writing in this paper is done by the help of ChatCPT 4o and the entire chat history is available in usage.txt located in the "llm" folder under "other" folder.
-
-
-## Some checks
-
-- [ ] Change the rproj file name so that it's not starter_folder.Rproj
-- [ ] Change the README title so that it's not Starter folder
-- [ ] Remove files that you're not using
-- [ ] Update comments in R scripts
-- [ ] Remove this checklist
+Graphing, simulating, cleaning, and editing writing in this paper is done by the help of ChatCPT 4o and the entire chat history is available in usage.txt located in the "llm" folder under "other" folder.

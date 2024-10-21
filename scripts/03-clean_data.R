@@ -9,6 +9,7 @@
 #### Workspace setup ####
 library(tidyverse)
 library(dplyr)
+library(readr)
 
 #### Clean data ####
 raw_data <- read_csv("data/01-raw_data/raw_data.csv")
@@ -28,8 +29,8 @@ just_DEM_high_quality <- raw_data |>
   mutate(
     num_DEM = round((pct / 100) * sample_size, 0) # Need number not percent for some models
   ) |>
-  select(pollster, numeric_grade, pollscore, methodology, state, start_date, end_date, sample_size, party, answer, pct) |>
-  drop_na(pollster, numeric_grade, pollscore, methodology, state, start_date, end_date, sample_size, party, answer, pct)
+  select(pollster, numeric_grade, pollscore, methodology, state, start_date, end_date, sample_size, party, answer, pct, num_DEM) |>
+  drop_na(pollster, numeric_grade, pollscore, methodology, state, start_date, end_date, sample_size, party, answer, pct, num_DEM)
 
 #### Save data ####
 write_csv(just_DEM_high_quality, "data/02-analysis_data/analysis_data.csv")
