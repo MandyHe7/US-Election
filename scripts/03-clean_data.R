@@ -1,7 +1,7 @@
 #### Preamble ####
-# Purpose: Cleans the raw plane data recorded 
+# Purpose: Cleans the raw plane data recorded
 # Author: Mandy He and Wendy Yuan
-# Date: 18 October 2024 
+# Date: November 4, 2024
 # Contact: Mandyxy.he@mail.utoronto.ca and w.yuan@mail.utoronto.ca
 # License: N/A
 # Pre-requisites: N/A
@@ -18,8 +18,8 @@ raw_data <- read_csv("data/01-raw_data/raw_data.csv")
 # Filter data to DEM estimates based on high-quality polls after DEM declared
 just_DEM_high_quality <- raw_data |>
   filter(
-    answer  %in% c("Biden", "Harris"),
-    numeric_grade >= 3 
+    answer %in% c("Biden", "Harris"),
+    numeric_grade >= 3
   ) |>
   mutate(
     state = if_else(is.na(state), "National", state), # Hacky fix for national polls - come back and check

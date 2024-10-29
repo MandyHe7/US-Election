@@ -1,7 +1,7 @@
 #### Preamble ####
 # Purpose: Simulates a dataset to understand expected outcomes and potential errors in analysis
 # Author: Mandy He and Wendy Yuan
-# Date: 18 October 2024 
+# Date: November 4, 2024
 # Contact: Mandyxy.he@mail.utoronto.ca and w.yuan@mail.utoronto.ca
 # License: N/A
 # Pre-requisites: N/A
@@ -27,7 +27,7 @@ parties <- "DEM"
 answers <- c("Harris", "Biden")
 
 # Simulate dates
-start_dates <- seq(as.Date("2024-09-01"), as.Date("2024-10-31"), by="day")
+start_dates <- seq(as.Date("2024-09-01"), as.Date("2024-10-31"), by = "day")
 end_dates <- start_dates + sample(3:7, length(start_dates), replace = TRUE)
 
 # Number of polls to simulate
@@ -49,12 +49,12 @@ simulated_data <- data.frame(
   sample_size = sample(seq(sample_size_min, sample_size_max, by = 50), n_polls, replace = TRUE),
   party = sample(parties, n_polls, replace = TRUE),
   answer = sample(answers, n_polls, replace = TRUE),
-  pct = round(runif(n_polls, 40, 55), 1)  # Random polling percentages between 40% and 55%
+  pct = round(runif(n_polls, 40, 55), 1) # Random polling percentages between 40% and 55%
 )
 
 # Simulate a winner based on polling percentages
 simulated_data <- simulated_data %>%
-  mutate(predicted_winner = ifelse(pct > 50, "DEM", "REP"))  # Predict winner based on percentage
+  mutate(predicted_winner = ifelse(pct > 50, "DEM", "REP")) # Predict winner based on percentage
 
 # Save the updated dataset with predictions
 #### Save data ####
