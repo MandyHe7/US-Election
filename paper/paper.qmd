@@ -398,7 +398,6 @@ ggplot(polling_data_2, aes(x = end_date, y = pct, color = state)) +
 
 @fig-figure5 in a Bayesian model that shows different colour points each corresponding to different states. The overall trend across most groups is an upward slope, though some groups have flatter or even slightly downward trends. The lines vary in steepness, and the credible intervals for each group give the plot a multi-layered shape, with each group showing distinct levels of uncertainty. The shape of the data suggests that many groups follow a similar positive trend. The graph as a whole has a spread-out, fan-like appearance, with a spreading out across the plot, reflecting the varied behaviors.
 
-
 \newpage
 
 # Discussion {#sec-Discussion}
